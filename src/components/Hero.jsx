@@ -16,7 +16,7 @@ const Hero = () => {
 					<div className="  text-center font-bold text-md">प्रचलित</div>
 				</div>
 				{/* main hero section */}
-				<div className="text-md ruluko-regular text-center leading-5">
+				<div className="text-md ruluko-regular text-center leading-5 font-bold">
 					विकासको नयाँ युगमा नेपाली खेलकुद, क्रिकेटर द्वय भट्ट र रावललाई आजीवन
 					छात्रवृत्ति, नेपाली चलचित्रको
 				</div>
@@ -30,7 +30,7 @@ const Hero = () => {
 						<p className="text-sm text-white rounded-md ">
 							अपडेट गरिएको : १ दिन अघि, खेलकुद, सुधीर नेपाल
 						</p>
-						<p className="text-md text-white mt-2">
+						<p className="text-md text-white mt-2 font-bold">
 							किन बन्दैछ नेपाल अपराधीहरूको सुरक्षित ठाउँ
 						</p>
 					</div>
@@ -45,7 +45,7 @@ const Hero = () => {
 							<p className="text-sm text-white  rounded-md ">
 								४ अगस्ट २०२५, पर्यटन, प्रकाश उप्रेती
 							</p>
-							<p className="text-md  text-white mt-2">
+							<p className="text-md  text-white mt-2 font-bold">
 								विकासको नयाँ युगमा नेपाली खेलकुद
 							</p>
 						</div>
@@ -58,7 +58,7 @@ const Hero = () => {
 							<p className="text-sm text-white rounded-md ">
 								२२ डिसेम्बर, २०२२ पर्यटन, प्रकाश उप्रेती
 							</p>
-							<p className="text-md text-white mt-2">
+							<p className="text-md text-white mt-2 font-bold">
 								क्रिकेटर द्वय भट्ट र रावललाई आजीवन छात्रवृत्ति
 							</p>
 						</div>
