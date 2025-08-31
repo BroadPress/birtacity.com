@@ -40,7 +40,7 @@ const Navbar = () => {
 					</div>
 				</div>
 				<div className="flex flex-col gap-8">
-					<div className=" border border-[#055D59] border-x-0 px-4 py-2 flex gap-18 items-center justify-center text-[16px] font-bold text-[#055D59]">
+					<div className=" border border-[#055D59] border-x-0 px-4 py-2 flex gap-9 items-center justify-center text-sm font-bold text-[#055D59]">
 						<div>होमपेज </div>
 						<div>राजनीति</div>
 						<div>प्रविधि</div>
@@ -54,15 +54,15 @@ const Navbar = () => {
 						<div>सुरक्षा</div>
 						<div>अन्य</div>
 					</div>
-					<div className="border border-[#055D59] border-x-0 flex items-center text-[16px] font-bold overflow-hidden">
+					<div className="border border-[#055D59] border-x-0 flex items-center text-sm font-bold overflow-hidden">
 						
-						<div className="w-[10%] text-white bg-[#055D59] text-center px-4 py-2 text-[16.6px]">
+						<div className="w-[10%] text-white bg-[#055D59] text-center px-4 py-2 text-sm">
 							Trending
 						</div>
 
 						
 						<div className="w-[80%] overflow-hidden">
-							<div className="flex gap-10 animate-marquee whitespace-nowrap items-center">
+							<div className="flex gap-10 animate-marquee whitespace-nowrap items-center text-sm">
 								
 								<p>Historic climate change agreement</p>
 								<div className="h-2 w-2 bg-[#055D59] rounded-full flex-shrink-0"></div>
