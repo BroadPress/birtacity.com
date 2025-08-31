@@ -7,14 +7,13 @@ function App() {
  
 
   return (
-    <>
-      <div className='px-10 py-8'>
-        <Navbar /> 
-        <Hero/>
-      </div>
-     
-    </>
-  )
+		<>
+			<div className="px-10 py-8 bg-[#F1F1F1]">
+				<Navbar />
+				<Hero />
+			</div>
+		</>
+	);
 }
 
 export default App
