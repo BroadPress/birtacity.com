@@ -27,7 +27,7 @@ const Hero = () => {
 					style={{ backgroundImage: `url(${image1})` }}
 				>
 					<div className="absolute bottom-5 left-5 px-4">
-						<p className="text-sm text-white px-4 py-2 rounded-md ">
+						<p className="text-sm text-white rounded-md ">
 							अपडेट गरिएको : १ दिन अघि, खेलकुद, सुधीर नेपाल
 						</p>
 						<p className="text-md text-white mt-2">
@@ -42,7 +42,7 @@ const Hero = () => {
 						style={{ backgroundImage: `url(${image2})` }}
 					>
 						<div className="absolute bottom-5 left-5 px-4">
-							<p className="text-sm text-white px-4 py-2 rounded-md ">
+							<p className="text-sm text-white  rounded-md ">
 								४ अगस्ट २०२५, पर्यटन, प्रकाश उप्रेती
 							</p>
 							<p className="text-md  text-white mt-2">
@@ -55,7 +55,7 @@ const Hero = () => {
 						style={{ backgroundImage: `url(${image3})` }}
 					>
 						<div className="absolute bottom-5 left-5 px-4">
-							<p className="text-sm text-white px-4 py-2 rounded-md ">
+							<p className="text-sm text-white rounded-md ">
 								२२ डिसेम्बर, २०२२ पर्यटन, प्रकाश उप्रेती
 							</p>
 							<p className="text-md text-white mt-2">
