@@ -1,23 +1,21 @@
-
-import reactLogo from './assets/react.svg'
-import Navbar from './homepage/Navbar'
-import Hero from './homepage/Hero'
-import Firstsection from './homepage/Firstsection';
-import Secondsection from './homepage/Secondsection';
+import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Homepage";
+import Navbar from '../src/components/Navbar'
 
 function App() {
- 
-
-  return (
-		<>
-			<div className="px-10 py-8 bg-[#F1F1F1]">
-				<Navbar />
-        <Hero />
-			  <Firstsection />
-			  <Secondsection/>
+	return (
+		<div className="">
+			<Navbar/>
+			<div className=" px-6 py-3 md:px-14 md:py-7 ">
+				<Routes>
+					<Route path="/" element={<Home />} />
+					
+				</Routes>
 			</div>
-		</>
+			
+		</div>
 	);
 }
 
-export default App
+export default App;

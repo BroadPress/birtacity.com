@@ -1,9 +1,19 @@
-import React from 'react'
-import image1 from '../assets/Sectionsecond/image1.png'
-import image2 from '../assets/Sectionsecond/image2.png'
+import React from "react";
+import image1 from "../assets/Homepage/Sectionsecond/image1.png";
+import image2 from "../assets/Homepage/Sectionsecond/image2.png";
+import image3 from "../assets/Homepage/Sectionsecond/image3.png";
+import image4 from "../assets/Homepage/Sectionsecond/image4.png";
+import image5 from "../assets/Homepage/Sectionsecond/image5.png";
+import image6 from "../assets/Homepage/Sectionsecond/image6.png";
+import image7 from "../assets/Homepage/Sectionsecond/image7.png";
+import image8 from "../assets/Homepage/Sectionsecond/image8.png";
+import arrow from '../assets/icons/arrow.svg'
+
+import profile1 from "../assets/Homepage/Sectionsecond/profile1.png";
+import profile2 from "../assets/Homepage/Sectionsecond/profile2.png";
 const Secondsection = () => {
-  return (
-		<div className="mt-10">
+	return (
+		<div className="mt-10 flex flex-col gap-10">
 			<div className="flex gap-6">
 				<div className=" flex  flex-col gap-6 border border-t-black border-x-0 border-b-0 py-6 w-[75%]">
 					<div className="font-bold text-lg">खेलकुदसम्बन्धी समाचार</div>
@@ -14,7 +24,7 @@ const Secondsection = () => {
 									<p className="font-bold text-md">
 										विकासको नयाँ युगमा नेपाली खेलकुद
 									</p>
-									<p className="text-sm">
+									<p className="text-xs">
 										आधुनिक प्रविधिको प्रयोगले नेपाली खेलाडीहरूको शारीरिक र
 										मानसिक तयारीमा ठूलो परिवर्तन ल्याएको छ। फिटनेस ट्रयाकर, हृदय
 										गति मापन गर्ने यन्त्रहरू प्रयोग गरेर खेलाडीको स्वास्थ्य
@@ -25,7 +35,7 @@ const Secondsection = () => {
 									<p className="font-bold text-md">
 										क्रिकेटर द्वय भट्ट र रावललाई आजीवन छात्रवृत्ति
 									</p>
-									<p className="text-sm">
+									<p className="text-xs">
 										क्रिकेट नगरीका रूपमा परिचित धनगढीमा अवस्थित एसपीए कलेजले
 										सुदूरपश्चिमका गौरवशाली युवा क्रिकेटरहरू सचिन भट्ट र सुशील
 										रावललाई आजीवन छात्रवृत्ति र नगदसहित सम्मान गरेको छ।
@@ -35,7 +45,7 @@ const Secondsection = () => {
 									<p className="font-bold text-md">
 										ओलम्पिक खेलहरूमा नेपालको सहभागिता र सम्भावना
 									</p>
-									<p className="text-sm">
+									<p className="text-xs">
 										ओलम्पिक खेलहरू विश्वका सबैभन्दा प्रतिष्ठित खेल प्रतियोगिता
 										हुन् जहाँ प्रत्येक राष्ट्रका उत्कृष्ट खेलाडीहरू भेला भएर
 										राष्ट्रिय गौरवका लागि प्रतिस्पर्धा गर्दछन्। नेपालको खेलकुद
@@ -67,17 +77,110 @@ const Secondsection = () => {
 					style={{ backgroundImage: `url(${image2})` }}
 				>
 					<div className="absolute bottom-5 left-5 px-4">
-						<p className="text-sm text-white">
-							४ अगस्ट २०२५, पर्यटन, प्रकाश उप्रेती
-						</p>
 						<p className="text-md text-white mt-2 font-bold">
-							विकासको नयाँ युगमा नेपाली खेलकुद
+							किन जुगनुहरू यो गर्मीमा जतातततै देखिन्छन्?
 						</p>
+						<div className="text-sm text-white flex flex-col ">
+							<div className="flex gap-3 items-center ">
+								<img src={profile1} alt="" className="h-5 w-5 rounded-full" />
+								<p>टेलर रोबिन्सन</p>
+							</div>
+							<div className="flex gap-3 items-center ">
+								<img src={profile2} alt="" className="h-5 w-5 rounded-full" />
+								<p>युवराज खन्ना</p>
+							</div>
+
+							<p>२०२५ जुलाई १९</p>
+						</div>
 					</div>
 				</div>
 			</div>
+			{/* news section */}
+			<div className="flex gap-7">
+				<div className="flex flex-col w-1/2 gap-7">
+					<div className="flex gap-8">
+						<img src={image3} alt="" className="w-[148px] h-[72px]" />
+						<div className="flex flex-col gap-3 justify-around ">
+							<p className="font-bold text-sm">
+								रूसको कीवमाथि हवाई आक्रमण: १८ जनाको मृत्यु
+							</p>
+							<p className="text-xs">
+								रूसले २८ अगस्ट २०२५ मा युक्रेनको राजधानी कीवमा हवाई आक्रमण गरेको
+								छ, जसमा १८ जनाको मृत्यु भएको छ र ४८ जना घाइते भएका छन्
+							</p>
+						</div>
+					</div>
+					<div className="flex gap-8">
+						<img src={image4} alt="" className="w-[148px] h-[72px]" />
+						<div className="flex flex-col gap-3 justify-around ">
+							<p className="font-bold text-sm">
+								युक्रेनले १८ देखि २२ वर्षका पुरुषलाई विदेश जान अनुमति दियो
+							</p>
+							<p className="text-xs">
+								रूसको पूर्ण आक्रमणपछि पहिलो पटक युक्रेनले १८ देखि २२ वर्षका
+								पुरुषलाई २९ अगस्ट २०२५ देखि विदेश जान अनुमति दिएको
+							</p>
+						</div>
+					</div>
+					<div className="flex gap-8">
+						<img src={image5} alt="" className="w-[148px] h-[72px]" />
+						<div className="flex flex-col gap-3 justify-around ">
+							<p className="font-bold text-sm">
+								युरोपले इरानमाथि आणविक कार्यक्रमको कारण प्रतिबन्ध पुनः लागू
+								गर्दै
+							</p>
+							<p className="text-xs">
+								संयुक्त अधिराज्य, फ्रान्स र जर्मनीले २०१५ को आणविक सम्झौताअनुसार
+								इरानमाथि लगाइएका सबै प्रतिबन्ध पुनः
+							</p>
+						</div>
+					</div>
+				</div>
+				<div className="flex flex-col w-1/2 gap-7">
+					<div className="flex gap-8">
+						<img src={image6} alt="" className="w-[148px] h-[72px]" />
+						<div className="flex flex-col gap-3 justify-around ">
+							<p className="font-bold text-sm">
+								चीनमा रुस र उत्तर कोरियाका नेतासँग सैन्य परेड
+							</p>
+							<p className="text-xs">
+								चीनका राष्ट्रपति शी जिनपिङले ८० औं द्वितीय विश्वयुद्धको अन्त्यको
+								सम्झनामा रुसका राष्ट्रपति भ्लादिमिर पुटिन र उत्तर कोरियाका
+							</p>
+						</div>
+					</div>
+					<div className="flex gap-8">
+						<img src={image7} alt="" className="w-[148px] h-[72px]" />
+						<div className="flex flex-col gap-3 justify-around ">
+							<p className="font-bold text-sm">
+								अमेरिकामा डाक सेवामा अवरोध: नयाँ ट्यारिफ नियमको प्रभाव
+							</p>
+							<p className="text-xs">
+								अमेरिकामा डोनाल्ड ट्रम्पको प्रशासनले $८०० भन्दा कम मूल्यका
+								प्याकेजमाथि ट्यारिफ हटाउने नियम हटाएपछि विश्वभरका डाक
+							</p>
+						</div>
+					</div>
+					<div className="flex gap-8">
+						<img src={image8} alt="" className="w-[148px] h-[72px]" />
+						<div className="flex flex-col gap-3 justify-around ">
+							<p className="font-bold text-sm">
+								इन्डोनेसियामा संसद सदस्यहरूको विशेषाधिकारको विरोधमा प्रदर्शन
+							</p>
+							<p className="text-xs">
+								इन्डोनेसियामा संसद सदस्यहरूको आवास भत्ताको विरोधमा देशभरि
+								प्रदर्शन भएको छ। यस भत्ताले न्यूनतम तलबको लगभग १० गुणा बढी
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div className="text-sm flex gap-3 justify-center font-bold">
+        <p>थप समाचार </p>
+        <img src={arrow} alt="" className="" />
+			</div>
 		</div>
 	);
-}
+};
 
-export default Secondsection
+export default Secondsection;

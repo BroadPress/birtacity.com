@@ -1,11 +1,11 @@
 import React from 'react'
-import image1 from '../assets/Heroimage/image1.jpg'
-import image2 from '../assets/Heroimage/image2.png'
-import image3 from '../assets/Heroimage/image3.png'
-import image4 from '../assets/Heroimage/image4.png'
-import image5 from '../assets/Heroimage/image5.png'
-import image6 from '../assets/Heroimage/image6.png'
-import thunder from '../assets/icons/thunder.svg'
+import image1 from "../assets/Homepage/Heroimage/image1.jpg";
+import image2 from "../assets/Homepage/Heroimage/image2.png";
+import image3 from "../assets/Homepage/Heroimage/image3.png";
+import image4 from "../assets/Homepage/Heroimage/image4.png";
+import image5 from "../assets/Homepage/Heroimage/image5.png";
+import image6 from "../assets/Homepage/Heroimage/image6.png";
+import thunder from "../assets/icons/thunder.svg";
 const Hero = () => {
   return (
 		<div className="mt-10 flex flex-col gap-8 ">

@@ -1,8 +1,8 @@
 import React from 'react'
 import arrow from '../assets/icons/arrow.svg'
-import image1 from '../assets/Sectionfirstimage/imag1.png'
-import image2 from '../assets/Sectionfirstimage/image2.png'
-import image3 from '../assets/Sectionfirstimage/image3.png'
+import image1 from "../assets/Homepage/Sectionfirstimage/imag1.png";
+import image2 from "../assets/Homepage/Sectionfirstimage/image2.png";
+import image3 from "../assets/Homepage/Sectionfirstimage/image3.png";
 const Firstsection = () => {
   return (
 		<div className="flex flex-col gap-8 mt-10">
