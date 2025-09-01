@@ -39,7 +39,7 @@ const Thirdsection = () => {
 						</div>
 					</div>
 				</div>
-				<div className="flex flex-col gap-3 w-[25%] border-y-0 border-r-0 border border-l-[#00000033] px-8 justify-center">
+				<div className="flex flex-col gap-5 w-[25%] border-y-0 border-r-0 border border-l-[#00000033] px-8 justify-center">
 					<div className="text-lg font-bold">सुझावहरू</div>
 					<div className="flex flex-col gap-2">
 						<p className="text-md">किन हुन्छ वेबसाइट ह्याक?</p>
