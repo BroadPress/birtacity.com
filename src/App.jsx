@@ -1,8 +1,9 @@
 
 import reactLogo from './assets/react.svg'
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Firstsection from './components/Firstsection';
+import Navbar from './homepage/Navbar'
+import Hero from './homepage/Hero'
+import Firstsection from './homepage/Firstsection';
+import Secondsection from './homepage/Secondsection';
 
 function App() {
  
@@ -12,7 +13,8 @@ function App() {
 			<div className="px-10 py-8 bg-[#F1F1F1]">
 				<Navbar />
         <Hero />
-        <Firstsection/>
+			  <Firstsection />
+			  <Secondsection/>
 			</div>
 		</>
 	);
