@@ -85,7 +85,7 @@ const Thapkathaharu = () => {
 				/>
 				<div className="flex flex-col gap-2 justify-around">
 					<p className="font-bold text-sm">{item.title}</p>
-					<p className="texts-xs">{item.category}</p>
+					<p className="text-xs">{item.category}</p>
 				</div>
 			</div>
 		));
@@ -105,7 +105,7 @@ const Thapkathaharu = () => {
 						<div className="flex flex-col gap-8">{renderItems(rightItems)}</div>
 					</div>
 				</div>
-				<div className="w-[35%] bg-[#FFFFFF] flex flex-col p-4 border gap-7 ">
+				<div className="w-[35%] bg-[#FFFFFF] flex flex-col p-4 border gap-8 ">
 					<div className="flex justify-between items-center">
 						<div className="text-lg font-bold">
 							सबैभन्दा धेरै हेरिएका समाचार
@@ -117,7 +117,7 @@ const Thapkathaharu = () => {
 					</div>
 					<img src={image11} alt="" className="aspect-video rounded-[15px]" />
 					<div className="flex gap-15 justify-center items-center">
-						<div className="bg-[#D9D9D9] px-7 py-3 font-bold rounded-md">
+						<div className="bg-[#D9D9D9] px-7 py-2 text-sm font-bold rounded-md">
 							प्रविधि
 						</div>
 						<p className="font-bold text-xs">२४ फेब्रुअरी २०२०</p>
