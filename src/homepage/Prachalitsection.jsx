@@ -8,7 +8,7 @@ const Prachalitsection = () => {
 	return (
 		<div className="mt-10 flex flex-col gap-10 ">
 			<p className="text-lg font-bold">प्रचलित</p>
-			<div className="flex gap-6 h-[500px]">
+			<div className="flex gap-6 h-[360px]">
 				{/* LEFT SIDE */}
 				<div className="flex flex-col w-1/2 gap-6 h-full">
 					<div className="flex gap-4 h-1/2">

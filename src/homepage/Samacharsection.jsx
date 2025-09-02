@@ -51,58 +51,98 @@ const Samacharsection = () => {
 					<p className="font-bold text-sm">सबै हेर्नुहोस्</p>
 					<img src={arrow} alt="" className="src" />
 				</div>
-				<div className="flex gap-7">
+				<div className="flex gap-7 h-[470px]">
 					{/* First Image */}
-					<div className="w-[40%]">
+					<div className="w-[45%]">
 						<div
-							className="bg-cover bg-center relative rounded-[20px] aspect-[16/9] overflow-hidden flex-[2]"
+							className="bg-cover bg-center relative rounded-[20px] h-full overflow-hidden flex-[2]"
 							style={{ backgroundImage: `url(${image2})` }}
 						>
 							<div className="absolute bottom-5 left-5 px-4">
-								
-								<p className="text-md text-white mt-2 font-bold">
+								<p className="text-md text-white mb-4 font-bold">
 									नेपालीहरूमा स्टार्टअपको उत्साह
 								</p>
+								<div className="flex gap-5 text-white ">
+									<div className="flex gap-3">
+										<img
+											src={profile}
+											alt=""
+											className="h-5 w-5 rounded-full"
+										/>
+										<p className="text-xs">सुधीर नेपाल</p>
+									</div>
+									<p className="text-xs">२३ दिन अघि</p>
+								</div>
 							</div>
 						</div>
 					</div>
 
 					{/* Second Image */}
-					<div className="w-[20%]">
+					<div className="w-[25%]">
 						<div
 							className="bg-cover bg-center relative rounded-[20px] h-full overflow-hidden"
 							style={{ backgroundImage: `url(${image3})` }}
 						>
 							<div className="absolute bottom-5 left-5 px-4">
-								
-								<p className="text-md text-white mt-2 font-bold">
+								<p className="text-md text-white mb-4 font-bold">
 									नेपालीहरूमा स्टार्टअपको उत्साह
 								</p>
+								<div className="flex gap-5 text-white ">
+									<div className="flex gap-3">
+										<img
+											src={profile}
+											alt=""
+											className="h-5 w-5 rounded-full"
+										/>
+										<p className="text-xs">सुधीर नेपाल</p>
+									</div>
+									<p className="text-xs">२३ दिन अघि</p>
+								</div>
 							</div>
 						</div>
 					</div>
 					{/* Third images */}
-					<div className="flex flex-col gap-4 w-[40%] h-auto">
+					<div className="flex flex-col gap-4 w-[30%] h-auto">
 						<div
 							className="bg-cover bg-center relative rounded-[20px] h-1/2 overflow-hidden"
 							style={{ backgroundImage: `url(${image4})` }}
 						>
 							<div className="absolute bottom-5 left-5 px-4">
-								
-								<p className="text-md text-white mt-2 font-bold">
+								<p className="text-md text-white mb-4 font-bold">
 									नेपालीहरूमा स्टार्टअपको उत्साह
 								</p>
+								<div className="flex gap-5 text-white ">
+									<div className="flex gap-3">
+										<img
+											src={profile}
+											alt=""
+											className="h-5 w-5 rounded-full"
+										/>
+										<p className="text-xs">सुधीर नेपाल</p>
+									</div>
+									<p className="text-xs">२३ दिन अघि</p>
+								</div>
 							</div>
 						</div>
 						<div
 							className="bg-cover bg-center relative rounded-[20px] h-1/2 overflow-hidden"
 							style={{ backgroundImage: `url(${image5})` }}
 						>
-							<div className="absolute bottom-5 left-5 px-4">
-					
-								<p className="text-md text-white mt-2 font-bold">
+							<div className="absolute bottom-5 left-5 px-4 items-center justify-center">
+								<p className="text-md text-white mb-4 font-bold">
 									किन बन्दैछ नेपाल अपराधीहरूको सुरक्षित ठाउँ
 								</p>
+								<div className="flex gap-5 text-white ">
+									<div className="flex gap-3">
+										<img
+											src={profile}
+											alt=""
+											className="h-5 w-5 rounded-full"
+										/>
+										<p className="text-xs">सुधीर नेपाल</p>
+									</div>
+									<p className="text-xs">२३ दिन अघि</p>
+								</div>
 							</div>
 						</div>
 					</div>

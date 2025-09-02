@@ -5,18 +5,20 @@ import Secondsection from '../homepage/Secondsection'
 import Thirdsection from '../homepage/Thirdsection'
 import Prachalitsection from '../homepage/Prachalitsection';
 import Samacharsection from '../homepage/Samacharsection';
+import Thapkathaharu from '../homepage/Thapkathaharu';
 
 
 
 const Homepage = () => {
   return (
-	  <div className="  ">
+	  <div className=" ">
           <Hero />
           <Firstsection/>
           <Secondsection />
           <Thirdsection />
       <Prachalitsection />
-      <Samacharsection/>
+      <Samacharsection />
+      <Thapkathaharu/>
 		</div>
 	);
 }
