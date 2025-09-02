@@ -12,7 +12,7 @@ import image10 from "../assets/Homepage/Thapkathaharu/image10.jpg";
 import image11 from "../assets/Homepage/Thapkathaharu/image11.png";
 import arrleft from '../assets/icons/arrleft.svg'
 import arrright from '../assets/icons/arrright.svg'
-import profile from "../assets/icons/profile.svg";
+import profile from "../assets//Homepage/Samachar/profile1.png"
 const Thapkathaharu = () => {
 	const leftItems = [
 		{
@@ -33,13 +33,13 @@ const Thapkathaharu = () => {
 			category: "बेसबल",
 		},
 		{
-			image: image4,
+			image: image10,
 			title:
 				"मोंटिग्नीले सहायक–बसोबास सुविधा सुरक्षा सम्बन्धी विस्तृत प्रतिवेदन मागे",
 			category: "समाचार",
 		},
 		{
-			image: image5,
+			image: image7,
 			title:
 				"मोंटिग्नीले सहायक–बसोबास सुविधा सुरक्षा सम्बन्धी विस्तृत प्रतिवेदन मागे",
 			category: "समाचार",
@@ -48,7 +48,7 @@ const Thapkathaharu = () => {
 
 	const rightItems = [
 		{
-			image: image6,
+			image: image9,
 			title: "फल रिभर मिल विकासकर्ताले भन्छन्: हाउसिङ बजारमा ‘मोमेंटम’ देखियो",
 			category: "रियल इस्टेट",
 		},
@@ -81,7 +81,7 @@ const Thapkathaharu = () => {
 				<img
 					src={item.image}
 					alt=""
-					className="w-[85px] h-[89px] rounded-[5px]"
+					className="w-[120px] h-[89px] rounded-[5px]"
 				/>
 				<div className="flex flex-col gap-2 justify-around">
 					<p className="font-bold text-sm">{item.title}</p>
@@ -94,10 +94,10 @@ const Thapkathaharu = () => {
 		<div className="flex flex-col gap-10 mt-10">
 			<div className="flex items-center gap-7">
 				<span className="font-bold text-black">थप कथाहरू</span>
-				<div className="w-[52%] border-t border-black"></div>
+				<div className="w-[55%] border-t border-black"></div>
 			</div>
 			<div className="flex gap-6 items-stretch">
-				<div className="flex gap-6 p-4 w-[60%]">
+				<div className="flex gap-6 p-4 w-[65%]">
 					<div className="flex gap-6 justify-between">
 						<div className="flex flex-col gap-8">{renderItems(leftItems)}</div>
 					</div>
@@ -105,7 +105,7 @@ const Thapkathaharu = () => {
 						<div className="flex flex-col gap-8">{renderItems(rightItems)}</div>
 					</div>
 				</div>
-				<div className="w-[40%] bg-[#FFFFFF]  min-h-[400px]  flex flex-col p-4 border gap-4 ">
+				<div className="w-[35%] bg-[#FFFFFF] flex flex-col p-4 border gap-10 ">
 					<div className="flex justify-between items-center">
 						<div className="text-lg font-bold">
 							सबैभन्दा धेरै हेरिएका समाचार
@@ -126,7 +126,7 @@ const Thapkathaharu = () => {
 						कसरी स्थानले बढी प्रासंगिक खोज परिणाम दिन मद्दत गर्दछ
 					</p>
 					<div className="flex justify-center items-center gap-4">
-						<img src={profile} alt="" className="h-5 w-5 rounded full text-black" />
+						<img src={profile} alt="" className="h-5 w-5 rounded-full" />
 						<p className="text-[#4B4B4B]">लेखक: मिरान्डा एच. हलीम</p>
 					</div>
 				</div>

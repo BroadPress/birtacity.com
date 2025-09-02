@@ -4,6 +4,7 @@ import instagram from "../assets/icons/instagram.svg"
 import linkdin from "../assets/icons/linkdin.svg"
 import pinterest from "../assets/icons/pinterest.svg"
 import twitter from "../assets/icons/twitter.svg"
+import birtacity from "../assets/icons/birtacity.svg"
 const Navbar = () => {
     return (
 			<div className="flex flex-col gap-16">
@@ -30,10 +31,8 @@ const Navbar = () => {
 						</div>
 					</div>
 				</div>
-				<div className="flex flex-col items-center justify-center gap-12">
-					<div className=" text-[90px] ruluko-regular font-bold text-[#055D59] leading-[10%]">
-						BIRTACITY
-					</div>
+				<div className="flex flex-col items-center justify-center gap-8">
+					<img src={birtacity} alt="" className="src" />
 					<div className="text-[18px] text-[#055D59] flex gap-2">
 						<div>23 June 2025</div>
 						<div>( ९ असार २०८२, सोमवार )</div>

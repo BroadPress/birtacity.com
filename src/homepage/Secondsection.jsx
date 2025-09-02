@@ -55,7 +55,7 @@ const Secondsection = () => {
 							</div>
 						</div>
 						{/* Middle Image */}
-						<div className="flex flex-col gap-4 w-[70%]">
+						<div className="flex flex-col gap-1 w-[70%]">
 							<img
 								src={image1}
 								alt="Nepali sports"

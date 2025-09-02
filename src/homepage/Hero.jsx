@@ -78,13 +78,13 @@ const Hero = () => {
 						</p>
 					</div>
 					<div className="flex gap-3 items-center justify-start">
-						<img src={image5} alt="" className="w-[110px] h-[107px]" />
+						<img src={image5} alt="" className="w-[110px] h-[107px] rounded-md" />
 						<p className="text-md font-semibold">
 							गर्मी मौसममा पिउन मिल्ने उत्कृष्ट पेय पदार्थ
 						</p>
 					</div>
 					<div className="flex gap-3 items-center justify-start">
-						<img src={image6} alt="" className="w-[110px] h-[107px]" />
+						<img src={image6} alt="" className="w-[110px] h-[107px] rounded-md" />
 						<p className="text-md font-semibold">
 							गर्मी मौसममा पिउन मिल्ने उत्कृष्ट पेय पदार्थ
 						</p>
