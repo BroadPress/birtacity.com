@@ -4,6 +4,7 @@ import Firstsection from '../homepage/Firstsection'
 import Secondsection from '../homepage/Secondsection'
 import Thirdsection from '../homepage/Thirdsection'
 import Prachalitsection from '../homepage/Prachalitsection';
+import Samacharsection from '../homepage/Samacharsection';
 
 
 
@@ -14,7 +15,8 @@ const Homepage = () => {
           <Firstsection/>
           <Secondsection />
           <Thirdsection />
-         <Prachalitsection/>
+      <Prachalitsection />
+      <Samacharsection/>
 		</div>
 	);
 }

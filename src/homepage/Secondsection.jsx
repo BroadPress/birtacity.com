@@ -99,7 +99,11 @@ const Secondsection = () => {
 			<div className="flex gap-7">
 				<div className="flex flex-col w-1/2 gap-7">
 					<div className="flex gap-8">
-						<img src={image3} alt="" className="w-[148px] h-[72px]" />
+						<img
+							src={image3}
+							alt=""
+							className="w-[148px] h-[72px] rounded-[5px]"
+						/>
 						<div className="flex flex-col gap-3 justify-around ">
 							<p className="font-bold text-sm">
 								रूसको कीवमाथि हवाई आक्रमण: १८ जनाको मृत्यु
@@ -111,7 +115,11 @@ const Secondsection = () => {
 						</div>
 					</div>
 					<div className="flex gap-8">
-						<img src={image4} alt="" className="w-[148px] h-[72px]" />
+						<img
+							src={image4}
+							alt=""
+							className="w-[148px] h-[72px] rounded-[5px]"
+						/>
 						<div className="flex flex-col gap-3 justify-around ">
 							<p className="font-bold text-sm">
 								युक्रेनले १८ देखि २२ वर्षका पुरुषलाई विदेश जान अनुमति दियो
@@ -123,7 +131,11 @@ const Secondsection = () => {
 						</div>
 					</div>
 					<div className="flex gap-8">
-						<img src={image5} alt="" className="w-[148px] h-[72px]" />
+						<img
+							src={image5}
+							alt=""
+							className="w-[148px] h-[72px] rounded-[5px]"
+						/>
 						<div className="flex flex-col gap-3 justify-around ">
 							<p className="font-bold text-sm">
 								युरोपले इरानमाथि आणविक कार्यक्रमको कारण प्रतिबन्ध पुनः लागू
@@ -138,7 +150,11 @@ const Secondsection = () => {
 				</div>
 				<div className="flex flex-col w-1/2 gap-7">
 					<div className="flex gap-8">
-						<img src={image6} alt="" className="w-[148px] h-[72px]" />
+						<img
+							src={image6}
+							alt=""
+							className="w-[148px] h-[72px] rounded-[5px]"
+						/>
 						<div className="flex flex-col gap-3 justify-around ">
 							<p className="font-bold text-sm">
 								चीनमा रुस र उत्तर कोरियाका नेतासँग सैन्य परेड
@@ -150,7 +166,11 @@ const Secondsection = () => {
 						</div>
 					</div>
 					<div className="flex gap-8">
-						<img src={image7} alt="" className="w-[148px] h-[72px]" />
+						<img
+							src={image7}
+							alt=""
+							className="w-[148px] h-[72px] rounded-[5px]"
+						/>
 						<div className="flex flex-col gap-3 justify-around ">
 							<p className="font-bold text-sm">
 								अमेरिकामा डाक सेवामा अवरोध: नयाँ ट्यारिफ नियमको प्रभाव
@@ -162,7 +182,11 @@ const Secondsection = () => {
 						</div>
 					</div>
 					<div className="flex gap-8">
-						<img src={image8} alt="" className="w-[148px] h-[72px]" />
+						<img
+							src={image8}
+							alt=""
+							className="w-[148px] h-[72px] rounded-[5px]"
+						/>
 						<div className="flex flex-col gap-3 justify-around ">
 							<p className="font-bold text-sm">
 								इन्डोनेसियामा संसद सदस्यहरूको विशेषाधिकारको विरोधमा प्रदर्शन
@@ -176,8 +200,8 @@ const Secondsection = () => {
 				</div>
 			</div>
 			<div className="text-sm flex gap-3 justify-center font-bold">
-        <p>थप समाचार </p>
-        <img src={arrow} alt="" className="" />
+				<p>थप समाचार </p>
+				<img src={arrow} alt="" className="" />
 			</div>
 		</div>
 	);

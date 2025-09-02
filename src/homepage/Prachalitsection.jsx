@@ -1,20 +1,21 @@
-import React from 'react'
-import image1 from '../assets/Homepage/prachalit/image1.png'
-import image2 from '../assets/Homepage/prachalit/image2.png'
-import image3 from '../assets/Homepage/prachalit/image3.png'
-import time from '../assets/icons/time.svg'
-import tag from '../assets/icons/tag.svg'
+import React from "react";
+import image1 from "../assets/Homepage/prachalit/image1.png";
+import image2 from "../assets/Homepage/prachalit/image2.png";
+import image3 from "../assets/Homepage/prachalit/image3.png";
+import time from "../assets/icons/time.svg";
+import tag from "../assets/icons/tag.svg";
 const Prachalitsection = () => {
-  return (
+	return (
 		<div className="mt-10 flex flex-col gap-10 ">
 			<p className="text-lg font-bold">प्रचलित</p>
-			<div className="flex gap-6">
-				<div className="flex flex-col w-1/2 gap-6">
-					<div className="flex gap-4 ">
+			<div className="flex gap-6 h-[500px]">
+				{/* LEFT SIDE */}
+				<div className="flex flex-col w-1/2 gap-6 h-full">
+					<div className="flex gap-4 h-1/2">
 						<img
 							src={image1}
 							alt=""
-							className="rounded-[20px] aspect-video w-[45%]"
+							className="rounded-[20px] w-[45%] object-cover"
 						/>
 						<div className="flex flex-col gap-3 justify-around">
 							<p className="font-bold">
@@ -38,11 +39,12 @@ const Prachalitsection = () => {
 							</div>
 						</div>
 					</div>
-					<div className="flex gap-4 ">
+
+					<div className="flex gap-4 h-1/2">
 						<img
-							src={image1}
+							src={image2}
 							alt=""
-							className="rounded-[20px] aspect-video w-[45%]"
+							className="rounded-[20px] w-[45%] object-cover"
 						/>
 						<div className="flex flex-col gap-3 justify-around">
 							<p className="font-bold">
@@ -67,9 +69,29 @@ const Prachalitsection = () => {
 						</div>
 					</div>
 				</div>
+				{/* RIGHT SIDE */}
+				<div className="w-1/2 h-full">
+					<div
+						className="bg-cover bg-center relative rounded-[20px] h-full overflow-hidden"
+						style={{ backgroundImage: `url(${image3})` }}
+					>
+						<div className="absolute bottom-5 left-5 px-4">
+							<p className="text-md text-white mt-2 font-bold">
+								नेपाली चलचित्रको बढ्दो लोकप्रियता
+							</p>
+						</div>
+						<div className="absolute bottom-5 right-5  w-fit">
+							<p className="text-sm  rounded-xl px-10 py-3 bg-[#D9D9D9] ">
+								थप जान्नुहोस्
+							</p>
+						</div>
+					</div>
+				</div>
 			</div>
+			
+			
 		</div>
 	);
-}
+};
 
-export default Prachalitsection
+export default Prachalitsection;

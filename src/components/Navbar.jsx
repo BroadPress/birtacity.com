@@ -31,7 +31,7 @@ const Navbar = () => {
 					</div>
 				</div>
 				<div className="flex flex-col items-center justify-center gap-12">
-					<div className=" text-[90px] font-jdr font-bold text-[#055D59] leading-[10%]">
+					<div className=" text-[90px] ruluko-regular font-bold text-[#055D59] leading-[10%]">
 						BIRTACITY
 					</div>
 					<div className="text-[18px] text-[#055D59] flex gap-2">
@@ -55,28 +55,25 @@ const Navbar = () => {
 						<div>अन्य</div>
 					</div>
 					<div className="border border-[#055D59] border-x-0 flex items-center text-sm font-bold overflow-hidden">
-						
 						<div className="w-[10%] text-white bg-[#055D59] text-center px-4 py-2 text-sm">
 							Trending
 						</div>
 
-						
 						<div className="w-[80%] overflow-hidden">
 							<div className="flex gap-10 animate-marquee whitespace-nowrap items-center text-sm">
-								
 								<p>Historic climate change agreement</p>
 								<div className="h-2 w-2 bg-[#055D59] rounded-full flex-shrink-0"></div>
 								<p>Tech giants are tackling a major cyber security breach.</p>
 								<div className="h-2 w-2 bg-[#055D59] rounded-full flex-shrink-0"></div>
 								<p>Financial Market experiences a huge loss</p>
 								<div className="h-2 w-2 bg-[#055D59] rounded-full flex-shrink-0"></div>
-								
+
 								<p>Historic climate change agreement</p>
 								<div className="h-2 w-2 bg-[#055D59] rounded-full flex-shrink-0"></div>
 								<p>Tech giants are tackling a major cyber security breach.</p>
 								<div className="h-2 w-2 bg-[#055D59] rounded-full flex-shrink-0"></div>
 								<p>Financial Market experiences a huge loss</p>
-								<div className="w-10 flex-shrink-0"></div> 
+								<div className="w-10 flex-shrink-0"></div>
 							</div>
 						</div>
 					</div>
