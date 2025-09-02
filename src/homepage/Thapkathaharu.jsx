@@ -85,7 +85,7 @@ const Thapkathaharu = () => {
 				/>
 				<div className="flex flex-col gap-2 justify-around">
 					<p className="font-bold text-sm">{item.title}</p>
-					<p className="texts-sm">{item.category}</p>
+					<p className="texts-xs">{item.category}</p>
 				</div>
 			</div>
 		));
@@ -105,7 +105,7 @@ const Thapkathaharu = () => {
 						<div className="flex flex-col gap-8">{renderItems(rightItems)}</div>
 					</div>
 				</div>
-				<div className="w-[35%] bg-[#FFFFFF] flex flex-col p-4 border gap-10 ">
+				<div className="w-[35%] bg-[#FFFFFF] flex flex-col p-4 border gap-7 ">
 					<div className="flex justify-between items-center">
 						<div className="text-lg font-bold">
 							सबैभन्दा धेरै हेरिएका समाचार
@@ -124,6 +124,12 @@ const Thapkathaharu = () => {
 					</div>
 					<p className="font-bold text-md text-center">
 						कसरी स्थानले बढी प्रासंगिक खोज परिणाम दिन मद्दत गर्दछ
+					</p>
+					<p className="text-xs text-center">
+						स्थानले खोज परिणामलाई बढी प्रासंगिक बनाउँछ किनभने यसले
+						प्रयोगकर्ताको हालको स्थानअनुसार नजिकका सेवा, पसल वा सुविधा
+						प्राथमिकतामा देखाउँछ। यसले स्थानीय सन्दर्भ, मौसम, समय र ट्राफिक
+						अवस्थासँग मिलेर उपयोगी र व्यवहारिक जानकारी प्रदान गर्छ। 
 					</p>
 					<div className="flex justify-center items-center gap-4">
 						<img src={profile} alt="" className="h-5 w-5 rounded-full" />

@@ -55,7 +55,7 @@ const Prachalitsection = () => {
 							</p>
 						</div>
 						<div className="absolute bottom-5 right-5  w-fit">
-							<p className="text-sm  rounded-xl px-10 py-3 bg-[#D9D9D9] ">
+							<p className="text-sm  rounded-xl px-7 py-2 bg-[#D9D9D9] ">
 								थप पढ्नुहोस्
 							</p>
 						</div>
