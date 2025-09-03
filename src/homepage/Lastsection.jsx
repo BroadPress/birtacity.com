@@ -127,8 +127,8 @@ const Lastsection = () => {
 							className="aspect-video rounded-[15px] object-cover"
 						/>
 						<p className="text-md font-bold">{article.title}</p>
-						<p className="text-md">{article.desc}</p>
-						<div className="flex justify-end gap-2">
+						<p className="text-md line-clamp-5">{article.desc}</p>
+						<div className="flex justify-end items-end gap-2">
 							<p className="text-xs">See more</p>
 							<img src={rightarr} alt="arrow" />
 						</div>
