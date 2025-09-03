@@ -119,7 +119,7 @@ const Lastsection = () => {
 				{article.map((article, idx) => (
 					<div
 						key={idx}
-						className="flex flex-col gap-2 bg-[#D9D9D9] py-5 px-3 rounded-[10px]"
+						className="flex flex-col gap-3 bg-[#D9D9D9] py-5 px-3 rounded-[10px]"
 					>
 						<img
 							src={article.image}

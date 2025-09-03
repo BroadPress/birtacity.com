@@ -8,7 +8,8 @@ const Tajasamachar = () => {
 	return (
 		<div className="mt-10 flex flex-col gap-10 bg-[#FFFFFF]">
 			<div className="font-bold text-lg">ताजा समाचार</div>
-			<div className="flex gap-10">
+            <div className="flex gap-10">
+                {/* Left section */}
 				<div className="flex flex-col gap-6 w-1/2 border border-y-0 border-l-0 pr-10">
 					<div className="flex flex-col gap-1">
 						<img src={image1} alt="" className="aspect-video rounded-[20px]" />
@@ -39,8 +40,7 @@ const Tajasamachar = () => {
 								</p>
 								<p className="text-md">
 									धनगढीस्थित एसपीए कलेजले हालै मलेसियामा सम्पन्न 'एसीसी मेन्स
-									यू-१६ ईस्ट जोन कप क्रिकेट प्रतियोगिता’ मा नेपालको नाम उँचो
-									बनाएका सुदूरपश्चिमका युवा क्रिकेटर सचिन भट्ट
+									यू-१६ ईस्ट जोन कप क्रिकेट प्रतियोगिता’
 								</p>
 								<div className="flex gap-1 text-[#747474]">
 									<img src={thunder} alt="" className="src" />
@@ -57,7 +57,8 @@ const Tajasamachar = () => {
 							className="w-1/2 aspect-video rounded-[20px]"
 						/>
 					</div>
-				</div>
+                </div>
+                {/* Right section */}
 				<div className="flex w-1/2 gap-8">
 					<div className="flex w-1/2">
 						<div className="flex flex-col gap-15">
@@ -74,7 +75,7 @@ const Tajasamachar = () => {
 									</p>{" "}
 									<p className="text-xs font-bold">TRENDING NOW</p>
 								</div>
-								<p className="text-md font-bold">
+								<p className="text-md font-bold line-clamp-1">
 									क्रिकेटर द्वय भट्ट र रावललाई आजीवन छात्रवृत्ति
 								</p>
 								<div className="flex gap-1 text-[#747474]">
