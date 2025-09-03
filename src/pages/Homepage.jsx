@@ -8,6 +8,7 @@ import Samacharsection from '../homepage/Samacharsection';
 import Thapkathaharu from '../homepage/Thapkathaharu';
 import Tajasamachar from '../homepage/Tajasamachar';
 import Tajalekharu from '../homepage/Tajalekharu';
+import Lastsection from '../homepage/Lastsection';
 
 
 
@@ -22,7 +23,8 @@ const Homepage = () => {
       <Samacharsection />
       <Thapkathaharu />
       <Tajasamachar />
-      <Tajalekharu/>
+      <Tajalekharu />
+      <Lastsection/>
 		</div>
 	);
 }
