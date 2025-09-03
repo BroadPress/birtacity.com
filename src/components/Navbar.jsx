@@ -31,7 +31,7 @@ const Navbar = () => {
 						</div>
 					</div>
 				</div>
-				<div className="flex flex-col items-center justify-center gap-8">
+				<div className="flex flex-col items-center justify-center gap-6">
 					<img src={birtacity} alt="" className="src" />
 					<div className="text-[18px] text-[#055D59] flex gap-2">
 						<div>23 June 2025</div>

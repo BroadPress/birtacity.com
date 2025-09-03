@@ -133,7 +133,7 @@ const Thapkathaharu = () => {
 					</p>
 					<div className="flex justify-center items-center gap-4">
 						<img src={profile} alt="" className="h-5 w-5 rounded-full" />
-						<p className="text-[#4B4B4B]">लेखक: मिरान्डा एच. हलीम</p>
+						<p className="text-[#4B4B4B] text-sm">लेखक: मिरान्डा एच. हलीम</p>
 					</div>
 				</div>
 			</div>

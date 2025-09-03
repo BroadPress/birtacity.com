@@ -7,13 +7,51 @@ import image5 from "../assets/Homepage/Sectionsecond/image5.png";
 import image6 from "../assets/Homepage/Sectionsecond/image6.png";
 import image7 from "../assets/Homepage/Sectionsecond/image7.png";
 import image8 from "../assets/Homepage/Sectionsecond/image8.png";
-import arrow from '../assets/icons/arrow.svg'
+import arrow from "../assets/icons/arrow.svg";
 
 import profile1 from "../assets/Homepage/Sectionsecond/profile1.png";
 import profile2 from "../assets/Homepage/Sectionsecond/profile2.png";
+
+const newsLeft = [
+	{
+		img: image3,
+		title: "रूसको कीवमाथि हवाई आक्रमण: १८ जनाको मृत्यु",
+		desc: "रूसले २८ अगस्ट २०२५ मा युक्रेनको राजधानी कीवमा हवाई आक्रमण गरेको छ, जसमा १८ जनाको मृत्यु भएको छ र ४८ जना घाइते भएका छन्",
+	},
+	{
+		img: image4,
+		title: "युक्रेनले १८ देखि २२ वर्षका पुरुषलाई विदेश जान अनुमति दियो",
+		desc: "रूसको पूर्ण आक्रमणपछि पहिलो पटक युक्रेनले १८ देखि २२ वर्षका पुरुषलाई २९ अगस्ट २०२५ देखि विदेश जान अनुमति दिएको",
+	},
+	{
+		img: image8,
+		title: "युरोपले इरानमाथि आणविक कार्यक्रमको कारण प्रतिबन्ध पुनः लागू गर्दै",
+		desc: "संयुक्त अधिराज्य, फ्रान्स र जर्मनीले २०१५ को आणविक सम्झौताअनुसार इरानमाथि लगाइएका सबै प्रतिबन्ध पुनः",
+	},
+];
+
+const newsRight = [
+	{
+		img: image6,
+		title: "चीनमा रुस र उत्तर कोरियाका नेतासँग सैन्य परेड",
+		desc: "चीनका राष्ट्रपति शी जिनपिङले ८० औं द्वितीय विश्वयुद्धको अन्त्यको सम्झनामा रुसका राष्ट्रपति भ्लादिमिर पुटिन र उत्तर कोरियाका",
+	},
+	{
+		img: image7,
+		title: "अमेरिकामा डाक सेवामा अवरोध: नयाँ ट्यारिफ नियमको प्रभाव",
+		desc: "अमेरिकामा डोनाल्ड ट्रम्पको प्रशासनले $८०० भन्दा कम मूल्यका प्याकेजमाथि ट्यारिफ हटाउने नियम हटाएपछि विश्वभरका डाक",
+	},
+	{
+		img: image8,
+		title: "इन्डोनेसियामा संसद सदस्यहरूको विशेषाधिकारको विरोधमा प्रदर्शन",
+		desc: "इन्डोनेसियामा संसद सदस्यहरूको आवास भत्ताको विरोधमा देशभरि प्रदर्शन भएको छ। यस भत्ताले न्यूनतम तलबको लगभग १० गुणा बढी",
+	},
+];
+
 const Secondsection = () => {
 	return (
 		<div className="mt-10 flex flex-col gap-10">
+			{/* Top Section */}
 			<div className="flex gap-6">
 				<div className=" flex  flex-col gap-6 border border-t-black border-x-0 border-b-0 py-6 w-[75%]">
 					<div className="font-bold text-lg">खेलकुदसम्बन्धी समाचार</div>
@@ -95,110 +133,43 @@ const Secondsection = () => {
 					</div>
 				</div>
 			</div>
-			{/* news section */}
+
+			{/* News Section  */}
 			<div className="flex gap-7">
 				<div className="flex flex-col w-1/2 gap-7">
-					<div className="flex gap-8">
-						<img
-							src={image3}
-							alt=""
-							className="w-[148px] h-[72px] rounded-[5px]"
-						/>
-						<div className="flex flex-col gap-3 justify-around ">
-							<p className="font-bold text-sm">
-								रूसको कीवमाथि हवाई आक्रमण: १८ जनाको मृत्यु
-							</p>
-							<p className="text-xs">
-								रूसले २८ अगस्ट २०२५ मा युक्रेनको राजधानी कीवमा हवाई आक्रमण गरेको
-								छ, जसमा १८ जनाको मृत्यु भएको छ र ४८ जना घाइते भएका छन्
-							</p>
+					{newsLeft.map((item, index) => (
+						<div key={index} className="flex gap-8">
+							<img
+								src={item.img}
+								alt=""
+								className="w-[148px] h-[72px] rounded-[5px]"
+							/>
+							<div className="flex flex-col gap-3 justify-around ">
+								<p className="font-bold text-sm">{item.title}</p>
+								<p className="text-xs">{item.desc}</p>
+							</div>
 						</div>
-					</div>
-					<div className="flex gap-8">
-						<img
-							src={image4}
-							alt=""
-							className="w-[148px] h-[72px] rounded-[5px]"
-						/>
-						<div className="flex flex-col gap-3 justify-around ">
-							<p className="font-bold text-sm">
-								युक्रेनले १८ देखि २२ वर्षका पुरुषलाई विदेश जान अनुमति दियो
-							</p>
-							<p className="text-xs">
-								रूसको पूर्ण आक्रमणपछि पहिलो पटक युक्रेनले १८ देखि २२ वर्षका
-								पुरुषलाई २९ अगस्ट २०२५ देखि विदेश जान अनुमति दिएको
-							</p>
-						</div>
-					</div>
-					<div className="flex gap-8">
-						<img
-							src={image5}
-							alt=""
-							className="w-[148px] h-[72px] rounded-[5px]"
-						/>
-						<div className="flex flex-col gap-3 justify-around ">
-							<p className="font-bold text-sm">
-								युरोपले इरानमाथि आणविक कार्यक्रमको कारण प्रतिबन्ध पुनः लागू
-								गर्दै
-							</p>
-							<p className="text-xs">
-								संयुक्त अधिराज्य, फ्रान्स र जर्मनीले २०१५ को आणविक सम्झौताअनुसार
-								इरानमाथि लगाइएका सबै प्रतिबन्ध पुनः
-							</p>
-						</div>
-					</div>
+					))}
 				</div>
+
 				<div className="flex flex-col w-1/2 gap-7">
-					<div className="flex gap-8">
-						<img
-							src={image6}
-							alt=""
-							className="w-[148px] h-[72px] rounded-[5px]"
-						/>
-						<div className="flex flex-col gap-3 justify-around ">
-							<p className="font-bold text-sm">
-								चीनमा रुस र उत्तर कोरियाका नेतासँग सैन्य परेड
-							</p>
-							<p className="text-xs">
-								चीनका राष्ट्रपति शी जिनपिङले ८० औं द्वितीय विश्वयुद्धको अन्त्यको
-								सम्झनामा रुसका राष्ट्रपति भ्लादिमिर पुटिन र उत्तर कोरियाका
-							</p>
+					{newsRight.map((item, index) => (
+						<div key={index} className="flex gap-8">
+							<img
+								src={item.img}
+								alt=""
+								className="w-[148px] h-[72px] rounded-[5px]"
+							/>
+							<div className="flex flex-col gap-3 justify-around ">
+								<p className="font-bold text-sm">{item.title}</p>
+								<p className="text-xs">{item.desc}</p>
+							</div>
 						</div>
-					</div>
-					<div className="flex gap-8">
-						<img
-							src={image7}
-							alt=""
-							className="w-[148px] h-[72px] rounded-[5px]"
-						/>
-						<div className="flex flex-col gap-3 justify-around ">
-							<p className="font-bold text-sm">
-								अमेरिकामा डाक सेवामा अवरोध: नयाँ ट्यारिफ नियमको प्रभाव
-							</p>
-							<p className="text-xs">
-								अमेरिकामा डोनाल्ड ट्रम्पको प्रशासनले $८०० भन्दा कम मूल्यका
-								प्याकेजमाथि ट्यारिफ हटाउने नियम हटाएपछि विश्वभरका डाक
-							</p>
-						</div>
-					</div>
-					<div className="flex gap-8">
-						<img
-							src={image8}
-							alt=""
-							className="w-[148px] h-[72px] rounded-[5px]"
-						/>
-						<div className="flex flex-col gap-3 justify-around ">
-							<p className="font-bold text-sm">
-								इन्डोनेसियामा संसद सदस्यहरूको विशेषाधिकारको विरोधमा प्रदर्शन
-							</p>
-							<p className="text-xs">
-								इन्डोनेसियामा संसद सदस्यहरूको आवास भत्ताको विरोधमा देशभरि
-								प्रदर्शन भएको छ। यस भत्ताले न्यूनतम तलबको लगभग १० गुणा बढी
-							</p>
-						</div>
-					</div>
+					))}
 				</div>
 			</div>
+
+			
 			<div className="text-sm flex gap-3 justify-center font-bold">
 				<p>थप समाचार </p>
 				<img src={arrow} alt="" className="" />

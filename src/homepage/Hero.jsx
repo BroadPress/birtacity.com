@@ -72,19 +72,19 @@ const Hero = () => {
 				</div>
 				<div className="grid lg:grid-cols-3 grid-cols-1 gap-4 bg-white py-4">
 					<div className="flex gap-3 items-center justify-start">
-						<img src={image4} alt="" className="w-[110px] h-[107px]" />
+						<img src={image4} alt="" className="w-[140px] h-[107px]" />
 						<p className="text-md font-semibold">
 							गर्मी मौसममा पिउन मिल्ने उत्कृष्ट पेय पदार्थ
 						</p>
 					</div>
 					<div className="flex gap-3 items-center justify-start">
-						<img src={image5} alt="" className="w-[110px] h-[107px] rounded-md" />
+						<img src={image5} alt="" className="w-[140px] h-[107px] rounded-md" />
 						<p className="text-md font-semibold">
 							गर्मी मौसममा पिउन मिल्ने उत्कृष्ट पेय पदार्थ
 						</p>
 					</div>
 					<div className="flex gap-3 items-center justify-start">
-						<img src={image6} alt="" className="w-[110px] h-[107px] rounded-md" />
+						<img src={image6} alt="" className="w-[140px] h-[107px] rounded-md" />
 						<p className="text-md font-semibold">
 							गर्मी मौसममा पिउन मिल्ने उत्कृष्ट पेय पदार्थ
 						</p>
