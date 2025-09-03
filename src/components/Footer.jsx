@@ -31,7 +31,7 @@ const Footer = () => {
 					</div>
 				</div>
 				{/* Team section */}
-				<div className="flex flex-col gap-12 text-start">
+				<div className="flex flex-col gap-8 text-start">
 					<p className="text-md font-bold ">हाम्रो टीम</p>
 					<div className="text-md flex gap-8">
 						<div className="flex flex-col gap-5">
@@ -49,7 +49,7 @@ const Footer = () => {
 					</div>
 				</div>
 				{/* Contact section */}
-				<div className="flex flex-col gap-12 text-start">
+				<div className="flex flex-col gap-8 text-start">
 					<p className="text-md font-bold ">सम्पर्क</p>
 
 					<div className="flex flex-col gap-5">
