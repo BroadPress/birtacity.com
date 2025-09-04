@@ -55,7 +55,7 @@ const Pramuk = () => {
                         <p className="text-sm">{article.date}</p>
                         <p className="text-md font-bold">{article.title}</p>
                         <img src={article.image} alt="" className="aspect-video rounded-[15px]" />
-                        <p className="text-md">{article.desc}</p>
+                        <p className="text-md line-clamp-4">{article.desc}</p>
                         <p className="text-sm font-bold">{article.author}</p>
                 </div>
 ))}

@@ -3,7 +3,10 @@ import image1 from "../assets/Categories/Prachalit/image5.png";
 import image2 from "../assets/Categories/Prachalit/image6.png";
 import image3 from "../assets/Categories/Prachalit/image7.png";
 import image4 from "../assets/Categories/Prachalit/image8.png";
+import image5 from "../assets/Categories/Prachalit/image9.png";
+import profile from "../assets/icons/profile.svg";
 import rightarr from "../assets/icons/arrright.svg";
+import time from "../assets/icons/time.svg";
 
 const Prachalit = () => {
 	const article = [
@@ -59,10 +62,63 @@ const Prachalit = () => {
 							alt=""
 							className="aspect-video rounded-[15px]"
 						/>
-						<p className="text-md">{article.desc}</p>
+						<p className="text-md line-clamp-4">{article.desc}</p>
 						<p className="text-sm font-bold">{article.author}</p>
 					</div>
 				))}
+            </div>
+            {/* Bottom section */}
+			<div className="bg-black w-fit text-white px-5 py-2 text-sm text-center mx-auto">
+				थप लोड गर्नुहोस्
+			</div>
+			<div className="mt-10 mb-10">
+				<div className="border-b-2 border-gray-400 py-4 mb-8">
+					<span className="text-lg font-bold">यसलाई पनि पढ्नुहोस्</span>
+				</div>
+				<div className="grid  grid-cols-1 md:grid-cols-2 gap-10">
+					<div className="flex flex-col gap-6">
+						<div className="text-md font-bold">प्रविधिमा नयाँतम समाचार</div>
+						<div className="h-[307px] bg-gray-100 flex flex-col items-start justify-around text-md p-3 font-semibold">
+							<p>पासवर्ड कसरी सुरक्षित राख्ने?</p>
+							<p>कम्प्युटर भाइरस के हो र यो किन खतरनाक हुन्छ? </p>
+							<p>इन्टरनेट को विकास अनि बिस्तार</p>
+						</div>
+					</div>
+					<div
+						className="flex flex-col rounded-[15px] h-[360px] gap-4 bg-gray-100 p-6 justify-between"
+						style={{
+							backgroundImage: `url(${image5})`,
+
+							backgroundSize: "100% 100%",
+						}}
+					>
+						<div></div>
+
+						<div className="flex flex-col gap-3 justify-items-end text-white">
+							<div className="flex gap-2 items-center">
+								<div className="bg-gray-200 rounded-full">
+									<img src={profile} alt="" className="h-5 w-5 rounded-full" />
+								</div>
+								<p className="font-semibold text-sm">Birat Info</p>
+							</div>
+							<p className="text-md font-bold">
+								सम्बन्ध: शिक्षा र संस्कृतिमा सहकार्य
+							</p>
+							<div className="flex gap-4 items-center text-sm ">
+								<div className="flex gap-2 items-center text-sm">
+									<img
+										src={time}
+										
+										alt=""
+										className="invert brightness-0"
+									/>
+									<p>३ मिनेटमा पढ्नुहोस्</p>
+								</div>
+								<p>४ घण्टा अघि अपडेट गरिएको</p>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	);
