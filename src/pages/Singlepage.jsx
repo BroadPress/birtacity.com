@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import Headersection from "../Singlepage/Headersection";
+import Relatedsection from "../Singlepage/Relatedsection";
 
 const Singlepage = () => {
-  return (
-    <div>Singlepage</div>
-  )
-}
+	return (
+		<div>
+            <Headersection />
+            <Relatedsection/>
+		</div>
+	);
+};
 
-export default Singlepage
+export default Singlepage;

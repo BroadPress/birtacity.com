@@ -1,0 +1,105 @@
+import React from 'react'
+import image3 from "../assets/Singlepage/image3.png";
+import image4 from "../assets/Singlepage/image4.png";
+import time from "../assets/icons/time.svg";
+const Relatedsection = () => {
+  return (
+		<div className="flex flex-col gap-10 mt-10">
+			{/* Related News */}
+			<div className="mt-10 flex flex-col gap-7">
+				<div className="text-lg font-bold border border-b-[#00000033] border-x-0 border-t-0 py-5">
+					Related News
+				</div>
+				<div className="flex gap-4">
+					<div className="py-7 flex w-[80%] gap-7">
+						<div className="flex gap-7">
+							<img
+								src={image3}
+								alt=""
+								className="rounded-[20px] w-1/2 aspect-video"
+							/>
+							<div className="flex flex-col justify-around w-1/2 gap-2 ">
+								<p className="font-bold text-md">
+									कम्प्युटर भाइरस भनेको के हो र यो किन खतरनाक हुन्छ?{" "}
+								</p>
+								<p className="text-md">
+									नेपालमा इन्टरनेटको पहुँच तीव्र रूपमा बढिरहेको छ, र यससँगै
+									कम्प्युटर भाइरसको जोखिम पनि बढिरहेको छ। त्यसैले, यस समस्याबाट
+									जोगिनको लागि सजग हुनु अत्यावश्यक छ नेपालमा इन्टरनेटको पहुँच
+									तीव्र रूपमा बढिरहेको छ, र यससँगै कम्प्युटर भाइरसको जोखिम पनि
+									बढिरहेको छ।
+								</p>
+								<p className="text-md">
+									साथै, डिजिटल सुरक्षा सम्बन्धी चेतना अभिवृद्धि गर्नु पनि आवश्यक
+									छ। प्रयोगकर्ताहरूले बलियो पासवर्ड प्रयोग गर्ने, अनजान लिंक वा
+									फाइल नखोल्ने, र नियमित रूपमा एण्टी-भाइरस सफ्टवेयर अपडेट गर्ने
+									बानी बसाल्नुपर्छ।।
+								</p>
+								<div className="flex gap-5">
+									<div className="flex gap-3">
+										<img src={time} alt="h-5 w-5" className="src" />
+										<p className="text-xs">७ मिनेटमा पढ्नुहोस</p>
+									</div>
+									<div className="text-xs">
+										<p>प्रविधि</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div className="flex flex-col gap-5 w-[25%] border-y-0 border-r-0 border border-l-[#00000033] px-8 justify-center">
+						<div className="text-lg font-bold">सुझावहरू</div>
+						<div className="flex flex-col gap-2">
+							<p className="text-md">किन हुन्छ वेबसाइट ह्याक?</p>
+							<p className="text-xs">अपडेट गरिएको : २ दिन अघि</p>
+						</div>
+						<div className="flex flex-col gap-2">
+							<p className="text-md">पासवर्ड कसरी सुरक्षित राख्ने?</p>
+							<p className="text-xs">अपडेट गरिएको : २ दिन अघि</p>
+						</div>
+						<div className="flex flex-col gap-2">
+							<p className="text-md">किन हुन्छ वेबसाइट ह्याक?</p>
+							<p className="text-xs">अपडेट गरिएको : २ दिन अघि</p>
+						</div>
+					</div>
+				</div>
+				<div className="flex flex-col gap-2 text-md text-center">
+					<p className="">
+						आजको युगमा वेबसाइट भनेको केवल इन्टरनेटमा देखिने एउटा पृष्ठ मात्र
+						होइन; यो संस्था, व्यवसाय, वा व्यक्तिगत ब्राण्डको डिजिटल परिचय हो।
+						वेबसाइटमा कम्पनीको सेवा, जानकारी, ग्राहक डेटा, भुक्तानी प्रणाली,
+						कर्मचारी विवरणदेखि गोप्य फाइलहरूसम्म रहने भएकाले यसको सुरक्षा
+						अत्यन्त संवेदनशील विषय हो। तर, दुःखको कुरा के छ भने नेपाललगायत
+						विश्वभर अधिकांश वेबसाइटहरू सुरक्षाका आधारभूत मापदण्डहरूबिना नै
+						सञ्चालन भइरहेका छन्
+					</p>
+					<p>
+						ह्याक हुनुको पहिलो र प्रमुख कारण भनेको कमजोर वा खराब सर्भर हो। सस्तो
+						र अज्ञात होस्टिङ सेवा प्रयोग गर्दा वेबसाइटले आवश्यक सुरक्षा प्रणाली
+						जस्तै– अपडेटेड फायरवाल, DDOS प्रोटेक्सन, र Server-level scanning
+						जस्ता सुविधा प्राप्त गर्दैन। ह्याकरहरूले यिनै कमजोरीहरू खोजेर सजिलै
+						सिस्टममा प्रवेश गर्छन्।
+					</p>
+				</div>
+			</div>
+			{/* Middle section */}
+			<div className=" border border-[#E5E5E5] p-14">
+				<div className="flex gap-8">
+					<img
+						src={image4}
+						alt=""
+						className="w-1/2 rounded-[15px] aspect-video"
+					/>
+					<div className="w-1/2 flex flex-col gap-2 text-md">
+						<p className="">लेखकबारे थप जान्नुहोस्</p>
+						<div className="flex gap-2 ">
+							<p className='font-bold'>सुधीर नेपाल</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
+}
+
+export default Relatedsection
