@@ -4,6 +4,7 @@ import Home from "./pages/Homepage";
 import Navbar from '../src/components/Navbar'
 import Footer from "./components/Footer";
 import Categories from "./pages/Categories";
+import Singlepage from "./pages/Singlepage";
 
 function App() {
 	return (
@@ -13,6 +14,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/categories" element={<Categories />} />
+					<Route path="/singlepage" element={<Singlepage />} />
 				</Routes>
 			</div>
 			<Footer/>

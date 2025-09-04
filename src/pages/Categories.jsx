@@ -3,6 +3,7 @@ import Headersection from '../Categories/Headersection'
 import Pramuk from '../Categories/Pramuk'
 import Prachalit from '../Categories/Prachalit'
 import Prabadhi from '../Categories/Prabadhi'
+import Lastsection from '../Categories/Lastsection'
 
 const Categories = () => {
   return (
@@ -10,7 +11,8 @@ const Categories = () => {
       <Headersection />
       <Pramuk />
       <Prachalit />
-      <Prabadhi/>
+      <Prabadhi />
+      <Lastsection/>
     </div>
   )
 }
