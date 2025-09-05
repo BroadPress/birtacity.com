@@ -157,11 +157,11 @@ const Author = () => {
 									className="rounded-[20px] w-1/2 h-full object-cover"
 								/>
 								<div className="flex flex-col gap-3 justify-around w-1/2">
-									<p className="font-bold">
+									<p className="font-bold line-clamp-1">
 										युवाहरूलाई इन्टरनेटमार्फत स्वरोजगारमा जोड्न सकिनेछ...
 										स्वरोजगारमा जोड्न युवाहरू
 									</p>
-									<p className="text-md">
+									<p className="text-md line-clamp-3">
 										युवाहरूलाई इन्टरनेटमार्फत स्वरोजगारमा जोड्न सकिनेछ, जसले
 										बेरोजगारी कम गर्नेछ। तर, डिजिटल परिवर्तनका लागि सरकारी नीति
 										स्पष्ट
