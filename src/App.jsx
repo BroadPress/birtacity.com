@@ -5,6 +5,8 @@ import Navbar from '../src/components/Navbar'
 import Footer from "./components/Footer";
 import Categories from "./pages/Categories";
 import Singlepage from "./pages/Singlepage";
+import Team from "./pages/Team";
+import Author from "./pages/Author";
 
 function App() {
 	return (
@@ -15,6 +17,8 @@ function App() {
 					<Route path="/" element={<Home />} />
 					<Route path="/categories" element={<Categories />} />
 					<Route path="/singlepage" element={<Singlepage />} />
+					<Route path="/team" element={<Team />} />
+					<Route path="/author" element={<Author />} />
 				</Routes>
 			</div>
 			<Footer/>

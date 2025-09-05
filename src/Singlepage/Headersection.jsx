@@ -3,8 +3,8 @@ import image1 from '../assets/Singlepage/image1.png'
 import image2 from '../assets/Singlepage/image2.jpg'
 
 import logo from '../assets/icons/Biratinfo.svg'
-import time from '../assets/icons/time.svg'
-import tag from '../assets/icons/tag.svg'
+import time from '../assets/icons/greentime.svg'
+import tag from '../assets/icons/greentag.svg'
 import upper from '../assets/icons/upperquote.svg'
 import lower from '../assets/icons/lowerquote.svg'
 
@@ -21,18 +21,18 @@ const Headersection = () => {
 					<div className="flex gap-5 text-sm text-[#055D59]">
 						<div className="flex gap-2">
 							<div className="bg-[#D9D9D9] h-5 w-5 rounded-full p-1">
-								<img src={logo} alt="" className="h-4 w-4" />
+								<img src={logo} alt="" className="h-4 w-4 " />
 							</div>
 							<p>बिराट इन्फो</p>
 						</div>
 						<div className="flex gap-2">
-							<img src={time} alt="" className="src" />
+							<img src={time} alt="" className="h-5 w-5 " />
 							<p>६ मिनेट पढ्नुहोस्</p>
 						</div>
 						<p>अन्तर्राष्ट्रिय</p>
 					</div>
 					<div className="flex gap-2 text-sm text-[#055D59]">
-						<img src={tag} alt="" className="" />
+						<img src={tag} alt="" className="h-5 w-5" />
 						<p>४ घण्टा अघि अपडेट गरिएको</p>
 					</div>
 				</div>
@@ -149,7 +149,6 @@ const Headersection = () => {
 					भूमिका निर्वाह गर्नुहोस्।
 				</p>
 			</div>
-			
 		</div>
 	);
 }

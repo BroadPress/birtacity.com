@@ -1,8 +1,40 @@
 import React from 'react'
 import image3 from "../assets/Singlepage/image3.png";
 import image4 from "../assets/Singlepage/image4.png";
+import image5 from "../assets/Singlepage/image5.png";
+import image6 from "../assets/Singlepage/image6.png";
+import image7 from "../assets/Singlepage/image7.png";
 import time from "../assets/icons/time.svg";
+import fb from "../assets/icons/sfb.svg";
+import twit from "../assets/icons/stw.svg";
+import pint from "../assets/icons/sp.svg";
+import linkdin from "../assets/icons/slink.svg";
+import ss from "../assets/icons/ss.svg";
+import arrow from "../assets/icons/arrright.svg";
 const Relatedsection = () => {
+	const cards = [
+			{
+				image: image5,
+				tags: ["सेलेब्रेटीहरू", "अहिले चर्चामा"],
+				title: "पहिले र पछि – लेना मोरोको मनमोहक रूपान्तरण",
+				date: "फेब्रुअरी २१",
+				author: "ओलिभिया कार्टर",
+			},
+			{
+				image: image6,
+				tags: ["स्वास्थ्य", "अहिले चर्चामा"],
+				title: "ऊर्जा र आत्मविश्वाससहित उमेर बढाउँदै जाने रहस्यहरू",
+				date: "फेब्रुअरी २१",
+				author: "ओलिभिया कार्टर",
+			},
+			{
+				image: image7,
+				tags: ["स्वास्थ्य", "अहिले चर्चामा"],
+				title: "रेट्रो अन व्हिल्स – भिन्टेज क्याम्परहरूको सौन्दर्यपूर्ण पुनरागमन",
+				date: "फेब्रुअरी २१",
+				author: "ओलिभिया कार्टर",
+			},
+		];
   return (
 		<div className="flex flex-col gap-10 mt-10">
 			{/* Related News */}
@@ -90,12 +122,69 @@ const Relatedsection = () => {
 						alt=""
 						className="w-1/2 rounded-[15px] aspect-video"
 					/>
-					<div className="w-1/2 flex flex-col gap-2 text-md">
+					<div className="w-1/2 flex flex-col gap-4 text-md justify-evenly">
 						<p className="">लेखकबारे थप जान्नुहोस्</p>
-						<div className="flex gap-2 ">
-							<p className='font-bold'>सुधीर नेपाल</p>
+						<div className="flex items-center gap-4">
+							<p className="font-bold text-black text-lg">सुधीर नेपाल</p>
+							<span className="w-5 h-px bg-black"></span>
+							<p className="font-bold">प्राविधिक लेखक</p>
+						</div>
+						<p>
+							बिगत तिन दशक देखि नेपाली पत्रकारिताको क्षेत्रमा निरन्तर रुपले
+							लागिरहेका एक अनुभवी र दक्ष पत्रकार हुन् । नेपाली पत्रकरितालाई
+							व्यावसायिक, आधुनिक र प्रविधिमैत्री बनाउने जमर्कोमा लागेका पत्रकार
+							नेपालले आफ्नो कार्यगत अनुभव नेपाली पत्रकरितालाई व्यावसायिक, आधुनिक
+							र प्रविधिमैत्री बनाउने जमर्कोमा लागेका पत्रकार नेपालले आफ्नो
+							कार्यगत अनुभव नेपाली पत्रकरितालाई व्यावसायिक, आधुनिक र
+							प्रविधिमैत्री बनाउने जमर्कोमा लागेका पत्रकार नेपालले आफ्नो कार्यगत
+							अनुभव नेपाली पत्रकरितालाई व्यावसायिक, आधुनिक र प्रविधिमैत्री
+							बनाउने जमर्कोमा लागेका पत्रकार नेपालले आफ्नो कार्यगत अनुभव{" "}
+						</p>
+						<div className="flex gap-3">
+							<img src={fb} alt="" className="h-5 w-5" />
+							<img src={twit} alt="" className="h-5 w-5" />
+							<img src={linkdin} alt="" className="h-5 w-5" />
+							<img src={pint} alt="" className="h-5 w-5" />
+							<img src={ss} alt="" className="h-5 w-5" />
 						</div>
 					</div>
+				</div>
+			</div>
+			{/* Prabidhhi samachar section */}
+			<div className="flex flex-col gap-8 ">
+				<div className="flex items-center justify-between">
+					<div className="font-bold text-lg">प्रवृत्तिमा रहेका समाचार</div>
+					<div className="flex gap-3">
+						<p className="text-sm">सबै हेर्नुहोस्</p>
+						<img src={arrow} alt="" className="src" />
+					</div>
+				</div>
+
+				<div className="grid lg:grid-cols-3 grid-cols-1 gap-13">
+					{cards.map((card, index) => (
+						<div key={index} className="flex flex-col gap-4">
+							<img
+								src={card.image}
+								alt=""
+								className="aspect-video rounded-[20px]"
+							/>
+							<div className="flex gap-2">
+								{card.tags.map((tag, idx) => (
+									<div
+										key={idx}
+										className="w-fit px-5 py-2 text-sm bg-[#F2F4F5]"
+									>
+										{tag}
+									</div>
+								))}
+							</div>
+							<p className="text-md font-bold">{card.title}</p>
+							<p className="text-[14px]">
+								{card.date} | <span className="font-bold">लेखिका:</span>{" "}
+								{card.author}
+							</p>
+						</div>
+					))}
 				</div>
 			</div>
 		</div>
