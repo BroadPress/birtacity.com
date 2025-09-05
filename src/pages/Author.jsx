@@ -55,7 +55,7 @@ const Author = () => {
 							</div>
 							<div className="rounded-[15px]  gap-1   bg-white p-4 text-black flex-1 ">
 								<p className="font-bold text-md">मुख्य श्रेणीहरू</p>
-								<p className="font-bold text-lg">प्रविधि, विचार, जीवनशैली</p>
+								<p className="font-bold text-md">प्रविधि, विचार, जीवनशैली</p>
 								<div className="flex gap-2">
 									<div className="mt-2 border-t-3 border-black w-4 "></div>
 									<div className="mt-2 border-t-3 border-black w-4 "></div>
