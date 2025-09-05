@@ -1,5 +1,5 @@
 import React from "react";
-import niranjan from "../assets/team/niranjan.png";
+import niranjan from "../assets/team/Niranjan.png";
 import bitisha from "../assets/team/bitisha.png";
 import lasta from "../assets/team/lasta.png";
 import aashma from "../assets/team/aashma.png";
