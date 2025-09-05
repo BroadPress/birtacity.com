@@ -1,29 +1,147 @@
-import React from 'react'
-import image1 from '../assets/Author/image1.png'
-import image2 from '../assets/Author/image2.png'
-import image3 from '../assets/Author/image3.png'
-import image4 from '../assets/Author/image4.png'
-import image5 from '../assets/Author/image5.png'
-import image6 from '../assets/Author/image6.png'
-import image7 from '../assets/Author/image7.png'
-import image8 from '../assets/Author/image8.png'
-import image9 from '../assets/Author/image9.png'
-import image10 from '../assets/Author/image10.png'
-import image11 from '../assets/Author/image11.png'
-import image12 from '../assets/Author/image12.png'
-import image13 from '../assets/Author/image13.png'
-import image14 from '../assets/Author/image14.png'
-import image15 from '../assets/Author/image15.png'
-import image16 from '../assets/Author/image16.png'
-import image17 from '../assets/Author/image17.png'
-import image18 from '../assets/Author/image18.png'
-import image19 from '../assets/Author/image19.png'
-import image20 from '../assets/Author/image20.png'
-import image21 from '../assets/Author/image21.png'
-import pracassir from '../assets/Author/pracassir.png'
+import React from "react";
+import image1 from "../assets/Author/image1.png";
+import image2 from "../assets/Author/image2.png";
+import image3 from "../assets/Author/image3.png";
+import image4 from "../assets/Author/image4.png";
+import image5 from "../assets/Author/image5.png";
+import image6 from "../assets/Author/image6.png";
+import image7 from "../assets/Author/image7.png";
+import image8 from "../assets/Author/image8.png";
+import image9 from "../assets/Author/image9.png";
+import image10 from "../assets/Author/image10.png";
+import image11 from "../assets/Author/image11.png";
+import image12 from "../assets/Author/image12.png";
+import image13 from "../assets/Author/image13.png";
+import image14 from "../assets/Author/image14.png";
+import image15 from "../assets/Author/image15.png";
+import image16 from "../assets/Author/image16.png";
+import image17 from "../assets/Author/image17.png";
+import image18 from "../assets/Author/image18.png";
+import image19 from "../assets/Author/image19.png";
+import image20 from "../assets/Author/image20.png";
+import image21 from "../assets/Author/image21.png";
+import pracassir from "../assets/Author/pracassir.png";
+import profile1 from "../assets/Homepage/Samachar/profile1.png";
+import time from "../assets/icons/time.svg";
+import tag from "../assets/icons/tag.svg";
 const Author = () => {
-  return (
+    const first = [
+            {
+                image: image6,
+                date: "राजनीति - २२ जनवरी, २०२४",
+                title: "सम्बन्ध: छिमेकी देशहरूसँगको वार्ता",
+                desc: "उच्च स्तरका छलफलहरू अघि बढिरहेका छन्। आपसी सम्बन्ध सुधार र सहकार्यलाई थप सुदृढ बनाउने विषयमा निरन्तर वार्ता भइरहेको छ। दुवै पक्षबीच विश्वास अभिवृद्धि गर्ने, राजनीतिक ...",
+                author: "लेखक: रमेश अधिकारी",
+            },
+            {
+                image: image7,
+                date: "समाज - २२ जनवरी, २०२४",
+                title: "सीमावर्ती क्षेत्रमा सुरक्षा वार्ता",
+    
+                desc: "सीमावर्ती क्षेत्रमा बढ्दो सुरक्षा चुनौतीलाई मध्यनजर गर्दै दुवै पक्षबीच संयुक्त गस्ती र सूचना आदानप्रदान गर्ने सहमति भएको छ। यसले आपसी विश्वासलाई बलियो बनाउनेछ।",
+                author: "लेखक: रमेश अधिकारी",
+            },
+            {
+                image: image8,
+                date: "प्रविधि - २२ जनवरी, २०२४",
+                title: "सम्बन्ध: शिक्षा र संस्कृतिमा सहकार्य",
+    
+                desc: "छिमेकी मुलुकसँग शैक्षिक आदानप्रदान कार्यक्रम र सांस्कृतिक सहकार्य सुरु गर्ने निर्णय भएको छ। विद्यार्थी आदानप्रदान र भाषा अध्ययनले सम्बन्ध अझ प्रगाढ हुने अपेक्षा गरिएको छ ",
+                author: "लेखक: रमेश अधिकारी",
+            },
+            {
+                image: image9,
+                date: "पर्यटन - २२ जनवरी, २०२४",
+                title: "सम्बन्ध: पूर्वाधार विकासमा संयुक्त लगानी",
+    
+                desc: "दुवै मुलुकले सडक, जलविद्युत् र प्रविधि क्षेत्रमा संयुक्त लगानी गर्ने सहमति गरेका छन्। यसले दुवै राष्ट्रको आर्थिक प्रगतिमा योगदान पुर्‍याउने विश्वास गरिएको छ।",
+                author: "लेखक: रमेश अधिकारी",
+            },
+    ];
+    const second = [
+            {
+                image: image10,
+                date: "राजनीति - २२ जनवरी, २०२४",
+                title: "सम्बन्ध: नयाँ गठबन्धन सरकारको घोषणा",
+    
+                desc: "देशको राजनीतिक परिदृश्यमा ठूलो परिवर्तन आउँदैछ। प्रमुख दलहरूबीच नयाँ गठबन्धनको सहमति भएको छ जसले आगामी नीति तथा कार्यक्रमलाई प्रत्यक्ष प्रभाव पार्नेछ",
+                author: "लेखक: जोन डो",
+            },
+            {
+                image: image11,
+                date: "राजनीति - २२ जनवरी, २०२४",
+                title: "सीमावर्ती क्षेत्रमा सुरक्षा वार्ता",
+    
+                desc: "विद्यालय तथा विश्वविद्यालयहरूमा अनलाइन शिक्षण प्रणालीलाई अनिवार्य रूपमा लागू गर्ने निर्णय सरकारले गरेको छ। यसले विद्यार्थीलाई आधुनिक प्रविधि–मैत्री बनाउने अपेक्षा गरिएको छ।",
+                author: "लेखक: जोन डो",
+            },
+            {
+                image: image12,
+                date: "राजनीति - २२ जनवरी, २०२४",
+                title: "सम्बन्ध: शिक्षा र संस्कृतिमा सहकार्य",
+    
+                desc: "नेपालमा पहिलोपटक ६G प्रविधिको परीक्षण सुरु भएको छ। यसले इन्टरनेट स्पीडलाई नयाँ स्तरमा पुर्‍याउने र डिजिटल सेवा अझ छिटो र भरपर्दो बनाउने दाबी गरिएको छ।",
+                author: "लेखक: जोन डो",
+            },
+            {
+                image: image13,
+                date: "राजनीति - २२ जनवरी, २०२४",
+                title: "सम्बन्ध: पूर्वाधार विकासमा संयुक्त लगानी",
+    
+                desc: "पर्यटन मन्त्रालयले आगामी वर्ष २० लाख पर्यटक भित्र्याउने महत्वाकांक्षी योजना सार्वजनिक गरेको छ। हिमाल, संस्कृति र साहसिक पर्यटनमार्फत रोजगारी र आयस्रोत बढाउने उद्देश्य राखिएको छ।",
+                author: "लेखक: जोन डो",
+            },
+    ];
+    const third = [
+			{
+				image: image14,
+				title: "प्रविधि ",
+				heading: "सम्बन्ध: कृत्रिम उपग्रह प्रविधिमा नेपालको प्रगति",
+				desc: "नेपालले आफ्नै सानो उपग्रह प्रविधि विकास गर्ने तयारी गरेको छ। यसले मौसम पूर्वानुमान, दुरसञ्चार र कृषि क्षेत्रमा ठूलो योगदान पुर्‍याउने अपेक्षा गरिएको छ।",
+				author: "लेखक: जिन-हो किम • पढ्न समय: २ मिनेट",
+			},
+			{
+				image: image15,
+				title: "प्रविधि ",
+				heading: "सम्बन्ध: कृत्रिम बुद्धिमत्ताद्वारा सरकारी सेवा सहज",
+				desc: "सरकारले एआई प्रविधि प्रयोग गरेर नागरिकता, राहदानी र करसम्बन्धी सेवा छिटो र पारदर्शी बनाउने घोषणा गरेको छ।",
+				author: "लेखक: जिन-हो किम • पढ्न समय: २ मिनेट",
+			},
+			{
+				image: image16,
+				title: "प्रविधि ",
+				heading: "सम्बन्ध: ई–कमर्स बजारमा तीव्र वृद्धि",
+				desc: "अनलाइन किनमेल गर्ने प्रयोगकर्ताको संख्या तीव्र गतिमा बढ्दै गएको छ। यसले स्थानीय व्यवसायलाई डिजिटल बजारतर्फ उन्मुख बनाइरहेको छ।",
+				author: "लेखक: जिन-हो किम • पढ्न समय: २ मिनेट",
+			},
+			{
+				image: image17,
+				title: "प्रविधि ",
+				heading: "सम्बन्ध: शिक्षा क्षेत्रमा भर्चुअल रियलिटी प्रयोग",
+				desc: "विद्यालय तथा विश्वविद्यालयहरूमा भर्चुअल रियलिटी प्रयोग बढ्दै गएको छ। यसले विद्यार्थीलाई प्रत्यक्ष अनुभवमार्फत सिकाइमा मद्दत गरिरहेको छ।",
+				author: "लेखक: जिन-हो किम • पढ्न समय: २ मिनेट",
+			},
+    ];
+     const last = [
+                {
+                    title: "फेवातालमा पर्यटकहरूको बोट सवारी",
+                    desc: "पोखराको फेवातालमा पर्यटकहरूले बोट सवारीको आनन्द लिइरहेका छन्। नेपालको पर्यटन राजधानीको रूपमा चिनिने पोखरामा यो गतिविधि पर्यटकहरूक....",
+                    img: image19,
+                },
+                {
+                    title: "मन्दिरको बन्दाबन्दी र पुनः उद्घाटन",
+                    desc: "जनवरी २०२५ मा, गोरखाको प्रसिद्ध मनकामना मन्दिर COVID-19 को पुनः जोखिमका कारण बन्द गरिएको थियो। मन्दिर क्षेत्र विकास ट्रस्टको ...",
+                    img: image20,
+                },
+                {
+                    title: "पालीमा प्राकृतिक दृश्यको विस्तृत वर्णन",
+                    desc: "प्रकृति द्वारा सिर्जना गरिएको सुन्दर दृश्य, जस्तै हिमाल, ताल, जंगल, नदी र आकाशको मिश्रण पहाड र नदीले मनमोहक प्राकृतिक दृष्य प्रस्तुत गर्छ...।",
+                    img: image21,
+                },
+            ];
+	return (
 		<div className="mt-10 flex flex-col gap-10 ">
+			{/* main author section */}
 			<div className="flex flex-col ">
 				<div className="w-full text-white flex flex-col lg:flex-row items-center gap-15 lg:gap-23 h-auto py-6 px-8 lg:px-22 bg-[#055D59]">
 					<div className=" flex flex-col  justify-center w-[40%]  items-center p-6 gap-6 ">
@@ -81,7 +199,7 @@ const Author = () => {
 					</div>
 				</div>
 			</div>
-			{/* main categories */}
+			{/* मुख्य विधाहरू section */}
 			<div className=" flex gap-4 flex-col">
 				<div className="text-lg font-bold">
 					<p className="underline underline-offset-8">मुख्य विधाहरू</p>
@@ -153,8 +271,267 @@ const Author = () => {
 					</div>
 				</div>
 			</div>
+			{/* मुख्य लेखहरू section */}
+			<div className="flex flex-col gap-8">
+				<div className="text-lg font-bold">मुख्य लेखहरू</div>
+				<div className="flex gap-6 h-[370px]">
+					{/* LEFT SIDE */}
+					<div className="flex flex-col w-1/2 gap-6 h-full">
+						{[image1, image2].map((img, index) => (
+							<div key={index} className="flex gap-4 h-[50%]">
+								<img
+									src={img}
+									alt=""
+									className="rounded-[20px] w-1/2 h-full object-cover"
+								/>
+								<div className="flex flex-col gap-3 justify-around w-1/2">
+									<p className="font-bold">
+										युवाहरूलाई इन्टरनेटमार्फत स्वरोजगारमा जोड्न सकिनेछ...
+										स्वरोजगारमा जोड्न युवाहरू
+									</p>
+									<p className="text-md">
+										युवाहरूलाई इन्टरनेटमार्फत स्वरोजगारमा जोड्न सकिनेछ, जसले
+										बेरोजगारी कम गर्नेछ। तर, डिजिटल परिवर्तनका लागि सरकारी नीति
+										स्पष्ट
+									</p>
+									<div className="flex gap-4">
+										<div className="flex gap-2">
+											<img src={time} alt="" className="h-5 w-5" />
+											<p className="text-xs">३ मिनेटमा पढ्नुहोस्</p>
+										</div>
+										<div className="flex gap-2">
+											<img src={tag} alt="" className="h-5 w-5" />
+											<p className="text-xs">प्रविधि</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						))}
+					</div>
+
+					{/* RIGHT SIDE */}
+					<div className="w-1/2 h-full">
+						<div
+							className="bg-cover bg-center relative rounded-[20px] h-full overflow-hidden"
+							style={{ backgroundImage: `url(${image3})` }}
+						>
+							<div className="absolute bottom-5 left-5 px-4">
+								<p className="text-md text-white mt-2 font-bold">
+									नेपाली चलचित्रको बढ्दो लोकप्रियता
+								</p>
+							</div>
+							<div className="absolute bottom-5 right-5  w-fit">
+								<p className="text-sm  rounded-xl px-7 py-2 bg-[#D9D9D9] ">
+									थप पढ्नुहोस्
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{/* midddle section */}
+			<div className="flex gap-5 mt-8 ">
+				<img src={image4} alt="" className="aspect-video rounded-md w-1/2" />
+				<div className="flex flex-col gap-3 justify-around w-1/2">
+					<div className="flex gap-3">
+						<img src={profile1} alt="" className="h-5 w-5 rounded-full" />
+						<p>Biratinfo</p>
+					</div>
+					<p className="text-xs font-bold">४ घण्टा अघि अपडेट गरिएको</p>
+					<div className="flex flex-col gap-2">
+						<p className="text-md">
+							सर्ट्स प्रयोगकर्ताहरूका लागि अर्को रोचक समाचार नयाँ एआई प्रभावहरू
+							हुन्। यी प्रभावहरूको प्रयोग गरेर, तपाईं आफ्नो डूडलहरू (हातले
+							बनाएका स्केचहरू) पूर्ण कलात्मक फोटोमा रूपान्तरण गर्न
+							सक्नुहुन्छ।सर्ट्स प्रयोगकर्ताहरूका लागि अर्को रोचक समाचार नयाँ एआई
+							प्रभावहरू हुन्। यी प्रभावहरूको प्रयोग गरेर, तपाईं आफ्नो डूडलहरू
+							(हातले बनाएका स्केचहरू) पूर्ण कलात्मक फोटोमा रूपान्तरण गर्न
+							सक्नुहुन्छ।यस्तैगरी, यी आधुनिक एआई उपकरणहरूले सिर्जनात्मक
+							प्रक्रियालाई छिटो र सजिलो बनाउँछन्। ।
+						</p>
+						<p className="text-md">
+							त्यसैगरी, नयाँ एआई टूलहरूले प्रयोगकर्ताहरूलाई अझ धेरै सिर्जनात्मक
+							स्वतन्त्रता दिन्छन्। तपाईंले आफ्नो साधारण चित्र वा प्रारम्भिक
+							डिज़ाइनहरूलाई प्रभावशाली एनिमेशन वा 3D शैलीमा रूपान्तरण गर्न
+							सक्नुहुन्छ। यसले केवल कलात्मक अनुभवलाई समृद्ध बनाउँदैन, तर
+							प्रयोगकर्ताहरूलाई आफ्नो सिर्जनात्मक विचारहरूलाई वास्तविकता जस्तो
+							दृश्यात्मक रूपमा प्रस्तुत गर्ने अवसर पनि प्रदान गर्दछ।पहिले जहाँ
+						</p>
+					</div>
+
+					<div className="flex gap-7">
+						<div className="flex gap-2">
+							<img src={time} alt="" className="src" />
+							<p className="text-xs">३ मिनेटमा पढ्नुहोस्</p>
+						</div>
+						<div className="flex gap-2">
+							<img src={tag} alt="" className="src" />
+							<p className="text-xs">प्रविधि</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			{/* sujhab section */}
+			<div className=" flex flex-col gap-9">
+				<div className="text-lg font-bold border border-b-[#00000033] border-x-0 border-t-0 py-5"></div>
+				<div className="flex gap-4">
+					<div className="py-7 flex w-[75%] gap-7">
+						<div className="flex gap-7">
+							<img
+								src={image5}
+								alt=""
+								className="rounded-[20px] w-1/2 aspect-video"
+							/>
+							<div className="flex flex-col justify-around w-1/2 gap-2 ">
+								<p className="font-bold text-md">
+									कम्प्युटर भाइरस भनेको के हो र यो किन खतरनाक हुन्छ?{" "}
+								</p>
+								<p className="text-md">
+									नेपालमा इन्टरनेटको पहुँच तीव्र रूपमा बढिरहेको छ, र यससँगै
+									कम्प्युटर भाइरसको जोखिम पनि बढिरहेको छ। त्यसैले, यस समस्याबाट
+									जोगिनको लागि सजग हुनु अत्यावश्यक छ नेपालमा इन्टरनेटको पहुँच
+									तीव्र रूपमा बढिरहेको छ, र यससँगै कम्प्युटर भाइरसको जोखिम पनि
+									बढिरहेको छ।
+								</p>
+								<p className="text-md">
+									साथै, डिजिटल सुरक्षा सम्बन्धी चेतना अभिवृद्धि गर्नु पनि आवश्यक
+									छ। प्रयोगकर्ताहरूले बलियो पासवर्ड प्रयोग गर्ने, अनजान लिंक वा
+									फाइल नखोल्ने, र नियमित रूपमा एण्टी-भाइरस सफ्टवेयर अपडेट गर्ने
+									बानी बसाल्नुपर्छ।।
+								</p>
+								<div className="flex gap-5">
+									<div className="flex gap-3">
+										<img src={time} alt="h-5 w-5" className="src" />
+										<p className="text-xs">७ मिनेटमा पढ्नुहोस</p>
+									</div>
+									<div className="text-xs">
+										<p>प्रविधि</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div className="flex flex-col gap-5 w-[25%] border-y-0 border-r-0 border border-l-[#00000033] px-8 justify-center">
+						<div className="text-lg font-bold">सुझावहरू</div>
+						<div className="flex flex-col gap-2">
+							<p className="text-md">किन हुन्छ वेबसाइट ह्याक?</p>
+							<p className="text-xs">अपडेट गरिएको : २ दिन अघि</p>
+						</div>
+						<div className="flex flex-col gap-2">
+							<p className="text-md">पासवर्ड कसरी सुरक्षित राख्ने?</p>
+							<p className="text-xs">अपडेट गरिएको : २ दिन अघि</p>
+						</div>
+						<div className="flex flex-col gap-2">
+							<p className="text-md">किन हुन्छ वेबसाइट ह्याक?</p>
+							<p className="text-xs">अपडेट गरिएको : २ दिन अघि</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			{/* News grid section */}
+			<div className="flex flex-col gap-12">
+				{/* First grid */}
+				<div className="grid grid-cols-4 gap-7">
+					{first.map((article, index) => (
+						<div key={index} className="flex flex-col gap-3">
+							<p className="text-sm">{article.date}</p>
+							<p className="text-md font-bold">{article.title}</p>
+							<img
+								src={article.image}
+								alt=""
+								className="aspect-video rounded-[15px]"
+							/>
+							<p className="text-md line-clamp-4">{article.desc}</p>
+							<p className="text-sm font-bold">{article.author}</p>
+						</div>
+					))}
+				</div>
+				{/* Second grid section */}
+				<div className="grid grid-cols-4 gap-7">
+					{second.map((article, index) => (
+						<div key={index} className="flex flex-col gap-3">
+							<p className="text-sm">{article.date}</p>
+							<p className="text-md font-bold">{article.title}</p>
+							<img
+								src={article.image}
+								alt=""
+								className="aspect-video rounded-[15px]"
+							/>
+							<p className="text-md line-clamp-4">{article.desc}</p>
+							<p className="text-sm font-bold">{article.author}</p>
+						</div>
+					))}
+				</div>
+				{/* Bottom section */}
+				<div className="bg-black w-fit text-white px-5 py-2 text-sm text-center mx-auto">
+					थप लोड गर्नुहोस्
+				</div>
+			</div>
+			{/* Thap padnuhos section */}
+			<div className="flex flex-col  gap-10">
+				{/* Header */}
+				<div className="flex justify-between py-2">
+					<div className="flex flex-col gap-2">
+						<p className="text-lg font-bold">थप पढ्नुहोस्</p>
+						<p className="text-sm text-[#8B8B8B]">
+							हाम्रा लेख, अन्तर्वार्ता, र सृजनात्मक परियोजनाहरूको अभिलेख अन्वेषण
+							गर्नुहोस्
+						</p>
+					</div>
+				</div>
+
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+					{third.map((item, index) => (
+						<div key={index} className="flex flex-col gap-2 p-2 rounded-[15px]">
+							<img
+								src={item.image}
+								alt={item.title}
+								className="aspect-video rounded-[15px] object-cover"
+							/>
+							<p className="text-sm font-bold">{item.title}</p>
+							<p className="text-md font-bold line-clamp-1">{item.heading}</p>
+
+							<p className="text-md  text-gray-700 line-clamp-3">{item.desc}</p>
+							<p className="text-sm">{item.author}</p>
+						</div>
+					))}
+				</div>
+			</div>
+			{/* last section */}
+			<div className="flex flex-col gap-10 mt-10">
+				<p className="text-lg font-bold">प्रविधि</p>
+				<div className="flex gap-8">
+					<div className="flex w-1/2 flex-col gap-3">
+						<img src={image18} alt="" className="aspect-video rounded-[15px]" />
+						<p className="text-md font-bold">
+							द न्यू योर्करको राजनीतिक मञ्च: पोडकास्ट र स्थानीय सत्ता खेल
+						</p>
+						<p className="text-md">
+							बेल्टवे–बाहेकको हलचल! DC को राजनीतिक जामदेखि NYC का शक्ति खेलसम्म,
+							द न्यू योर्करले राजनीतिक नाट्यक्रमलाई कसरी देखाउँछ भनेर सुन्नुहोस्
+							...
+						</p>
+						<p className="text-xs font-bold">लेखक: जिन-हो किम • पढ्न समय: २ मिनेट</p>
+					</div>
+					<div className="flex flex-col gap-10 w-1/2">
+						{last.map((item, index) => (
+							<div key={index} className="flex justify-between">
+								<div className="flex flex-col gap-2 text-md w-[65%]">
+									<p className="font-bold">{item.title}</p>
+									<p>{item.desc}</p>
+								</div>
+								<img
+									src={item.img}
+									alt={item.title}
+									className="w-[232px] h-[133px] rounded-[15px] "
+								/>
+							</div>
+						))}
+					</div>
+				</div>
+			</div>
 		</div>
 	);
-}
+};
 
-export default Author
+export default Author;
