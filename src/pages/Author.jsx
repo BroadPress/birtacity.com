@@ -60,9 +60,10 @@ const Author = () => {
 								<p className="font-bold text-md">मुख्य श्रेणीहरू</p>
 								<p className="font-bold text-lg">प्रविधि, विचार, जीवनशैली</p>
 								<div className="flex gap-2">
-									<div class="mt-2 border-t-3 border-black w-4 "></div>
-									<div class="mt-2 border-t-3 border-black w-4 "></div>
-									<div class="mt-2 border-t-3 border-black w-4 "></div>
+									<div className="mt-2 border-t-3 border-black w-4 "></div>
+									<div className="mt-2 border-t-3 border-black w-4 "></div>
+                                    <div className
+                                        ="mt-2 border-t-3 border-black w-4 "></div>
 								</div>
 							</div>
 							<div className="rounded-[15px]  bg-white p-4 font-bold text-black flex-1 ">
