@@ -4,22 +4,9 @@ import image2 from "../assets/Author/image2.png";
 import image3 from "../assets/Author/image3.png";
 import image4 from "../assets/Author/image4.png";
 import image5 from "../assets/Author/image5.png";
-import image6 from "../assets/Author/image6.png";
-import image7 from "../assets/Author/image7.png";
-import image8 from "../assets/Author/image8.png";
-import image9 from "../assets/Author/image9.png";
-import image10 from "../assets/Author/image10.png";
-import image11 from "../assets/Author/image11.png";
-import image12 from "../assets/Author/image12.png";
-import image13 from "../assets/Author/image13.png";
-import image14 from "../assets/Author/image14.png";
-import image15 from "../assets/Author/image15.png";
-import image16 from "../assets/Author/image16.png";
-import image17 from "../assets/Author/image17.png";
+
 import image18 from "../assets/Author/image18.png";
-import image19 from "../assets/Author/image19.png";
-import image20 from "../assets/Author/image20.png";
-import image21 from "../assets/Author/image21.png";
+
 import pracassir from "../assets/Author/pracassir.png";
 import profile1 from "../assets/Homepage/Samachar/profile1.png";
 import time from "../assets/icons/time.svg";
