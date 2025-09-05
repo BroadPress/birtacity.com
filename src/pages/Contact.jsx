@@ -212,7 +212,7 @@ const Contact = () => {
 				{[image4, image5, image6].map((img, idx) => (
 					<div
 						key={idx}
-						className="flex flex-col gap-3 md:gap-5 bg-[#055D59] text-white p-6 md:p-8 rounded-[10px] items-center justify-center h-[300px] w-full md:w-1/5"
+						className="flex flex-col gap-3 md:gap-5 bg-[#055D59] text-white p-6 md:p-8 rounded-[10px] items-center justify-center h-[300px] w-full md:w-1/4"
 					>
 						<img src={img} alt={`Support ${idx}`} className="h-8 w-8" />
 						<p className="text-lg font-bold">
