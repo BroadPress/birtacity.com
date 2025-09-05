@@ -7,6 +7,7 @@ import Categories from "./pages/Categories";
 import Singlepage from "./pages/Singlepage";
 import Team from "./pages/Team";
 import Author from "./pages/Author";
+import Contact from "./pages/Contact";
 
 function App() {
 	return (
@@ -19,6 +20,7 @@ function App() {
 					<Route path="/singlepage" element={<Singlepage />} />
 					<Route path="/team" element={<Team />} />
 					<Route path="/author" element={<Author />} />
+					<Route path="/contact" element={<Contact />} />
 				</Routes>
 			</div>
 			<Footer/>

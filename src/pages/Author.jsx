@@ -4,16 +4,13 @@ import image2 from "../assets/Author/image2.png";
 import image3 from "../assets/Author/image3.png";
 import image4 from "../assets/Author/image4.png";
 import image5 from "../assets/Author/image5.png";
-
 import image18 from "../assets/Author/image18.png";
-
 import pracassir from "../assets/Author/pracassir.png";
 import profile1 from "../assets/Homepage/Samachar/profile1.png";
 import time from "../assets/icons/time.svg";
 import tag from "../assets/icons/tag.svg";
-import { first,second,third,last } from "../data/Authordata";
+import { first, second, third, last } from "../data/Authordata";
 const Author = () => {
-   
 	return (
 		<div className="mt-10 flex flex-col gap-10 ">
 			{/* main author section */}
@@ -62,8 +59,7 @@ const Author = () => {
 								<div className="flex gap-2">
 									<div className="mt-2 border-t-3 border-black w-4 "></div>
 									<div className="mt-2 border-t-3 border-black w-4 "></div>
-                                    <div className
-                                        ="mt-2 border-t-3 border-black w-4 "></div>
+									<div className="mt-2 border-t-3 border-black w-4 "></div>
 								</div>
 							</div>
 							<div className="rounded-[15px]  bg-white p-4 font-bold text-black flex-1 ">
@@ -387,7 +383,9 @@ const Author = () => {
 							द न्यू योर्करले राजनीतिक नाट्यक्रमलाई कसरी देखाउँछ भनेर सुन्नुहोस्
 							...
 						</p>
-						<p className="text-xs font-bold">लेखक: जिन-हो किम • पढ्न समय: २ मिनेट</p>
+						<p className="text-xs font-bold">
+							लेखक: जिन-हो किम • पढ्न समय: २ मिनेट
+						</p>
 					</div>
 					<div className="flex flex-col gap-10 w-1/2">
 						{last.map((item, index) => (
@@ -409,5 +407,4 @@ const Author = () => {
 		</div>
 	);
 };
-
 export default Author;
