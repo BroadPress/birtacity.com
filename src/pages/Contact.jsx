@@ -32,7 +32,7 @@ const Contact = () => {
 	};
 
 	return (
-		<div className="mt-10 flex flex-col gap-10 px-4 md:px-12">
+		<div className="mt-10 flex flex-col gap-10 ">
 			{/* Main section */}
 			<div className="bg-[#055D59] flex flex-col gap-12 text-white p-8 md:p-12">
 				<div className="flex flex-col gap-6 items-center w-full md:w-1/3 mx-auto">
