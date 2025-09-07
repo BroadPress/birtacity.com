@@ -8,22 +8,22 @@ const Prachalitsection = () => {
 	return (
 		<div className="mt-10 flex flex-col gap-10 ">
 			<p className="text-lg font-bold">प्रचलित</p>
-			<div className=" flex flex-col-reverse lg:flex gap-6 lg:h-[370px]">
+			<div className="lg:flex gap-8 lg:h-[370px]">
 				{/* LEFT SIDE */}
 				<div className="flex flex-col lg:w-1/2 gap-6 h-full">
 					{[image1, image2].map((img, index) => (
-						<div key={index} className="lg:flex flex flex-col gap-4 lg:h-[50%]">
+						<div key={index} className="lg:flex gap-4 lg:h-[50%]">
 							<img
 								src={img}
 								alt=""
-								className="rounded-[20px] lg:w-1/2 lg:h-full object-cover aspect-video"
+								className="rounded-[20px] lg:w-1/2 lg:h-full object-cove w-full aspect-video"
 							/>
 							<div className="flex flex-col gap-3 justify-around lg:w-1/2">
 								<p className="font-bold">
 									युवाहरूलाई इन्टरनेटमार्फत स्वरोजगारमा जोड्न सकिनेछ...
-									स्वरोजगारमा जोड्न युवाहरू
+									
 								</p>
-								<p className="text-md text-justify">
+								<p className="text-md text-justify line-clamp-3">
 									युवाहरूलाई इन्टरनेटमार्फत स्वरोजगारमा जोड्न सकिनेछ, जसले
 									बेरोजगारी कम गर्नेछ। तर, डिजिटल परिवर्तनका लागि सरकारी नीति
 									स्पष्ट

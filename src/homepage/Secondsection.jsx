@@ -52,11 +52,11 @@ const Secondsection = () => {
 	return (
 		<div className="mt-10 flex flex-col gap-10">
 			{/* Top Section */}
-			<div className="lg:flex flex flex-col gap-6">
-				<div className=" flex flex-col gap-6 border border-t-black border-x-0 border-b-0 py-6 w-full lg:w-[75%]">
+			<div className="lg:flex gap-6">
+				<div className=" flex flex-col  gap-6 border border-t-black border-x-0 border-b-0 py-6 w-full lg:w-[75%]">
 					<div className="font-bold text-lg">खेलकुदसम्बन्धी समाचार</div>
-					<div className="lg:flex flex flex-col gap-6">
-						<div className="flex flex-col gap-6  lg:w-[30%] w-full">
+					<div className="lg:flex gap-6">
+						<div className="flex flex-col gap-6 lg:w-[30%] ">
 							<div className="flex flex-col gap-4">
 								<div className=" flex flex-col gap-2">
 									<p className="font-bold text-md">
@@ -130,18 +130,18 @@ const Secondsection = () => {
 			</div>
 
 			{/* News Section  */}
-			<div className="lg:flex gap-7 flex flex-col">
+			<div className="lg:flex gap-7   ">
 				<div className="flex flex-col lg:w-1/2 gap-7">
 					{newsLeft.map((item, index) => (
-						<div key={index} className="lg:flex flex flex-col gap-8">
+						<div key={index} className="lg:flex gap-8">
 							<img
 								src={item.img}
 								alt=""
-								className="lg:w-[148px] lg:h-[72px] rounded-[5px] aspect-video"
+								className="lg:w-[148px] lg:h-[72px] w-full rounded-[5px] aspect-video"
 							/>
 							<div className="flex flex-col gap-3 justify-around ">
 								<p className="font-bold text-sm">{item.title}</p>
-								<p className="text-md text-justify">{item.desc}</p>
+								<p className="text-md text-justify line-clamp-2">{item.desc}</p>
 							</div>
 						</div>
 					))}
@@ -149,15 +149,15 @@ const Secondsection = () => {
 
 				<div className="flex flex-col lg:w-1/2 gap-7">
 					{newsRight.map((item, index) => (
-						<div key={index} className="lg:flex flex flex-col gap-8">
+						<div key={index} className="lg:flex gap-8">
 							<img
 								src={item.img}
 								alt=""
-								className="lg:w-[148px] lg:h-[72px] rounded-[5px] aspect-video"
+								className="lg:w-[148px] lg:h-[72px] w-full rounded-[5px] aspect-video"
 							/>
 							<div className="flex flex-col gap-3 justify-around ">
 								<p className="font-bold text-sm">{item.title}</p>
-								<p className="text-md text-justify">{item.desc}</p>
+								<p className="text-md text-justify line-clamp-2">{item.desc}</p>
 							</div>
 						</div>
 					))}

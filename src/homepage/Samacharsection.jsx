@@ -14,7 +14,7 @@ const Samacharsection = () => {
 		<div className="mt-10 flex flex-col gap-10">
 			{/* First section */}
 			<p className="text-lg font-bold">समाचार</p>
-			<div className="lg:flex flex flex-col gap-5 ">
+			<div className="lg:flex flex  gap-5 ">
 				<img
 					src={image1}
 					alt=""
@@ -69,9 +69,9 @@ const Samacharsection = () => {
 					</div>
 				</div>
 
-				<div className="lg:flex flex flex-col gap-7 lg:h-[470px]">
+				<div className="lg:flex gap-7 lg:h-[470px]">
 					{/* First Image */}
-					<div className=" w-full lg:w-[45%]">
+					<div className="lg:w-[45%]">
 						<div
 							className="bg-cover bg-center relative rounded-[20px] lg:h-full aspect-video overflow-hidden flex-[2]"
 							style={{ backgroundImage: `url(${image2})` }}

@@ -7,9 +7,9 @@ const Thirdsection = () => {
 			<div className="text-lg font-bold border border-b-[#00000033] border-x-0 border-t-0 py-5">
 				प्रविधि
 			</div>
-			<div className="lg:flex flex flex-col gap-4">
-				<div className="py-7 lg:flex flex flex-col lg:w-[75%] gap-7">
-					<div className="lg:flex flex flex-col gap-7">
+			<div className="lg:flex gap-4">
+				<div className="py-7 lg:flex  lg:w-[75%] gap-7">
+					<div className="lg:flex gap-7">
 						<img
 							src={image1}
 							alt=""
@@ -44,7 +44,7 @@ const Thirdsection = () => {
 						</div>
 					</div>
 				</div>
-				<div className="flex flex-col gap-5 lg:w-[25%] border-y-0 border-r-0 lg:border border-l-[#00000033] lg:px-8 justify-center">
+				<div className="flex flex-col gap-5 lg:w-[25%] lg:border-y-0 lg:border-r-0 lg:border border-l-[#00000033] lg:px-8 justify-center">
 					<div className="text-lg font-bold">सुझावहरू</div>
 					<div className="flex flex-col gap-2">
 						<p className="text-md">किन हुन्छ वेबसाइट ह्याक?</p>
