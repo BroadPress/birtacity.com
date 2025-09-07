@@ -8,22 +8,22 @@ const Prachalitsection = () => {
 	return (
 		<div className="mt-10 flex flex-col gap-10 ">
 			<p className="text-lg font-bold">प्रचलित</p>
-			<div className="flex gap-6 h-[370px]">
+			<div className=" flex flex-col-reverse lg:flex gap-6 lg:h-[370px]">
 				{/* LEFT SIDE */}
-				<div className="flex flex-col w-1/2 gap-6 h-full">
+				<div className="flex flex-col lg:w-1/2 gap-6 h-full">
 					{[image1, image2].map((img, index) => (
-						<div key={index} className="flex gap-4 h-[50%]">
+						<div key={index} className="lg:flex flex flex-col gap-4 lg:h-[50%]">
 							<img
 								src={img}
 								alt=""
-								className="rounded-[20px] w-1/2 h-full object-cover"
+								className="rounded-[20px] lg:w-1/2 lg:h-full object-cover aspect-video"
 							/>
-							<div className="flex flex-col gap-3 justify-around w-1/2">
+							<div className="flex flex-col gap-3 justify-around lg:w-1/2">
 								<p className="font-bold">
 									युवाहरूलाई इन्टरनेटमार्फत स्वरोजगारमा जोड्न सकिनेछ...
 									स्वरोजगारमा जोड्न युवाहरू
 								</p>
-								<p className="text-md">
+								<p className="text-md text-justify">
 									युवाहरूलाई इन्टरनेटमार्फत स्वरोजगारमा जोड्न सकिनेछ, जसले
 									बेरोजगारी कम गर्नेछ। तर, डिजिटल परिवर्तनका लागि सरकारी नीति
 									स्पष्ट
@@ -44,9 +44,9 @@ const Prachalitsection = () => {
 				</div>
 
 				{/* RIGHT SIDE */}
-				<div className="w-1/2 h-full">
+				<div className="lg:w-1/2 lg:h-full">
 					<div
-						className="bg-cover bg-center relative rounded-[20px] h-full overflow-hidden"
+						className="bg-cover bg-center relative rounded-[20px] lg:h-full aspect-video overflow-hidden"
 						style={{ backgroundImage: `url(${image3})` }}
 					>
 						<div className="absolute bottom-5 left-5 px-4">
@@ -54,8 +54,8 @@ const Prachalitsection = () => {
 								नेपाली चलचित्रको बढ्दो लोकप्रियता
 							</p>
 						</div>
-						<div className="absolute bottom-5 right-5  w-fit">
-							<p className="text-sm  rounded-xl px-7 py-2 bg-[#D9D9D9] ">
+						<div className="absolute top-5 right-5  w-fit">
+							<p className="text-sm  rounded-xl px-3 lg:px-7 py-2 bg-[#D9D9D9] ">
 								थप पढ्नुहोस्
 							</p>
 						</div>

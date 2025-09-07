@@ -92,7 +92,7 @@ const Lastsection = () => {
 				{categories.map((cat, index) => (
 					<button
 						key={index}
-						className="px-8 py-2 text-sm border-r font-bold last:border-r-0 
+						className="lg:px-8 px-5 py-2 text-sm border-r font-bold last:border-r-0 
                        hover:bg-gray-100 focus:bg-gray-200"
 					>
 						{cat}
@@ -101,7 +101,7 @@ const Lastsection = () => {
 			</div>
 
 			{/* Articles Grid */}
-			<div className="grid grid-cols-4 gap-8">
+			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 				{articles.map((article, idx) => (
 					<div key={idx} className="flex flex-col gap-2">
 						<img
@@ -110,12 +110,12 @@ const Lastsection = () => {
 							className="aspect-video object-cover rounded-[15px]"
 						/>
 						<p className="text-md font-bold">{article.title}</p>
-						<p className="text-md text-[#00000099]">{article.desc}</p>
+						<p className="text-md text-[#00000099] text-justify">{article.desc}</p>
 					</div>
 				))}
 			</div>
 			{/* Bottom articles part */}
-			<div className="grid grid-cols-4 gap-5">
+			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
 				{article.map((article, idx) => (
 					<div
 						key={idx}

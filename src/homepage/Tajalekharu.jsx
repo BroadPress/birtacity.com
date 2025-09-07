@@ -9,9 +9,9 @@ const Tajalekharu = () => {
 		<div className="flex flex-col mt-10 gap-10">
 			<p className="font-bold text-lg">ताजा लेखहरू</p>
 
-			<div className="flex gap-10">
+			<div className="lg:flex flex flex-col gap-10">
 				{/* Left Side (Main Featured Article) */}
-				<div className="flex w-1/2">
+				<div className="lg:flex flex flex-col lg:w-1/2">
 					<div className="flex flex-col gap-2 w-full">
 						<div
 							className="relative rounded-[20px] aspect-video overflow-hidden p-5 bg-cover bg-center"
@@ -35,14 +35,14 @@ const Tajalekharu = () => {
 				</div>
 
 				{/* Right Side (Secondary Articles) */}
-				<div className="flex flex-col gap-8 w-1/2">
-					<div className="flex gap-4">
+				<div className="flex flex-col gap-8 lg:w-1/2">
+					<div className="lg:flex flex flex-col gap-4">
 						<img
 							src={image2}
 							alt="article thumbnail"
-							className="rounded-[20px] w-1/2 aspect-video object-cover"
+							className="rounded-[20px] lg:w-1/2 aspect-video object-cover"
 						/>
-						<div className="flex flex-col gap-4 w-1/2">
+						<div className="flex flex-col gap-4 lg:w-1/2">
 							<div className="flex justify-between items-center">
 								<p className="text-xs">१ घण्टा पहिले अपडेट</p>
 								<p className="px-4 py-1 bg-[#E9E9E9] w-fit text-sm rounded-xl">
@@ -57,13 +57,13 @@ const Tajalekharu = () => {
 						</div>
 					</div>
 
-					<div className="flex gap-4">
+					<div className="lg:flex flex flex-col gap-4">
 						<img
 							src={image3}
 							alt="article thumbnail"
-							className="rounded-[20px] w-1/2 aspect-video object-cover"
+							className="rounded-[20px] lg:w-1/2 aspect-video object-cover"
 						/>
-						<div className="flex flex-col gap-4  w-1/2">
+						<div className="flex flex-col gap-4  lg:w-1/2">
 							<div className="flex justify-between items-center">
 								<p className="text-xs">२ घण्टा पहिले अपडेट</p>
 								<p className="px-4 py-1 bg-[#E9E9E9] w-fit text-sm rounded-xl">

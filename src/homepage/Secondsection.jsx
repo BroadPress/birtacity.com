@@ -52,11 +52,11 @@ const Secondsection = () => {
 	return (
 		<div className="mt-10 flex flex-col gap-10">
 			{/* Top Section */}
-			<div className="flex gap-6">
-				<div className=" flex  flex-col gap-6 border border-t-black border-x-0 border-b-0 py-6 w-[75%]">
+			<div className="lg:flex flex flex-col gap-6">
+				<div className=" flex flex-col gap-6 border border-t-black border-x-0 border-b-0 py-6 w-full lg:w-[75%]">
 					<div className="font-bold text-lg">खेलकुदसम्बन्धी समाचार</div>
-					<div className="flex gap-6">
-						<div className="flex flex-col gap-6  w-[30%]">
+					<div className="lg:flex flex flex-col gap-6">
+						<div className="flex flex-col gap-6  lg:w-[30%] w-full">
 							<div className="flex flex-col gap-4">
 								<div className=" flex flex-col gap-2">
 									<p className="font-bold text-md">
@@ -88,7 +88,7 @@ const Secondsection = () => {
 							</div>
 						</div>
 						{/* Middle Image */}
-						<div className="flex flex-col gap-1 w-[70%]">
+						<div className="flex flex-col gap-1 lg:w-[70%] w-full">
 							<img
 								src={image1}
 								alt="Nepali sports"
@@ -106,7 +106,7 @@ const Secondsection = () => {
 
 				{/* Third Image */}
 				<div
-					className=" w-[30%] bg-cover bg-center relative rounded-[20px] aspect-[16/9] overflow-hidden"
+					className="w-full lg:w-[30%] bg-cover bg-center relative rounded-[20px] aspect-[16/9] overflow-hidden"
 					style={{ backgroundImage: `url(${image2})` }}
 				>
 					<div className="absolute bottom-5 left-5 px-4">
@@ -130,34 +130,34 @@ const Secondsection = () => {
 			</div>
 
 			{/* News Section  */}
-			<div className="flex gap-7">
-				<div className="flex flex-col w-1/2 gap-7">
+			<div className="lg:flex gap-7 flex flex-col">
+				<div className="flex flex-col lg:w-1/2 gap-7">
 					{newsLeft.map((item, index) => (
-						<div key={index} className="flex gap-8">
+						<div key={index} className="lg:flex flex flex-col gap-8">
 							<img
 								src={item.img}
 								alt=""
-								className="w-[148px] h-[72px] rounded-[5px]"
+								className="lg:w-[148px] lg:h-[72px] rounded-[5px] aspect-video"
 							/>
 							<div className="flex flex-col gap-3 justify-around ">
 								<p className="font-bold text-sm">{item.title}</p>
-								<p className="text-md">{item.desc}</p>
+								<p className="text-md text-justify">{item.desc}</p>
 							</div>
 						</div>
 					))}
 				</div>
 
-				<div className="flex flex-col w-1/2 gap-7">
+				<div className="flex flex-col lg:w-1/2 gap-7">
 					{newsRight.map((item, index) => (
-						<div key={index} className="flex gap-8">
+						<div key={index} className="lg:flex flex flex-col gap-8">
 							<img
 								src={item.img}
 								alt=""
-								className="w-[148px] h-[72px] rounded-[5px]"
+								className="lg:w-[148px] lg:h-[72px] rounded-[5px] aspect-video"
 							/>
 							<div className="flex flex-col gap-3 justify-around ">
 								<p className="font-bold text-sm">{item.title}</p>
-								<p className="text-md">{item.desc}</p>
+								<p className="text-md text-justify">{item.desc}</p>
 							</div>
 						</div>
 					))}

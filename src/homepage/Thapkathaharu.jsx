@@ -94,10 +94,10 @@ const Thapkathaharu = () => {
 		<div className="flex flex-col gap-10 mt-10">
 			<div className="flex items-center gap-7">
 				<span className="font-bold text-black">थप कथाहरू</span>
-				<div className="w-[55%] border-t border-black"></div>
+				<div className="lg:w-[55%] border-t border-black"></div>
 			</div>
-			<div className="flex gap-6 items-stretch">
-				<div className="flex gap-6 p-4 w-[65%]">
+			<div className="lg:flex  flex flex-col gap-6 items-stretch">
+				<div className="lg:flex flex flex-col gap-6 lg:p-4 lg:w-[65%]">
 					<div className="flex gap-6 justify-between">
 						<div className="flex flex-col gap-8">{renderItems(leftItems)}</div>
 					</div>
@@ -105,7 +105,7 @@ const Thapkathaharu = () => {
 						<div className="flex flex-col gap-8">{renderItems(rightItems)}</div>
 					</div>
 				</div>
-				<div className="w-[35%] bg-[#FFFFFF] flex flex-col p-4 border gap-8 ">
+				<div className="lg:w-[35%] bg-[#FFFFFF] flex flex-col p-4 border gap-8 ">
 					<div className="flex justify-between items-center">
 						<div className="text-lg font-bold">
 							सबैभन्दा धेरै हेरिएका समाचार

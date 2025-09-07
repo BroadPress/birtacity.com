@@ -8,14 +8,14 @@ const Tajasamachar = () => {
 	return (
 		<div className="mt-10 flex flex-col gap-10 bg-[#FFFFFF]">
 			<div className="font-bold text-lg">ताजा समाचार</div>
-            <div className="flex gap-10">
+            <div className="lg:flex flex flex-col gap-10">
                 {/* Left section */}
-				<div className="flex flex-col gap-6 w-1/2 border border-y-0 border-l-0 pr-10">
+				<div className="flex flex-col gap-6 lg:w-1/2 w-full lg:border border-y-0 border-l-0 lg:pr-10">
 					<div className="flex flex-col gap-1">
-						<img src={image1} alt="" className="aspect-video rounded-[20px]" />
+						<img src={image1} alt="" className="aspect-video rounded-[20px] " />
 						<p className="font-semibold text-[#3C3C3C]">BREAKING NEWS</p>
 						<p className="font-bold text-black">सफल पालिकाका सफल मेयर कार्की</p>
-						<p className="text-md text-[#878787]">
+						<p className="text-md text-[#878787] text-justify">
 							काठमाडौं महानगरपालिकालाई समेत उछिनेर अहिले देशभरीको नगरपालिका मध्य
 							उत्कृष्ट नगरपालिका बन्न पुगेको कागेश्वरी मनोहरा नगरपालिकाको
 							महत्त्व र स्थान आफ्नै छ । संघीय राजधानी काठमाडौं उपत्यकाको
@@ -25,8 +25,8 @@ const Tajasamachar = () => {
 						</p>
 						<p className="text-xs ">सुधीर नेपाल | २०२५ जुलाई १४, सोमबार</p>
 					</div>
-					<div className="flex gap-5 ">
-						<div className="flex flex-col gap-2 w-1/2 justify-center">
+					<div className="lg:flex flex flex-col-reverse gap-5 ">
+						<div className="flex flex-col gap-2 lg:w-1/2 w-full lg:justify-center">
 							<div className="flex flex-col gap-3">
 								<div className="flex gap-1">
 									<img src={pointarr} alt="" className="src" />
@@ -38,7 +38,7 @@ const Tajasamachar = () => {
 								<p className="text-md font-bold">
 									क्रिकेटर द्वय भट्ट र रावललाई आजीवन छात्रवृत्ति
 								</p>
-								<p className="text-md">
+								<p className="text-md text-justify">
 									धनगढीस्थित एसपीए कलेजले हालै मलेसियामा सम्पन्न 'एसीसी मेन्स
 									यू-१६ ईस्ट जोन कप क्रिकेट प्रतियोगिता’
 								</p>
@@ -54,13 +54,14 @@ const Tajasamachar = () => {
 						<img
 							src={image4}
 							alt=""
-							className="w-1/2 aspect-video rounded-[20px]"
+							className="lg:w-1/2 aspect-video rounded-[20px]"
 						/>
 					</div>
                 </div>
                 {/* Right section */}
-				<div className="flex w-1/2 gap-8">
-					<div className="flex w-1/2">
+				<div className="lg:flex flex flex-col  lg:w-1/2 gap-8">
+					{/* First column */}
+					<div className="flex lg:w-1/2  ">
 						<div className="flex flex-col gap-15">
 							<div className="flex flex-col gap-1">
 								<img
@@ -162,7 +163,8 @@ const Tajasamachar = () => {
 							</div>
 						</div>
 					</div>
-					<div className="flex w-1/2">
+					{/* Second column */}
+					<div className="flex lg:w-1/2 w-full">
 						<div className="flex flex-col gap-15">
 							<div className="flex flex-col gap-1">
 								<img

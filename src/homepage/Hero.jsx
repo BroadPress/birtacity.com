@@ -11,12 +11,12 @@ const Hero = () => {
 		<div className="mt-10 flex flex-col gap-8 ">
 			{/* Heading section */}
 			<div className="border  gap-8 border-[#055D59] border-x-0 flex items-center text-[16px] overflow-hidden">
-				<div className="flex items-center  bg-[#D6D6D6] justify-center  w-[10%] ">
+				<div className="flex items-center bg-[#D6D6D6] justify-center w-[10%] ">
 					<img src={thunder} alt="" className="src" />
 					<div className="  text-center font-bold text-md">प्रचलित</div>
 				</div>
 				{/* main hero section */}
-				<div className="text-md ruluko-regular text-center leading-5 font-bold">
+				<div className=" text-xs lg:text-md ruluko-regular text-center lg:leading-5 font-bold py-1">
 					विकासको नयाँ युगमा नेपाली खेलकुद, क्रिकेटर द्वय भट्ट र रावललाई आजीवन
 					छात्रवृत्ति, नेपाली चलचित्रको
 				</div>

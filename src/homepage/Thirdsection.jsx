@@ -7,26 +7,26 @@ const Thirdsection = () => {
 			<div className="text-lg font-bold border border-b-[#00000033] border-x-0 border-t-0 py-5">
 				प्रविधि
 			</div>
-			<div className="flex gap-4">
-				<div className="py-7 flex w-[75%] gap-7">
-					<div className="flex gap-7">
+			<div className="lg:flex flex flex-col gap-4">
+				<div className="py-7 lg:flex flex flex-col lg:w-[75%] gap-7">
+					<div className="lg:flex flex flex-col gap-7">
 						<img
 							src={image1}
 							alt=""
-							className="rounded-[20px] w-1/2 aspect-video"
+							className="rounded-[20px] lg:w-1/2 aspect-video"
 						/>
-						<div className="flex flex-col justify-around w-1/2 gap-2 ">
+						<div className="flex flex-col justify-around lg:w-1/2 gap-2 ">
 							<p className="font-bold text-md">
 								कम्प्युटर भाइरस भनेको के हो र यो किन खतरनाक हुन्छ?{" "}
 							</p>
-							<p className="text-md">
+							<p className="text-md text-justify">
 								नेपालमा इन्टरनेटको पहुँच तीव्र रूपमा बढिरहेको छ, र यससँगै
 								कम्प्युटर भाइरसको जोखिम पनि बढिरहेको छ। त्यसैले, यस समस्याबाट
 								जोगिनको लागि सजग हुनु अत्यावश्यक छ नेपालमा इन्टरनेटको पहुँच
 								तीव्र रूपमा बढिरहेको छ, र यससँगै कम्प्युटर भाइरसको जोखिम पनि
 								बढिरहेको छ। 
 							</p>
-							<p className="text-md">
+							<p className="text-md text-justify">
 								साथै, डिजिटल सुरक्षा सम्बन्धी चेतना अभिवृद्धि गर्नु पनि आवश्यक
 								छ। प्रयोगकर्ताहरूले बलियो पासवर्ड प्रयोग गर्ने, अनजान लिंक वा
 								फाइल नखोल्ने, र नियमित रूपमा एण्टी-भाइरस सफ्टवेयर अपडेट गर्ने
@@ -44,7 +44,7 @@ const Thirdsection = () => {
 						</div>
 					</div>
 				</div>
-				<div className="flex flex-col gap-5 w-[25%] border-y-0 border-r-0 border border-l-[#00000033] px-8 justify-center">
+				<div className="flex flex-col gap-5 lg:w-[25%] border-y-0 border-r-0 lg:border border-l-[#00000033] lg:px-8 justify-center">
 					<div className="text-lg font-bold">सुझावहरू</div>
 					<div className="flex flex-col gap-2">
 						<p className="text-md">किन हुन्छ वेबसाइट ह्याक?</p>
