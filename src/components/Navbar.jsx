@@ -13,7 +13,7 @@ const Navbar = () => {
 	const [search, setSearch] = useState("");
 
 	return (
-		<div className="flex flex-col gap-6">
+		<div className="flex flex-col gap-6 ">
 			{/*Desktop Top bar */}
 			<div className="hidden lg:flex justify-between items-center">
 				<div className="flex gap-3">
