@@ -14,7 +14,7 @@ const Navbar = () => {
 
 	return (
 		<div className="flex flex-col gap-6">
-			{/* Top bar */}
+			{/*Desktop Top bar */}
 			<div className="hidden lg:flex justify-between items-center">
 				<div className="flex gap-3">
 					<img src={facebook} alt="facebook" />
