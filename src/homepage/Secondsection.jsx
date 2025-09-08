@@ -52,10 +52,10 @@ const Secondsection = () => {
 	return (
 		<div className="mt-10 flex flex-col gap-10">
 			{/* Top Section */}
-			<div className="lg:flex gap-6">
+			<div className="lg:flex-row flex flex-col gap-6">
 				<div className=" flex flex-col  gap-6 border border-t-black border-x-0 border-b-0 py-6 w-full lg:w-[75%]">
 					<div className="font-bold text-lg">खेलकुदसम्बन्धी समाचार</div>
-					<div className="lg:flex gap-6">
+					<div className="lg:flex-row flex flex-col gap-6">
 						<div className="flex flex-col gap-6 lg:w-[30%] ">
 							<div className="flex flex-col gap-4">
 								<div className=" flex flex-col gap-2">
@@ -133,7 +133,7 @@ const Secondsection = () => {
 			<div className="lg:flex gap-7   ">
 				<div className="flex flex-col lg:w-1/2 gap-7">
 					{newsLeft.map((item, index) => (
-						<div key={index} className="lg:flex gap-8">
+						<div key={index} className="lg:flex-row flex flex-col gap-8">
 							<img
 								src={item.img}
 								alt=""
@@ -149,7 +149,7 @@ const Secondsection = () => {
 
 				<div className="flex flex-col lg:w-1/2 gap-7">
 					{newsRight.map((item, index) => (
-						<div key={index} className="lg:flex gap-8">
+						<div key={index} className="lg:flex-row flex flex-col gap-8">
 							<img
 								src={item.img}
 								alt=""

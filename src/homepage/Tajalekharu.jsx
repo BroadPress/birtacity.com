@@ -9,7 +9,7 @@ const Tajalekharu = () => {
 		<div className="flex flex-col mt-10 gap-10">
 			<p className="font-bold text-lg">ताजा लेखहरू</p>
 
-			<div className="lg:flex flex flex-col gap-10">
+			<div className="lg:flex-row flex flex-col gap-10">
 				{/* Left Side (Main Featured Article) */}
 				<div className="lg:flex flex flex-col lg:w-1/2">
 					<div className="flex flex-col gap-2 w-full">
@@ -36,7 +36,7 @@ const Tajalekharu = () => {
 
 				{/* Right Side (Secondary Articles) */}
 				<div className="flex flex-col gap-8 lg:w-1/2">
-					<div className="lg:flex flex flex-col gap-4">
+					<div className="lg:flex-row flex flex-col gap-4">
 						<img
 							src={image2}
 							alt="article thumbnail"
@@ -57,7 +57,7 @@ const Tajalekharu = () => {
 						</div>
 					</div>
 
-					<div className="lg:flex flex flex-col gap-4">
+					<div className="lg:flex-row flex flex-col gap-4">
 						<img
 							src={image3}
 							alt="article thumbnail"

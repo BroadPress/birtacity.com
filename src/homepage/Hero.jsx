@@ -10,13 +10,15 @@ const Hero = () => {
   return (
 		<div className="mt-10 flex flex-col gap-8 ">
 			{/* Heading section */}
-			<div className="border  gap-8 border-[#055D59] border-x-0 flex items-center text-[16px] overflow-hidden">
-				<div className="flex items-center bg-[#D6D6D6] justify-center w-[10%] ">
-					<img src={thunder} alt="" className="src" />
-					<div className="  text-center font-bold text-md">प्रचलित</div>
+			<div className="border gap-8 border-[#055D59] border-x-0 flex items-center text-[16px] overflow-hidden">
+				<div className="flex items-center bg-[#D6D6D6] justify-center w-[20%] md:w-[15%] px-5 py-2 lg:w-[10%]">
+					<img src={thunder} alt="" className="h-4 w-5" />
+					<div className="text-center font-bold text-xs lg:text-md">
+						प्रचलित
+					</div>
 				</div>
 				{/* main hero section */}
-				<div className=" text-xs lg:text-md ruluko-regular text-center lg:leading-5 font-bold py-1">
+				<div className=" text-xs lg:text-md ruluko-regular text-center lg:leading-5 font-bold line-clamp-1">
 					विकासको नयाँ युगमा नेपाली खेलकुद, क्रिकेटर द्वय भट्ट र रावललाई आजीवन
 					छात्रवृत्ति, नेपाली चलचित्रको
 				</div>
@@ -78,13 +80,21 @@ const Hero = () => {
 						</p>
 					</div>
 					<div className="flex gap-3 items-center justify-start">
-						<img src={image5} alt="" className="w-[140px] h-[107px] rounded-md" />
+						<img
+							src={image5}
+							alt=""
+							className="w-[140px] h-[107px] rounded-md"
+						/>
 						<p className="text-md font-semibold">
 							गर्मी मौसममा पिउन मिल्ने उत्कृष्ट पेय पदार्थ
 						</p>
 					</div>
 					<div className="flex gap-3 items-center justify-start">
-						<img src={image6} alt="" className="w-[140px] h-[107px] rounded-md" />
+						<img
+							src={image6}
+							alt=""
+							className="w-[140px] h-[107px] rounded-md"
+						/>
 						<p className="text-md font-semibold">
 							गर्मी मौसममा पिउन मिल्ने उत्कृष्ट पेय पदार्थ
 						</p>

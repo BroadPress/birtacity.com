@@ -12,7 +12,7 @@ import apple from '../assets/icons/apple.svg'
 const Footer = () => {
 	return (
 		<div className="mt-10 bg-[#EBEBEB] py-6 px-7 md:px-0 flex flex-col gap-10 text-center">
-			<div className="lg:flex flex flex-col lg:justify-around gap-10">
+			<div className="lg:flex-row flex flex-col lg:justify-around gap-10">
 				{/* Company Information section */}
 				<div className="flex flex-col gap-5 lg:w-1/4 items-start">
 					<p className="text-md font-bold text-start">
@@ -74,7 +74,7 @@ const Footer = () => {
 				{/* Download section */}
 				<div className="flex flex-col gap-5">
 					<p className="text-md font-bold ">Download the App</p>
-					<div className="lg:flex lg:flex-col flex justify-between">
+					<div className="lg:flex lg:flex-col flex justify-center gap-5">
 						<img src={playstore} alt="" className="src" />
 						<img src={apple} alt="" className="src" />
 					</div>

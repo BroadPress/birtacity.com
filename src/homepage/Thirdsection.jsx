@@ -7,13 +7,13 @@ const Thirdsection = () => {
 			<div className="text-lg font-bold border border-b-[#00000033] border-x-0 border-t-0 py-5">
 				प्रविधि
 			</div>
-			<div className="lg:flex gap-4">
-				<div className="py-7 lg:flex  lg:w-[75%] gap-7">
-					<div className="lg:flex gap-7">
+			<div className="lg:flex-row flex flex-col gap-4">
+				<div className="py-7 lg:flex-row flex flex-col lg:w-[75%] gap-7">
+					<div className="lg:flex-row flex flex-col gap-7">
 						<img
 							src={image1}
 							alt=""
-							className="rounded-[20px] lg:w-1/2 aspect-video"
+							className="rounded-[20px] lg:w-1/2 aspect-video w-full"
 						/>
 						<div className="flex flex-col justify-around lg:w-1/2 gap-2 ">
 							<p className="font-bold text-md">

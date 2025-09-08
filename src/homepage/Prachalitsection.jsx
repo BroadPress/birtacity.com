@@ -8,11 +8,11 @@ const Prachalitsection = () => {
 	return (
 		<div className="mt-10 flex flex-col gap-10 ">
 			<p className="text-lg font-bold">प्रचलित</p>
-			<div className="lg:flex gap-8 lg:h-[370px]">
+			<div className="lg:flex-row flex flex-col-reverse gap-8 lg:h-[370px]">
 				{/* LEFT SIDE */}
 				<div className="flex flex-col lg:w-1/2 gap-6 h-full">
 					{[image1, image2].map((img, index) => (
-						<div key={index} className="lg:flex gap-4 lg:h-[50%]">
+						<div key={index} className="lg:flex-row flex flex-col gap-4 lg:h-[50%]">
 							<img
 								src={img}
 								alt=""

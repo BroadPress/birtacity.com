@@ -8,9 +8,9 @@ const Tajasamachar = () => {
 	return (
 		<div className="mt-10 flex flex-col gap-10 bg-[#FFFFFF]">
 			<div className="font-bold text-lg">ताजा समाचार</div>
-            <div className="lg:flex flex flex-col gap-10">
+            <div className="lg:flex-row flex flex-col gap-10">
                 {/* Left section */}
-				<div className="flex flex-col gap-6 lg:w-1/2 w-full lg:border border-y-0 border-l-0 lg:pr-10">
+				<div className="flex flex-col gap-6 lg:w-1/2 w-full lg:border lg:border-y-0 lg:border-l-0 lg:pr-10">
 					<div className="flex flex-col gap-1">
 						<img src={image1} alt="" className="aspect-video rounded-[20px] " />
 						<p className="font-semibold text-[#3C3C3C]">BREAKING NEWS</p>
@@ -25,7 +25,7 @@ const Tajasamachar = () => {
 						</p>
 						<p className="text-xs ">सुधीर नेपाल | २०२५ जुलाई १४, सोमबार</p>
 					</div>
-					<div className="lg:flex flex flex-col-reverse gap-5 ">
+					<div className="lg:flex-row flex flex-col-reverse gap-5 ">
 						<div className="flex flex-col gap-2 lg:w-1/2 w-full lg:justify-center">
 							<div className="flex flex-col gap-3">
 								<div className="flex gap-1">
@@ -59,7 +59,7 @@ const Tajasamachar = () => {
 					</div>
                 </div>
                 {/* Right section */}
-				<div className="lg:flex flex flex-col  lg:w-1/2 gap-8">
+				<div className="lg:flex-row flex flex-col  lg:w-1/2 gap-8">
 					{/* First column */}
 					<div className="flex lg:w-1/2  ">
 						<div className="flex flex-col gap-15">

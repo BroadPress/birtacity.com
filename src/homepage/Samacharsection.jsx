@@ -14,13 +14,13 @@ const Samacharsection = () => {
 		<div className="mt-10 flex flex-col gap-10">
 			{/* First section */}
 			<p className="text-lg font-bold">समाचार</p>
-			<div className="lg:flex flex  gap-5 ">
+			<div className="lg:flex-row flex flex-col  gap-5 ">
 				<img
 					src={image1}
 					alt=""
-					className="aspect-video rounded-[15px] lg:w-1/2"
+					className="aspect-video rounded-[15px] lg:w-1/2 w-full"
 				/>
-				<div className="flex flex-col gap-3 justify-around lg:w-1/2">
+				<div className="flex flex-col gap-3  lg:w-1/2">
 					<div className="flex gap-3">
 						<img src={profile1} alt="" className="h-5 w-5 rounded-full" />
 						<p>Biratinfo</p>
@@ -69,18 +69,18 @@ const Samacharsection = () => {
 					</div>
 				</div>
 
-				<div className="lg:flex gap-7 lg:h-[470px]">
+				<div className="flex flex-col lg:flex-row gap-7 lg:h-[470px]">
 					{/* First Image */}
-					<div className="lg:w-[45%]">
+					<div className="w-full lg:w-[45%]">
 						<div
-							className="bg-cover bg-center relative rounded-[20px] lg:h-full aspect-video overflow-hidden flex-[2]"
+							className="bg-cover bg-center relative rounded-[20px] w-full lg:h-full aspect-video overflow-hidden flex-[2]"
 							style={{ backgroundImage: `url(${image2})` }}
 						>
 							<div className="absolute bottom-5 left-5 px-4">
 								<p className="text-md text-white mb-4 font-bold">
 									नेपालीहरूमा स्टार्टअपको उत्साह
 								</p>
-								<div className="flex gap-5 text-white ">
+								<div className="flex gap-5 text-white">
 									<div className="flex gap-3">
 										<img
 											src={profile}
@@ -96,16 +96,16 @@ const Samacharsection = () => {
 					</div>
 
 					{/* Second Image */}
-					<div className=" w-full lg:w-[25%]">
+					<div className="w-full lg:w-[25%]">
 						<div
-							className="bg-cover bg-center relative rounded-[20px] lg:h-full aspect-video overflow-hidden"
+							className="bg-cover bg-center relative rounded-[20px] w-full lg:h-full aspect-video overflow-hidden"
 							style={{ backgroundImage: `url(${image3})` }}
 						>
 							<div className="absolute bottom-5 left-5 px-4">
 								<p className="text-md text-white mb-4 font-bold">
 									नेपालीहरूमा स्टार्टअपको उत्साह
 								</p>
-								<div className="flex gap-5 text-white ">
+								<div className="flex gap-5 text-white">
 									<div className="flex gap-3">
 										<img
 											src={profile}
@@ -119,17 +119,18 @@ const Samacharsection = () => {
 							</div>
 						</div>
 					</div>
-					{/* Third images */}
-					<div className="flex flex-col gap-4 lg:w-[30%] lg:h-auto">
+
+					{/* Third Images */}
+					<div className="flex flex-col gap-4 w-full lg:w-[30%] lg:h-auto">
 						<div
-							className="bg-cover bg-center relative rounded-[20px] lg:h-1/2 aspect-video overflow-hidden"
+							className="bg-cover bg-center relative rounded-[20px] w-full aspect-video lg:h-1/2 overflow-hidden"
 							style={{ backgroundImage: `url(${image4})` }}
 						>
 							<div className="absolute bottom-5 left-5 px-4">
 								<p className="text-md text-white mb-4 font-bold">
 									नेपालीहरूमा स्टार्टअपको उत्साह
 								</p>
-								<div className="flex gap-5 text-white ">
+								<div className="flex gap-5 text-white">
 									<div className="flex gap-3">
 										<img
 											src={profile}
@@ -142,15 +143,16 @@ const Samacharsection = () => {
 								</div>
 							</div>
 						</div>
+
 						<div
-							className="bg-cover bg-center relative rounded-[20px] h-1/2 overflow-hidden"
+							className="bg-cover bg-center relative rounded-[20px] w-full aspect-video lg:h-1/2 overflow-hidden"
 							style={{ backgroundImage: `url(${image5})` }}
 						>
 							<div className="absolute bottom-5 left-5 px-4 items-center justify-center">
 								<p className="text-md text-white mb-4 font-bold">
 									किन बन्दैछ नेपाल अपराधीहरूको सुरक्षित ठाउँ
 								</p>
-								<div className="flex gap-5 text-white ">
+								<div className="flex gap-5 text-white">
 									<div className="flex gap-3">
 										<img
 											src={profile}
