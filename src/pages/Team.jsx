@@ -33,7 +33,7 @@ const Team = () => {
 			
 			<div className="flex flex-col gap-3 text-center">
 				<p className="text-lg font-bold">Meet Our Team</p>
-				<p className="text-md w-1/4 mx-auto">
+				<p className="text-md lg:w-1/4 mx-auto">
 					Our team consists of experienced architects who develop projects from
 					initial sketches to final implementation.
 				</p>

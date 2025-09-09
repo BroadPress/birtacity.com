@@ -43,11 +43,11 @@ const Contact = () => {
 					</p>
 				</div>
 
-				<div className="flex flex-col md:flex-row justify-between gap-8 md:gap-8 w-full md:w-[70%] mx-auto">
-					<div className="flex flex-col gap-4 md:gap-8 w-full md:w-1/3">
+				<div className="flex flex-col md:flex-row justify-center lg:justify-between gap-8 md:gap-8 w-full md:w-[70%] mx-auto">
+					<div className="flex flex-col justify-center lg:justify-start lg:items-start items-center gap-4 md:gap-8 w-full md:w-1/3">
 						<img src={image1} alt="Support" className="h-8 w-8" />
 						<p className="text-lg font-semibold">समर्थन प्राप्त गर्नुहोस्</p>
-						<p className="text-md">
+						<p className="text-md text-center md:text-start">
 							यदि तपाईंलाई BIRTACITY प्रयोग गर्दा समस्या आइरहेको छ भने, Help &
 							Learning का लेखहरू हेर्नुहोस् वा हाम्रो चर्चा फोरमहरूमा अन्य
 							Evernote प्रयोगकर्ताबाट सहयोग लिनुहोस्।
@@ -57,10 +57,10 @@ const Contact = () => {
 						</div>
 					</div>
 
-					<div className="flex flex-col gap-4 md:gap-8 w-full md:w-1/3">
+					<div className="flex flex-col justify-center lg:justify-start lg:items-start items-center gap-4 md:gap-8 w-full md:w-1/3">
 						<img src={image2} alt="Support 2" className="h-8 w-8" />
 						<p className="text-lg font-semibold">समर्थन प्राप्त गर्नुहोस्</p>
-						<p className="text-md">
+						<p className="text-md text-center md:text-start">
 							यदि तपाईंलाई BIRTACITY प्रयोग गर्दा समस्या आइरहेको छ भने, Help &
 							Learning का लेखहरू हेर्नुहोस् वा हाम्रो चर्चा फोरमहरूमा अन्य
 							Evernote प्रयोगकर्ताबाट सहयोग लिनुहोस्।

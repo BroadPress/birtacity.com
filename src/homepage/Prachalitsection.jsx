@@ -16,7 +16,7 @@ const Prachalitsection = () => {
 							<img
 								src={img}
 								alt=""
-								className="rounded-[20px] lg:w-1/2 lg:h-full object-cove w-full aspect-video"
+								className="rounded-[20px] lg:w-1/2 lg:h-full object-cover w-full aspect-video"
 							/>
 							<div className="flex flex-col gap-3 justify-around lg:w-1/2">
 								<p className="font-bold">

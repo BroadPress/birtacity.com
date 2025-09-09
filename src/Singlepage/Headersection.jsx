@@ -53,8 +53,8 @@ const Headersection = () => {
 				</p>
 			</div>
 			{/* Advertisement section */}
-			<div className="flex gap-18">
-				<div className="flex w-[65%]">
+			<div className="flex flex-col-reverse lg:flex-row gap-18">
+				<div className="flex lg:w-[65%]">
 					<div className="flex flex-col text-md justify-around text-justify ">
 						<p>
 							विभिन्न माध्यमबाट भाइरस तपाईँको कम्प्युटरमा प्रवेश गर्न सक्छ।
@@ -97,10 +97,10 @@ const Headersection = () => {
 						</p>
 					</div>
 				</div>
-				<img src={image2} alt="" className="w-[35%]" />
+				<img src={image2} alt="" className="lg:w-[35%]" />
 			</div>
 			{/* Description section */}
-			<div className="flex flex-col gap-2 text-center text-md h-[100px] ">
+			<div className="flex flex-col gap-2 text-center text-md  ">
 				<p>
 					कम्प्युटर भाइरसबाट जोगिनको लागि पहिलो र सबैभन्दा प्रभावकारी उपाय भनेको
 					एक भरपर्दो एन्टिभाइरस सफ्टवेयर इन्स्टल गर्नु हो। यस्ता सफ्टवेयरहरूले
@@ -122,14 +122,14 @@ const Headersection = () => {
 			</div>
 			{/* Quotaion section */}
 			<div className="flex flex-col gap-4">
-				<img src={upper} alt="" className="w-[45px]" />
-				<p className="text-bold text-[39px] text-center">
+				<img src={upper} alt="" className="w-10 lg:w-[45px] h-20" />
+				<p className="text-bold text-lg lg:text-[39px] text-center">
 					 थप रूपमा, समय समयमा तपाईँको प्रणालीको फुल स्क्यान गर्नु, सफ्टवेयर तथा
 					अपरेटिङ सिस्टमलाई सधैँ अपडेट राख्नु, र क्र्याक वा पायरेटेड प्रोग्राम
 					नचलाउनु निकै महत्त्वपूर्ण उपाय हुन्।
 				</p>
 				<div className="flex justify-end">
-					<img src={lower} alt="" className="items-end w-[45px] h-[100px]" />
+					<img src={lower} alt="" className="items-end w-10 lg:w-[45px] lg:h-[100px]" />
 				</div>
 				<p className="text-md text-center">
 					यदि तपाईंको कम्प्युटरमा भाइरस लागेको शंका लागिरहेको छ भने, पहिले आफ्नो

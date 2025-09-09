@@ -6,9 +6,9 @@ import image4 from "../assets/Categories/Headers/image4.png";
 import image5 from "../assets/Categories/Headers/image5.png";
 const Headersection = () => {
 	return (
-		<div className=" mt-10 flex gap-8">
-			<div className="flex flex-col gap-3 w-1/2">
-				<div className="flex flex-col">
+		<div className=" mt-10 flex flex-col lg:flex-row gap-8">
+			<div className="flex flex-col gap-3 lg:w-1/2">
+				<div className="flex flex-col gap-2">
 					<img src={image1} alt="" className="aspect-video rounded-[15px]" />
 					<div className="text-xs text-[#4B4B4B]">
 						म्याडी म्यागार्भे/द वाशिङ्टन पोस्टका लागि
@@ -25,8 +25,8 @@ const Headersection = () => {
 				</p>
 				<p className="text-xs text-[#4B4B4B]">१ घण्टा अघि</p>
 			</div>
-			<div className="flex w-1/2 gap-8">
-				<div className="flex flex-col gap-4 w-1/2">
+			<div className="lg:flex-row flex flex-col lg:w-1/2 gap-8">
+				<div className="flex flex-col gap-4 lg:w-1/2">
 					<div className="flex flex-col gap-2">
 						<img src={image2} alt="" className="aspect-video rounded-[15px]" />
 						<p className="text-md font-bold line-clamp-2">
@@ -44,7 +44,7 @@ const Headersection = () => {
 						<p className="text-xs text-[#4B4B4B]">१८ घण्टा अघि</p>
 					</div>
 				</div>
-				<div className="flex flex-col gap-4 w-1/2">
+				<div className="flex flex-col gap-4 lg:w-1/2">
 					<div className="flex flex-col gap-2">
 						<img src={image3} alt="" className="aspect-video rounded-[15px]" />
 						<p className="text-md font-bold line-clamp-2">

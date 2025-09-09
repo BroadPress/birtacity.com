@@ -40,7 +40,7 @@ const Author = () => {
 								विकासक्रममाथि गहिरो चासो राख्नुहुन्छ |
 							</p>
 						</div>
-						<div className="flex gap-6">
+						<div className="flex flex-col lg:flex-row gap-6">
 							<div className=" flex flex-col gap-1 rounded-[15px]  bg-white p-4 text-black flex-1 ">
 								<p className="font-bold text-md">जम्मा लेखहरू</p>
 								<p className="font-bold text-lg">८</p>
@@ -76,7 +76,7 @@ const Author = () => {
 				<div className="text-lg font-bold">
 					<p className="underline underline-offset-8">मुख्य विधाहरू</p>
 				</div>
-				<div className="grid grid-cols-4 gap-10 lg:justify-around bg-primary p-5 text-md ">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:justify-around bg-primary p-5 text-md ">
 					<div className="flex flex-col gap-5 bg-[#B1E8B8] p-5 rounded-[15px]">
 						<div className="flex flex-col gap-3 font-semibold ">
 							<p>पर्यटन </p>
@@ -146,17 +146,20 @@ const Author = () => {
 			{/* मुख्य लेखहरू section */}
 			<div className="flex flex-col gap-8">
 				<div className="text-lg font-bold">मुख्य लेखहरू</div>
-				<div className="flex gap-6 h-[370px]">
+				<div className="flex flex-col-reverse lg:flex-row gap-6 lg:h-[370px]">
 					{/* LEFT SIDE */}
-					<div className="flex flex-col w-1/2 gap-6 h-full">
+					<div className="flex flex-col lg:w-1/2 gap-6 h-full">
 						{[image1, image2].map((img, index) => (
-							<div key={index} className="flex gap-4 h-[50%]">
+							<div
+								key={index}
+								className="flex flex-col lg:flex-row gap-4 h-[50%]"
+							>
 								<img
 									src={img}
 									alt=""
-									className="rounded-[20px] w-1/2 h-full object-cover"
+									className="rounded-[20px] aspect-video lg:w-1/2 h-full object-cover"
 								/>
-								<div className="flex flex-col gap-3 justify-around w-1/2">
+								<div className="flex flex-col gap-3 justify-around lg:w-1/2 text-justify">
 									<p className="font-bold line-clamp-1">
 										युवाहरूलाई इन्टरनेटमार्फत स्वरोजगारमा जोड्न सकिनेछ...
 										स्वरोजगारमा जोड्न युवाहरू
@@ -182,9 +185,9 @@ const Author = () => {
 					</div>
 
 					{/* RIGHT SIDE */}
-					<div className="w-1/2 h-full">
+					<div className="lg:w-1/2 lg:h-full">
 						<div
-							className="bg-cover bg-center relative rounded-[20px] h-full overflow-hidden"
+							className="bg-cover bg-center relative rounded-[20px] lg:h-full aspect-video overflow-hidden"
 							style={{ backgroundImage: `url(${image3})` }}
 						>
 							<div className="absolute bottom-5 left-5 px-4">
@@ -202,15 +205,15 @@ const Author = () => {
 				</div>
 			</div>
 			{/* midddle section */}
-			<div className="flex gap-5 mt-8 ">
-				<img src={image4} alt="" className="aspect-video rounded-md w-1/2" />
-				<div className="flex flex-col gap-3 justify-around w-1/2">
+			<div className="flex flex-col lg:flex-row gap-5 mt-8 ">
+				<img src={image4} alt="" className="aspect-video rounded-md lg:w-1/2" />
+				<div className="flex flex-col gap-3 justify-around lg:w-1/2">
 					<div className="flex gap-3">
 						<img src={profile1} alt="" className="h-5 w-5 rounded-full" />
 						<p>Biratinfo</p>
 					</div>
 					<p className="text-xs font-bold">४ घण्टा अघि अपडेट गरिएको</p>
-					<div className="flex flex-col gap-2">
+					<div className="flex flex-col gap-2 text-justify">
 						<p className="text-md">
 							सर्ट्स प्रयोगकर्ताहरूका लागि अर्को रोचक समाचार नयाँ एआई प्रभावहरू
 							हुन्। यी प्रभावहरूको प्रयोग गरेर, तपाईं आफ्नो डूडलहरू (हातले
@@ -246,15 +249,15 @@ const Author = () => {
 			{/* sujhab section */}
 			<div className=" flex flex-col gap-9">
 				<div className="text-lg font-bold border border-b-[#00000033] border-x-0 border-t-0 py-5"></div>
-				<div className="flex gap-4">
-					<div className="py-7 flex w-[75%] gap-7">
-						<div className="flex gap-7">
+				<div className="flex flex-col lg:flex-row gap-4">
+					<div className="py-7 flex flex--col lg:flex-row lg:w-[75%] gap-7">
+						<div className="flex flex-col lg:flex-row gap-7">
 							<img
 								src={image5}
 								alt=""
-								className="rounded-[20px] w-1/2 aspect-video"
+								className="rounded-[20px] lg:w-1/2 aspect-video"
 							/>
-							<div className="flex flex-col justify-around w-1/2 gap-2 ">
+							<div className="flex flex-col justify-around lg:w-1/2 gap-2 text-justify ">
 								<p className="font-bold text-md">
 									कम्प्युटर भाइरस भनेको के हो र यो किन खतरनाक हुन्छ?{" "}
 								</p>
@@ -283,7 +286,7 @@ const Author = () => {
 							</div>
 						</div>
 					</div>
-					<div className="flex flex-col gap-5 w-[25%] border-y-0 border-r-0 border border-l-[#00000033] px-8 justify-center">
+					<div className="flex flex-col gap-5 lg:w-[25%] border-y-0 border-r-0 border border-l-[#00000033] px-8 justify-center">
 						<div className="text-lg font-bold">सुझावहरू</div>
 						<div className="flex flex-col gap-2">
 							<p className="text-md">किन हुन्छ वेबसाइट ह्याक?</p>
@@ -303,7 +306,7 @@ const Author = () => {
 			{/* News grid section */}
 			<div className="flex flex-col gap-12">
 				{/* First grid */}
-				<div className="grid grid-cols-4 gap-7">
+				<div className="grid grid-cols-1 mdd:grid-cols-2 lg:grid-cols-4 gap-7">
 					{first.map((article, index) => (
 						<div key={index} className="flex flex-col gap-3">
 							<p className="text-sm">{article.date}</p>
@@ -319,7 +322,7 @@ const Author = () => {
 					))}
 				</div>
 				{/* Second grid section */}
-				<div className="grid grid-cols-4 gap-7">
+				<div className="grid grid-cols-1 mdd:grid-cols-2 lg:grid-cols-4 gap-7">
 					{second.map((article, index) => (
 						<div key={index} className="flex flex-col gap-3">
 							<p className="text-sm">{article.date}</p>
@@ -372,8 +375,8 @@ const Author = () => {
 			{/* last section */}
 			<div className="flex flex-col gap-10 mt-10">
 				<p className="text-lg font-bold">प्रविधि</p>
-				<div className="flex gap-8">
-					<div className="flex w-1/2 flex-col gap-3">
+				<div className="flex flex-col lg:flex-row gap-8">
+					<div className="flex lg:w-1/2 flex-col gap-3">
 						<img src={image18} alt="" className="aspect-video rounded-[15px]" />
 						<p className="text-md font-bold">
 							द न्यू योर्करको राजनीतिक मञ्च: पोडकास्ट र स्थानीय सत्ता खेल
@@ -387,17 +390,17 @@ const Author = () => {
 							लेखक: जिन-हो किम • पढ्न समय: २ मिनेट
 						</p>
 					</div>
-					<div className="flex flex-col gap-10 w-1/2">
+					<div className="flex flex-col gap-10 lg:w-1/2">
 						{last.map((item, index) => (
-							<div key={index} className="flex justify-between">
-								<div className="flex flex-col gap-2 text-md w-[65%]">
+							<div key={index} className="flex flex-col-reverse lg:flex-row gap-2 lg:justify-between">
+								<div className="flex flex-col gap-2 text-md lg:w-[65%]">
 									<p className="font-bold">{item.title}</p>
-									<p>{item.desc}</p>
+									<p className="text-justify">{item.desc}</p>
 								</div>
 								<img
 									src={item.img}
 									alt={item.title}
-									className="w-[232px] h-[133px] rounded-[15px] "
+									className="lg:w-[232px] lg:h-[133px] aspect-video rounded-[15px] "
 								/>
 							</div>
 						))}

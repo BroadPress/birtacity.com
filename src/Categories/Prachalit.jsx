@@ -52,7 +52,7 @@ const Prachalit = () => {
 					<img src={rightarr} alt="" className="h-3 items-center" />
 				</div>
 			</div>
-			<div className="grid grid-cols-4 gap-5">
+			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
 				{article.map((article, index) => (
 					<div key={index} className="flex flex-col gap-2">
 						<p className="text-sm">{article.date}</p>
@@ -66,8 +66,8 @@ const Prachalit = () => {
 						<p className="text-sm font-bold">{article.author}</p>
 					</div>
 				))}
-            </div>
-            {/* Bottom section */}
+			</div>
+			{/* Bottom section */}
 			<div className="bg-black w-fit text-white px-5 py-2 text-sm text-center mx-auto">
 				थप लोड गर्नुहोस्
 			</div>
@@ -75,42 +75,45 @@ const Prachalit = () => {
 				<div className="border-b-2 border-gray-400 py-4 mb-8">
 					<span className="text-lg font-bold">यसलाई पनि पढ्नुहोस्</span>
 				</div>
-				<div className="grid  grid-cols-1 md:grid-cols-2 gap-10">
-					<div className="flex flex-col gap-6">
-						<div className="text-md font-bold">प्रविधिमा नयाँतम समाचार</div>
-						<div className="h-[307px] bg-gray-100 flex flex-col items-start justify-around text-md p-3 font-semibold">
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 px-4 md:px-0">
+					{/* Left Column  */}
+					<div className="flex flex-col gap-4">
+						<div className="text-md md:text-lg font-bold">
+							प्रविधिमा नयाँतम समाचार
+						</div>
+						<div className="bg-gray-100 flex flex-col justify-around gap-3 p-4 rounded-md min-h-[200px] md:h-[307px] text-sm md:text-md font-semibold">
 							<p>पासवर्ड कसरी सुरक्षित राख्ने?</p>
-							<p>कम्प्युटर भाइरस के हो र यो किन खतरनाक हुन्छ? </p>
+							<p>कम्प्युटर भाइरस के हो र यो किन खतरनाक हुन्छ?</p>
 							<p>इन्टरनेट को विकास अनि बिस्तार</p>
 						</div>
 					</div>
+
+					{/* Right Column  */}
 					<div
-						className="flex flex-col rounded-[15px] h-[360px] gap-4 bg-gray-100 p-6 justify-between"
+						className="flex flex-col rounded-[15px] aspect-video gap-4 bg-gray-100 p-4 md:p-6 justify-end bg-cover bg-center text-white"
 						style={{
 							backgroundImage: `url(${image5})`,
-
-							backgroundSize: "100% 100%",
+							backgroundRepeat: "no-repeat",
 						}}
 					>
-						<div></div>
-
-						<div className="flex flex-col gap-3 justify-items-end text-white">
+						<div className="flex flex-col gap-2 md:gap-3">
 							<div className="flex gap-2 items-center">
-								<div className="bg-gray-200 rounded-full">
+								<div className="bg-gray-200 rounded-full p-[2px]">
 									<img src={profile} alt="" className="h-5 w-5 rounded-full" />
 								</div>
 								<p className="font-semibold text-sm">Birat Info</p>
 							</div>
-							<p className="text-md font-bold">
+
+							<p className="text-md md:text-lg font-bold leading-snug">
 								सम्बन्ध: शिक्षा र संस्कृतिमा सहकार्य
 							</p>
-							<div className="flex gap-4 items-center text-sm ">
-								<div className="flex gap-2 items-center text-sm">
+
+							<div className="flex flex-wrap gap-2 md:gap-4 items-center text-xs md:text-sm">
+								<div className="flex gap-2 items-center">
 									<img
 										src={time}
-										
 										alt=""
-										className="invert brightness-0"
+										className="h-4 w-4 invert brightness-0"
 									/>
 									<p>३ मिनेटमा पढ्नुहोस्</p>
 								</div>

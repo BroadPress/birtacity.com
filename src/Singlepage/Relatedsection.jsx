@@ -42,15 +42,15 @@ const Relatedsection = () => {
 				<div className="text-lg font-bold border border-b-[#00000033] border-x-0 border-t-0 py-5">
 					Related News
 				</div>
-				<div className="flex gap-4">
-					<div className="py-7 flex w-[80%] gap-7">
-						<div className="flex gap-7">
+				<div className="flex flex-col lg:flex-row gap-4">
+					<div className="py-7 flex flex-col lg:flex-row lg:w-[80%] gap-7">
+						<div className="flex flex-col lg:flex-row gap-7">
 							<img
 								src={image3}
 								alt=""
-								className="rounded-[20px] w-1/2 aspect-video"
+								className="rounded-[20px] lg:w-1/2 aspect-video"
 							/>
-							<div className="flex flex-col justify-around w-1/2 gap-2 ">
+							<div className="flex flex-col justify-around lg:w-1/2 gap-2 text-justify">
 								<p className="font-bold text-md">
 									कम्प्युटर भाइरस भनेको के हो र यो किन खतरनाक हुन्छ?{" "}
 								</p>
@@ -79,7 +79,7 @@ const Relatedsection = () => {
 							</div>
 						</div>
 					</div>
-					<div className="flex flex-col gap-5 w-[25%] border-y-0 border-r-0 border border-l-[#00000033] px-8 justify-center">
+					<div className="flex flex-col gap-5 lg:w-[25%] border-y-0 border-r-0 border border-l-[#00000033] px-8 justify-center">
 						<div className="text-lg font-bold">सुझावहरू</div>
 						<div className="flex flex-col gap-2">
 							<p className="text-md">किन हुन्छ वेबसाइट ह्याक?</p>
@@ -95,7 +95,7 @@ const Relatedsection = () => {
 						</div>
 					</div>
 				</div>
-				<div className="flex flex-col gap-2 text-md text-center">
+				<div className="flex flex-col gap-2 text-md text-justify">
 					<p className="">
 						आजको युगमा वेबसाइट भनेको केवल इन्टरनेटमा देखिने एउटा पृष्ठ मात्र
 						होइन; यो संस्था, व्यवसाय, वा व्यक्तिगत ब्राण्डको डिजिटल परिचय हो।
@@ -115,14 +115,14 @@ const Relatedsection = () => {
 				</div>
 			</div>
 			{/* Middle section */}
-			<div className=" border border-[#E5E5E5] p-14">
-				<div className="flex gap-8">
+			<div className=" border border-[#E5E5E5] lg:p-14">
+				<div className="flex flex-col lg:flex-row gap-8">
 					<img
 						src={image4}
 						alt=""
-						className="w-1/2 rounded-[15px] aspect-video"
+						className="lg:w-1/2 rounded-[15px] aspect-video"
 					/>
-					<div className="w-1/2 flex flex-col gap-4 text-md justify-evenly">
+					<div className="lg:w-1/2 flex flex-col gap-4 text-md justify-evenly">
 						<p className="">लेखकबारे थप जान्नुहोस्</p>
 						<div className="flex items-center gap-4">
 							<p className="font-bold text-black text-lg">सुधीर नेपाल</p>

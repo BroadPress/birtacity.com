@@ -49,7 +49,7 @@ const Pramuk = () => {
                     <img src={rightarr} alt="" className="h-3 items-center" />
 					</div>
             </div>
-            <div className="grid grid-cols-4 gap-5">
+            <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
                 {article.map((article,index)=>(
                 <div key={index} className="flex flex-col gap-2">
                         <p className="text-sm">{article.date}</p>
