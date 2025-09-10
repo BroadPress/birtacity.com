@@ -5,16 +5,16 @@ import linkdin from "../assets/icons/linkdin.svg";
 import pinterest from "../assets/icons/pinterest.svg";
 import twitter from "../assets/icons/twitter.svg";
 import birtacity from "../assets/icons/birtacity.svg";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaSearch } from "react-icons/fa";
 
 const Navbar = () => {
 	const [hamIcon, setHamIcon] = useState(false);
-	const [search, setSearch] = useState("");
 	const [isMenuFixed, setIsMenuFixed] = useState(false);
 	const [active, setActive] = useState("होमपेज");
+	const [activeSearch, setActiveSearch] = useState(false);
 	useEffect(() => {
 		const handleScroll = () => {
-			if (window.scrollY > 100) {
+			if (window.scrollY > 600) {
 				setIsMenuFixed(true);
 			} else {
 				setIsMenuFixed(false);
@@ -37,14 +37,13 @@ const Navbar = () => {
 					<img src={pinterest} alt="pinterest" />
 				</div>
 				<div className="flex gap-8 items-center text-[#055D59] text-[19px]">
-					<input
+					{/* <input
 						type="text"
 						placeholder="Search..."
-						onChange={(e) => setSearch(e.target.value)}
 						className="px-3 py-1 border rounded-lg focus:outline-none focus:ring-0 focus:border-[#055D59] "
-					/>
+					/> */}
 					<div className="text-center">Sign in</div>
-					<div className="border py-2 px-4 bg-[#055D59] text-white font-bold rounded">
+					<div className="border text-sm py-2 px-4 bg-[#055D59] text-white font-bold rounded">
 						Write a post
 					</div>
 				</div>
@@ -192,10 +191,27 @@ const Navbar = () => {
 							>
 								अन्य
 							</div>
+							<div
+								onClick={() => setActiveSearch(!activeSearch)}
+								className="py-2 px-3 cursor-pointer"
+							>
+								<FaSearch />
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			{activeSearch && (
+				<div className="flex relative flex-col -top-6 bg-gray-300 px-2 py-1 ">
+					<div className="flex gap-5">
+						<input
+							type="text"
+							placeholder="लेखकको नाम"
+							className=" text-md px-4 py-1 rounded-full focus:outline-none bg-white"
+						/>
+					</div>
+				</div>
+			)}
 
 			{/* Trending section */}
 			<div className="border border-[#055D59] border-x-0 flex items-center text-sm font-bold overflow-hidden">
