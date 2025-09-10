@@ -60,7 +60,7 @@ const Samacharsection = () => {
 				</div>
 			</div>
 			{/* Saptahik prabidhi */}
-			<div className="flex flex-col gap-10">
+			<div className="flex flex-col gap-10 ">
 				<div className="text-lg flex justify-between font-bold border border-b-[#00000033] border-x-0 border-t-0 py-5">
 					<div>साप्ताहिक प्रविधि</div>
 					<div className="flex gap-4 justify-end items-center">
@@ -69,7 +69,7 @@ const Samacharsection = () => {
 					</div>
 				</div>
 
-				<div className="flex flex-col lg:flex-row gap-7 lg:h-[470px]">
+				<div className="flex flex-col lg:flex-row gap-7 lg:h-[470px] pr-12">
 					{/* First Image */}
 					<div className="w-full lg:w-[45%]">
 						<div

@@ -12,7 +12,7 @@ import Contact from "./pages/Contact";
 function App() {
 	return (
 		<div className="">
-			<div className=" px-6 py-3 md:px-14 md:py-7 ">
+			<div className=" px-6 py-3 lg:w-4/5 lg:mx-auto  ">
 				<Navbar />
 				<Routes>
 					<Route path="/" element={<Home />} />

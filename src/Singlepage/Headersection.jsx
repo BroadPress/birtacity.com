@@ -131,7 +131,7 @@ const Headersection = () => {
 				<div className="flex justify-end">
 					<img src={lower} alt="" className="items-end w-10 lg:w-[45px] lg:h-[100px]" />
 				</div>
-				<p className="text-md text-center">
+				<p className="text-md text-justify">
 					यदि तपाईंको कम्प्युटरमा भाइरस लागेको शंका लागिरहेको छ भने, पहिले आफ्नो
 					डाटा सुरक्षित स्थानमा ब्याकअप गर्नुहोस्। त्यसपछि, भरपर्दो एन्टिभाइरस
 					सफ्टवेयर जस्तै Avast, Kaspersky, Bitdefender, Windows Defender आदि
@@ -140,7 +140,7 @@ const Headersection = () => {
 					एन्टिभाइरस सफ्टवेयर नै निष्क्रिय बनाउने गर्छ, यस्तो अवस्थामा
 					कम्प्युटर System Restore वा फर्म्याट गर्नु पर्ने हुन सक्छ
 				</p>
-				<p className="text-md text-center">
+				<p className="text-md text-justify">
 					यस्ता संवेदनशील अवस्थामा पेशेवर सहयोग आवश्यक पर्न सक्छ। भविष्यमा यस्ता
 					समस्या दोहोरिन नदिनको लागि सतर्कता, नियमित अपडेट, सचेत इन्टरनेट प्रयोग
 					र सुरक्षित डाटाको अभ्यास गरिनु अति जरूरी हुन्छ। कम्प्युटर भाइरस केवल

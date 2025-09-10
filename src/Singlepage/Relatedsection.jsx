@@ -79,7 +79,7 @@ const Relatedsection = () => {
 							</div>
 						</div>
 					</div>
-					<div className="flex flex-col gap-5 lg:w-[25%] border-y-0 border-r-0 border border-l-[#00000033] px-8 justify-center">
+					<div className="flex flex-col gap-5 lg:w-[25%] lg:border-y-0 lg:border-r-0 lg:border lg:border-l-[#00000033] px-8 justify-center">
 						<div className="text-lg font-bold">सुझावहरू</div>
 						<div className="flex flex-col gap-2">
 							<p className="text-md">किन हुन्छ वेबसाइट ह्याक?</p>
@@ -129,7 +129,7 @@ const Relatedsection = () => {
 							<span className="w-5 h-px bg-black"></span>
 							<p className="font-bold">प्राविधिक लेखक</p>
 						</div>
-						<p>
+						<p className='text-justify'>
 							बिगत तिन दशक देखि नेपाली पत्रकारिताको क्षेत्रमा निरन्तर रुपले
 							लागिरहेका एक अनुभवी र दक्ष पत्रकार हुन् । नेपाली पत्रकरितालाई
 							व्यावसायिक, आधुनिक र प्रविधिमैत्री बनाउने जमर्कोमा लागेका पत्रकार
@@ -172,7 +172,7 @@ const Relatedsection = () => {
 								{card.tags.map((tag, idx) => (
 									<div
 										key={idx}
-										className="w-fit px-5 py-2 text-sm bg-[#F2F4F5]"
+										className="w-fit px-5 py-2 text-sm rounded bg-[#F2F4F5]"
 									>
 										{tag}
 									</div>

@@ -73,7 +73,7 @@ const Secondsection = () => {
 									</p>
 									<p className="text-md">
 										क्रिकेट नगरीका रूपमा परिचित धनगढीमा अवस्थित एसपीए कलेजले
-										सुदूरपश्चिमका गौरवशाली युवा 
+										सुदूरपश्चिमका गौरवशाली युवा
 									</p>
 								</div>
 								<div className="flex flex-col gap-3">
@@ -82,7 +82,7 @@ const Secondsection = () => {
 									</p>
 									<p className="text-md">
 										ओलम्पिक खेलहरू विश्वका सबैभन्दा प्रतिष्ठित खेल प्रतियोगिता
-										हुन् 
+										हुन्
 									</p>
 								</div>
 							</div>
@@ -99,6 +99,13 @@ const Secondsection = () => {
 							</p>
 							<p className="text-md font-bold">
 								विकासको नयाँ युगमा नेपाली खेलकुद
+							</p>
+							<p className="text-md">
+								आधुनिक प्रविधिको प्रयोगले नेपाली खेलाडीहरूको शारीरिक र मानसिक
+								तयारीमा ठूलो परिवर्तन ल्याएको छ।आधुनिक प्रविधिको प्रयोगले नेपाली
+								खेलाडीहरूको शारीरिक र मानसिक तयारीमा ठूलो परिवर्तन ल्याएको
+								छ।आधुनिक प्रविधिको प्रयोगले नेपाली खेलाडीहरूको शारीरिक र मानसिक
+								तयारीमा ठूलो परिवर्तन ल्याएको छ।
 							</p>
 						</div>
 					</div>
@@ -130,16 +137,16 @@ const Secondsection = () => {
 			</div>
 
 			{/* News Section  */}
-			<div className="lg:flex gap-7   ">
+			<div className="lg:flex-row flex flex-col gap-7   ">
 				<div className="flex flex-col lg:w-1/2 gap-7">
 					{newsLeft.map((item, index) => (
 						<div key={index} className="lg:flex-row flex flex-col gap-8">
 							<img
 								src={item.img}
 								alt=""
-								className="lg:w-[148px] lg:h-[72px] w-full rounded-[5px] aspect-video"
+								className="lg:w-[148px] lg:h-[92px] w-full rounded-[5px] aspect-video"
 							/>
-							<div className="flex flex-col gap-3 justify-around ">
+							<div className="flex flex-col gap-2 justify-around ">
 								<p className="font-bold text-sm">{item.title}</p>
 								<p className="text-md text-justify line-clamp-2">{item.desc}</p>
 							</div>
@@ -147,15 +154,15 @@ const Secondsection = () => {
 					))}
 				</div>
 
-				<div className="flex flex-col lg:w-1/2 gap-7">
+				<div className="flex flex-col lg:w-1/2  gap-7">
 					{newsRight.map((item, index) => (
 						<div key={index} className="lg:flex-row flex flex-col gap-8">
 							<img
 								src={item.img}
 								alt=""
-								className="lg:w-[148px] lg:h-[72px] w-full rounded-[5px] aspect-video"
+								className="lg:w-[148px] lg:h-[92px] w-full rounded-[5px] aspect-video"
 							/>
-							<div className="flex flex-col gap-3 justify-around ">
+							<div className="flex flex-col gap-2 justify-around ">
 								<p className="font-bold text-sm">{item.title}</p>
 								<p className="text-md text-justify line-clamp-2">{item.desc}</p>
 							</div>
@@ -164,7 +171,6 @@ const Secondsection = () => {
 				</div>
 			</div>
 
-			
 			<div className="text-sm flex gap-3 justify-center font-bold">
 				<p>थप समाचार </p>
 				<img src={arrow} alt="" className="" />

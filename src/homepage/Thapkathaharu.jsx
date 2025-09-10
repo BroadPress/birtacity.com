@@ -97,7 +97,7 @@ const Thapkathaharu = () => {
 				<div className="lg:w-[55%] border-t border-black"></div>
 			</div>
 			<div className="lg:flex-row flex flex-col  gap-6 items-stretch">
-				<div className="lg:flex gap-6 lg:p-4 lg:w-[65%]">
+				<div className="lg:flex-row flex flex-col gap-6 lg:p-4 lg:w-[65%]">
 					<div className="flex gap-6 justify-between">
 						<div className="flex flex-col gap-8">{renderItems(leftItems)}</div>
 					</div>
