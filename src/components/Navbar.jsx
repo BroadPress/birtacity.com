@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import facebook from "../assets/icons/facebook.svg";
 import instagram from "../assets/icons/instagram.svg";
 import linkdin from "../assets/icons/linkdin.svg";
@@ -7,10 +7,23 @@ import twitter from "../assets/icons/twitter.svg";
 import birtacity from "../assets/icons/birtacity.svg";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-
 const Navbar = () => {
 	const [hamIcon, setHamIcon] = useState(false);
 	const [search, setSearch] = useState("");
+	const [isMenuFixed, setIsMenuFixed] = useState(false);
+	const [active, setActive] = useState("होमपेज");
+	useEffect(() => {
+		const handleScroll = () => {
+			if (window.scrollY > 100) {
+				setIsMenuFixed(true);
+			} else {
+				setIsMenuFixed(false);
+			}
+		};
+
+		window.addEventListener("scroll", handleScroll);
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, []);
 
 	return (
 		<div className="flex flex-col gap-6 ">
@@ -66,22 +79,124 @@ const Navbar = () => {
 			</div>
 
 			{/* Desktop Menu */}
-			<div className="hidden md:flex flex-col gap-6">
-				<div className=" border border-[#055D59] border-x-0 px-4 py-2 flex gap-6 lg:gap-9 items-center justify-center text-sm font-bold text-[#055D59]">
-					<div>होमपेज</div>
-					<div>राजनीति</div>
-					<div>प्रविधि</div>
-					<div>साहित्य</div>
-					<div>अर्थ</div>
-					<div>सम्पादकीय</div>
-					<div>बिचार</div>
-					<div>खेलकुद</div>
-					<div>रोजगार</div>
-					<div>मनोरंजन</div>
-					<div>सुरक्षा</div>
-					<div>अन्य</div>
+
+			<div
+				className={`hidden lg:flex ${
+					isMenuFixed
+						? "fixed top-0 left-0 w-full z-50 bg-white shadow-md "
+						: ""
+				} border border-[#055D59] border-x-0 justify-center transition-all duration-300`}
+			>
+				<div className="flex gap-6 lg:gap-2 items-center text-sm font-bold text-[#055D59] overflow-x-auto whitespace-nowrap">
+					<div
+						className={`hidden lg:flex ${
+							isMenuFixed
+								? "fixed top-0 left-0 w-full z-50 bg-white shadow-md "
+								: ""
+						}  justify-center transition-all duration-300`}
+					>
+						<div className="flex gap-6 lg:gap-0 items-center text-sm font-bold text-[#055D59] overflow-x-auto whitespace-nowrap">
+							<div
+								onClick={() => setActive("होमपेज")}
+								className={`py-2 px-3 cursor-pointer hover:bg-blue-300 ${
+									active === "होमपेज" ? "bg-blue-500 text-white" : ""
+								}`}
+							>
+								होमपेज
+							</div>
+							<div
+								onClick={() => setActive("राजनीति")}
+								className={`py-2 px-3 cursor-pointer hover:bg-blue-300 ${
+									active === "राजनीति" ? "bg-blue-500 text-white" : ""
+								}`}
+							>
+								राजनीति
+							</div>
+							<div
+								onClick={() => setActive("प्रविधि")}
+								className={`py-2 px-3 cursor-pointer hover:bg-blue-300 ${
+									active === "प्रविधि" ? "bg-blue-500 text-white" : ""
+								}`}
+							>
+								प्रविधि
+							</div>
+							<div
+								onClick={() => setActive("साहित्य")}
+								className={`py-2 px-3 cursor-pointer hover:bg-blue-300 ${
+									active === "साहित्य" ? "bg-blue-500 text-white" : ""
+								}`}
+							>
+								साहित्य
+							</div>
+							<div
+								onClick={() => setActive("अर्थ")}
+								className={`p-2 px-3 cursor-pointer hover:bg-blue-300 ${
+									active === "अर्थ" ? "bg-blue-500 text-white" : ""
+								}`}
+							>
+								अर्थ
+							</div>
+							<div
+								onClick={() => setActive("सम्पादकीय")}
+								className={`py-2 px-3 cursor-pointer hover:bg-blue-300 ${
+									active === "सम्पादकीय" ? "bg-blue-500 text-white" : ""
+								}`}
+							>
+								सम्पादकीय
+							</div>
+							<div
+								onClick={() => setActive("बिचार")}
+								className={`py-2 px-3 cursor-pointer hover:bg-blue-300 ${
+									active === "बिचार" ? "bg-blue-500 text-white" : ""
+								}`}
+							>
+								बिचार
+							</div>
+							<div
+								onClick={() => setActive("खेलकुद")}
+								className={`py-2 px-3 cursor-pointer hover:bg-blue-300 ${
+									active === "खेलकुद" ? "bg-blue-500 text-white" : ""
+								}`}
+							>
+								खेलकुद
+							</div>
+							<div
+								onClick={() => setActive("रोजगार")}
+								className={`py-2 px-3 cursor-pointer hover:bg-blue-300 ${
+									active === "रोजगार" ? "bg-blue-500 text-white" : ""
+								}`}
+							>
+								रोजगार
+							</div>
+							<div
+								onClick={() => setActive("मनोरंजन")}
+								className={`py-2 px-3 cursor-pointer hover:bg-blue-300 ${
+									active === "मनोरंजन" ? "bg-blue-500 text-white" : ""
+								}`}
+							>
+								मनोरंजन
+							</div>
+							<div
+								onClick={() => setActive("सुरक्षा")}
+								className={`py-2 px-3 cursor-pointer hover:bg-blue-300 ${
+									active === "सुरक्षा" ? "bg-blue-500 text-white" : ""
+								}`}
+							>
+								सुरक्षा
+							</div>
+							<div
+								onClick={() => setActive("अन्य")}
+								className={`py-2 px-3 cursor-pointer hover:bg-blue-300 ${
+									active === "अन्य" ? "bg-blue-500 text-white" : ""
+								}`}
+							>
+								अन्य
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
+
 			{/* Trending section */}
 			<div className="border border-[#055D59] border-x-0 flex items-center text-sm font-bold overflow-hidden">
 				<div className="w-[20%] md:w-[15%] lg:w-[10%] text-white bg-[#055D59] text-center px-4 py-2 text-xs lg:text-sm">
