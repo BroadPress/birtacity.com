@@ -108,7 +108,7 @@ const Navbar = () => {
 			{/* Mobile Dropdown Menu */}
 			{hamIcon && (
 				<div
-					className={`fixed top-0 left-0 flex flex-col gap-2 w-2/3 h-auto bg-[#055D59] p-10  transform transition-transform duration-500 ease-in-out z-10 ${
+					className={`fixed top-0 left-0 flex flex-col gap-4 w-2/3 h-full bg-[#055D59] p-10  transform transition-transform duration-500 ease-in-out z-10 ${
 						hamIcon ? "translate-x-0" : "-translate-x-full"
 					}`}
 				>
@@ -119,7 +119,7 @@ const Navbar = () => {
 							color="white"
 						/>
 					</div>
-					<div className="flex flex-col gap-3 text-white font-bold text-sm">
+					<div className="flex flex-col gap-4 text-white font-bold text-sm">
 						<div>होमपेज</div>
 						<div>राजनीति</div>
 						<div>प्रविधि</div>
