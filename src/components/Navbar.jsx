@@ -9,7 +9,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 
 const Navbar = () => {
-	const [menuOpen, setMenuOpen] = useState(false);
+	const [hamIcon, setHamIcon] = useState(false);
 	const [search, setSearch] = useState("");
 
 	return (
@@ -50,9 +50,9 @@ const Navbar = () => {
 					<div className="text-[#055D59] tesxt-xs">Sign in</div>
 					<button
 						className="text-[#055D59] text-2xl"
-						onClick={() => setMenuOpen(!menuOpen)}
+						onClick={() => setHamIcon(!hamIcon)}
 					>
-						{menuOpen ? <FaTimes /> : <FaBars />}
+						{hamIcon ? <FaTimes /> : <FaBars />}
 					</button>
 				</div>
 			</div>
@@ -106,15 +106,15 @@ const Navbar = () => {
 			</div>
 
 			{/* Mobile Dropdown Menu */}
-			{menuOpen && (
+			{hamIcon && (
 				<div
-					className={`fixed top-0 left-0 flex flex-col gap-2 w-2/3 h-full bg-[#055D59] p-4  transform transition-transform duration-500 ease-in-out z-10 ${
-						menuOpen ? "translate-x-0" : "-translate-x-full"
+					className={`fixed top-0 left-0 flex flex-col gap-2 w-2/3 h-auto bg-[#055D59] p-10  transform transition-transform duration-500 ease-in-out z-10 ${
+						hamIcon ? "translate-x-0" : "-translate-x-full"
 					}`}
 				>
 					<div className=" flex justify-end">
 						<FaTimes
-							onClick={() => setMenuOpen(!menuOpen)}
+							onClick={() => setHamIcon(!hamIcon)}
 							size={22}
 							color="white"
 						/>
