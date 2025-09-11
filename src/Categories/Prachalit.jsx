@@ -56,7 +56,7 @@ const Prachalit = () => {
 				{article.map((article, index) => (
 					<div key={index} className="flex flex-col gap-2">
 						<p className="text-sm">{article.date}</p>
-						<p className="text-md font-bold">{article.title}</p>
+						<p className="text-md font-bold line-clamp-1">{article.title}</p>
 						<img
 							src={article.image}
 							alt=""
@@ -75,13 +75,13 @@ const Prachalit = () => {
 				<div className="border-b-2 border-gray-400 py-4 mb-8">
 					<span className="text-lg font-bold">यसलाई पनि पढ्नुहोस्</span>
 				</div>
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 px-4 md:px-0">
+				<div className="flex flex-col lg:flex-row  gap-6 md:gap-10 px-4 md:px-0">
 					{/* Left Column  */}
-					<div className="flex flex-col gap-4">
+					<div className="flex flex-col gap-4 lg:w-[39%]">
 						<div className="text-md md:text-lg font-bold">
 							प्रविधिमा नयाँतम समाचार
 						</div>
-						<div className="bg-gray-100 flex flex-col justify-around gap-3 p-4 rounded-md min-h-[200px] md:h-[307px] text-sm md:text-md font-semibold">
+						<div className="bg-gray-100 flex flex-col justify-around p-4 rounded-md min-h-[200px] md:h-[307px] text-sm md:text-md font-semibold">
 							<p>पासवर्ड कसरी सुरक्षित राख्ने?</p>
 							<p>कम्प्युटर भाइरस के हो र यो किन खतरनाक हुन्छ?</p>
 							<p>इन्टरनेट को विकास अनि बिस्तार</p>
@@ -90,7 +90,7 @@ const Prachalit = () => {
 
 					{/* Right Column  */}
 					<div
-						className="flex flex-col rounded-[15px] aspect-video gap-4 bg-gray-100 p-4 md:p-6 justify-end bg-cover bg-center text-white"
+						className="flex flex-col rounded-[15px] lg:w-[61%] aspect-video gap-4 bg-gray-100 p-4 md:p-6 justify-end bg-cover bg-center text-white"
 						style={{
 							backgroundImage: `url(${image5})`,
 							backgroundRepeat: "no-repeat",

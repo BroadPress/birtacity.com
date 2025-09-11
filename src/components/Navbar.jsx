@@ -11,7 +11,8 @@ const Navbar = () => {
 	const [hamIcon, setHamIcon] = useState(false);
 	const [isMenuFixed, setIsMenuFixed] = useState(false);
 	const [active, setActive] = useState("होमपेज");
-	const [activeSearch, setActiveSearch] = useState(false);
+	
+	
 	useEffect(() => {
 		const handleScroll = () => {
 			if (window.scrollY > 600) {
@@ -201,17 +202,7 @@ const Navbar = () => {
 					</div>
 				</div>
 			</div>
-			{activeSearch && (
-				<div className="flex relative flex-col -top-6 bg-gray-300 px-2 py-1 ">
-					<div className="flex gap-5">
-						<input
-							type="text"
-							placeholder="लेखकको नाम"
-							className=" text-md px-4 py-1 rounded-full focus:outline-none bg-white"
-						/>
-					</div>
-				</div>
-			)}
+			
 
 			{/* Trending section */}
 			<div className="border border-[#055D59] border-x-0 flex items-center text-sm font-bold overflow-hidden">

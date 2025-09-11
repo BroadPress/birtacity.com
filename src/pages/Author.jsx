@@ -310,7 +310,7 @@ const Author = () => {
 					{first.map((article, index) => (
 						<div key={index} className="flex flex-col gap-3">
 							<p className="text-sm">{article.date}</p>
-							<p className="text-md font-bold">{article.title}</p>
+							<p className="text-md font-bold line-clamp-1">{article.title}</p>
 							<img
 								src={article.image}
 								alt=""
@@ -326,7 +326,7 @@ const Author = () => {
 					{second.map((article, index) => (
 						<div key={index} className="flex flex-col gap-3">
 							<p className="text-sm">{article.date}</p>
-							<p className="text-md font-bold">{article.title}</p>
+							<p className="text-md font-bold line-clamp-1">{article.title}</p>
 							<img
 								src={article.image}
 								alt=""
@@ -381,10 +381,13 @@ const Author = () => {
 						<p className="text-md font-bold">
 							द न्यू योर्करको राजनीतिक मञ्च: पोडकास्ट र स्थानीय सत्ता खेल
 						</p>
-						<p className="text-md">
+						<p className="text-md text-justify">
 							बेल्टवे–बाहेकको हलचल! DC को राजनीतिक जामदेखि NYC का शक्ति खेलसम्म,
 							द न्यू योर्करले राजनीतिक नाट्यक्रमलाई कसरी देखाउँछ भनेर सुन्नुहोस्
-							...
+						</p>
+						<p className="text-md text-justify">
+							बेल्टवे–बाहेकको हलचल! DC को राजनीतिक जामदेखि NYC का शक्ति खेलसम्म,
+							द न्यू योर्करले राजनीतिक नाट्यक्रमलाई कसरी देखाउँछ भनेर सुन्नुहोस्
 						</p>
 						<p className="text-xs font-bold">
 							लेखक: जिन-हो किम • पढ्न समय: २ मिनेट
@@ -392,7 +395,10 @@ const Author = () => {
 					</div>
 					<div className="flex flex-col gap-10 lg:w-1/2">
 						{last.map((item, index) => (
-							<div key={index} className="flex flex-col-reverse lg:flex-row gap-2 lg:justify-between">
+							<div
+								key={index}
+								className="flex flex-col-reverse lg:flex-row gap-2 lg:justify-between"
+							>
 								<div className="flex flex-col gap-2 text-md lg:w-[65%]">
 									<p className="font-bold">{item.title}</p>
 									<p className="text-justify">{item.desc}</p>

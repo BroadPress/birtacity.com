@@ -25,7 +25,7 @@ const Lastsection = () => {
 		<div className="flex flex-col gap-10 mt-10">
 			<p className="text-lg font-bold">थप पढ्नुहोस्</p>
 			<div className="flex flex-col lg:flex-row gap-8">
-				<div className="flex flex-col lg:flex-row lg:w-1/2  gap-3">
+				<div className="flex flex-col lg:w-1/2  gap-3">
 					<img src={image1} alt="" className="aspect-video rounded-[15px]" />
 					<p className="text-md font-bold">
 						रोबोटिक्स शिक्षा: विद्यार्थीमा प्रविधिको पहुँच
@@ -33,15 +33,23 @@ const Lastsection = () => {
 					<p className="text-md text-justify">
 						काठमाडौं र पोखराका विद्यालयहरूले रोबोटिक्स र STEM शिक्षा कार्यक्रम
 						सुरु गरेका छन्। विद्यार्थीहरूले प्रायोगिक तरिकाले रोबोट निर्माण र
-						प्रोग्रामिङ अनुभव गर्ने अवसर पाउँछन
+						प्रोग्रामिङ अनुभव गर्ने अवसर पाउँछन |
+						<p className="text-md text-justify">
+							काठमाडौं र पोखराका विद्यालयहरूले रोबोटिक्स र STEM शिक्षा कार्यक्रम
+							सुरु गरेका छन्। विद्यार्थीहरूले प्रायोगिक तरिकाले रोबोट निर्माण र
+							प्रोग्रामिङ अनुभव गर्ने अवसर पाउँछन
+						</p>
 					</p>
 				</div>
 				<div className="flex flex-col gap-10 lg:w-1/2">
 					{data.map((item, index) => (
-						<div key={index} className="flex flex-col-reverse lg:flex-row gap-2 lg:justify-between">
-							<div className="flex flex-col gap-2 text-md lg:w-[65%]">
+						<div
+							key={index}
+							className="flex flex-col-reverse lg:flex-row gap-2 lg:justify-between"
+						>
+							<div className="flex flex-col gap-2 text-md justify-center lg:w-[65%]">
 								<p className="font-bold">{item.title}</p>
-								<p className='text-justify'>{item.desc}</p>
+								<p className="text-justify line-clamp-3 ">{item.desc}</p>
 							</div>
 							<img
 								src={item.img}
