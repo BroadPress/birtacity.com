@@ -400,8 +400,8 @@ const Author = () => {
 								className="flex flex-col-reverse lg:flex-row gap-2 lg:justify-between"
 							>
 								<div className="flex flex-col gap-2 text-md lg:w-[65%]">
-									<p className="font-bold">{item.title}</p>
-									<p className="text-justify">{item.desc}</p>
+									<p className="font-bold line-clamp-1">{item.title}</p>
+									<p className="text-justify line-clamp-4">{item.desc}</p>
 								</div>
 								<img
 									src={item.img}
