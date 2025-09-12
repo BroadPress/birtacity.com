@@ -109,8 +109,8 @@ const Lastsection = () => {
 							alt={article.title}
 							className="aspect-video object-cover rounded-[15px]"
 						/>
-						<p className="text-md font-bold">{article.title}</p>
-						<p className="text-md text-[#00000099] text-justify">{article.desc}</p>
+						<p className="text-md font-bold line-clamp-1">{article.title}</p>
+						<p className="text-md text-[#00000099] text-justify line-clamp-4">{article.desc}</p>
 					</div>
 				))}
 			</div>
@@ -126,7 +126,7 @@ const Lastsection = () => {
 							alt={article.title}
 							className="aspect-video rounded-[15px] object-cover"
 						/>
-						<p className="text-md font-bold">{article.title}</p>
+						<p className="text-md font-bold line-clamp-2">{article.title}</p>
 						<p className="text-md line-clamp-5">{article.desc}</p>
 						<div className="flex justify-end items-end gap-2">
 							<p className="text-xs">See more</p>

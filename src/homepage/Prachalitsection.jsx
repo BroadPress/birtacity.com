@@ -46,9 +46,9 @@ const Prachalitsection = () => {
 				</div>
 
 				{/* RIGHT SIDE */}
-				<div className="lg:w-[50%] lg:h-full pr-10 ">
+				<div className="lg:w-[50%]  lg:h-full lg:pr-10 ">
 					<div
-						className="bg-cover bg-center relative rounded-[20px] lg:h-full aspect-video overflow-hidden"
+						className="bg-cover bg-center  relative rounded-[20px] lg:h-full aspect-video overflow-hidden"
 						style={{ backgroundImage: `url(${image3})` }}
 					>
 						<div className="absolute bottom-5 left-5 px-4">

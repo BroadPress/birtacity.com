@@ -28,7 +28,7 @@ const Thapkathaharu = () => {
 			category: "समाचार",
 		},
 		{
-			image: image3,
+			image: image9,
 			title: "सबै स्कोलास्टिक्स: उच्च विद्यालय बेसबल",
 			category: "बेसबल",
 		},
@@ -84,7 +84,7 @@ const Thapkathaharu = () => {
 					className="w-[120px] h-[89px] rounded-[5px]"
 				/>
 				<div className="flex flex-col gap-2 justify-around">
-					<p className="font-bold text-sm">{item.title}</p>
+					<p className="font-bold text-sm line-clamp-2">{item.title}</p>
 					<p className="text-xs">{item.category}</p>
 				</div>
 			</div>
@@ -99,10 +99,10 @@ const Thapkathaharu = () => {
 			<div className="lg:flex-row flex flex-col  gap-6 items-stretch">
 				<div className="lg:flex-row flex flex-col gap-6 lg:p-4 lg:w-[65%]">
 					<div className="flex gap-6 justify-between">
-						<div className="flex flex-col gap-8">{renderItems(leftItems)}</div>
+						<div className="flex flex-col gap-10">{renderItems(leftItems)}</div>
 					</div>
 					<div className="flex gap-6">
-						<div className="flex flex-col gap-8">{renderItems(rightItems)}</div>
+						<div className="flex flex-col gap-10">{renderItems(rightItems)}</div>
 					</div>
 				</div>
 				<div className="lg:w-[35%] bg-[#FFFFFF] flex flex-col p-4 border gap-8 ">

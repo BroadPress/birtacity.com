@@ -1,5 +1,5 @@
 import React from "react";
-import arrow from "../assets/icons/arrow.svg";
+import arrow from "../assets/icons/arrright.svg";
 import image1 from "../assets/Homepage/Sectionfirstimage/imag1.png";
 import image2 from "../assets/Homepage/Sectionfirstimage/image2.png";
 import image3 from "../assets/Homepage/Sectionfirstimage/image3.png";

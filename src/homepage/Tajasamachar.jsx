@@ -10,7 +10,7 @@ const Tajasamachar = () => {
 			<div className="font-bold text-lg">ताजा समाचार</div>
             <div className="lg:flex-row flex flex-col gap-10">
                 {/* Left section */}
-				<div className="flex flex-col gap-6 lg:w-1/2 w-full lg:border lg:border-y-0 lg:border-l-0 lg:pr-10">
+				<div className="flex flex-col gap-10 lg:w-1/2 w-full lg:border lg:border-y-0 lg:border-l-0 lg:pr-10">
 					<div className="flex flex-col gap-1">
 						<img src={image1} alt="" className="aspect-video rounded-[20px] " />
 						<p className="font-semibold text-[#3C3C3C]">BREAKING NEWS</p>
@@ -76,7 +76,7 @@ const Tajasamachar = () => {
 									</p>{" "}
 									<p className="text-xs font-bold">TRENDING NOW</p>
 								</div>
-								<p className="text-md font-bold line-clamp-1">
+								<p className="text-md font-bold">
 									क्रिकेटर द्वय भट्ट र रावललाई आजीवन छात्रवृत्ति
 								</p>
 								<div className="flex gap-1 text-[#747474]">

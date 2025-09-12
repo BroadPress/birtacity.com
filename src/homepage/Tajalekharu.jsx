@@ -45,12 +45,12 @@ const Tajalekharu = () => {
 						<div className="flex flex-col gap-4 lg:w-1/2">
 							<div className="flex justify-between items-center">
 								<p className="text-xs">१ घण्टा पहिले अपडेट</p>
-								<p className="px-4 py-1 bg-[#E9E9E9] w-fit text-sm rounded-xl">
+								<p className="px-4 py-0.5 bg-[#E9E9E9] w-fit text-sm rounded-xl">
 									राजनीति
 								</p>
 							</div>
 							<p className="text-md font-bold">शीर्षक: “संसद् बैठक आज बस्दै”</p>
-							<p className="text-sm">
+							<p className="text-sm line-clamp-3">
 								संक्षिप्त विवरण: संसद्को आगामी बैठक आज बिहान ११ बजे बस्ने भएको
 								छ। बैठकमा बजेट अनुमोदन र नयाँ कानुन प्रस्तावबारे छलफल हुने छ।
 							</p>
@@ -66,14 +66,14 @@ const Tajalekharu = () => {
 						<div className="flex flex-col gap-4  lg:w-1/2">
 							<div className="flex justify-between items-center">
 								<p className="text-xs">२ घण्टा पहिले अपडेट</p>
-								<p className="px-4 py-1 bg-[#E9E9E9] w-fit text-sm rounded-xl">
+								<p className="px-4 py-0.5 bg-[#E9E9E9] w-fit text-sm rounded-xl">
 									खेलकुद
 								</p>
 							</div>
-							<p className="text-md font-bold">
+							<p className="text-md font-bold line-clamp-1">
 								शीर्षक: “नेपाल क्रिकेट टिमको विजयी यात्रा”
 							</p>
-							<p className="text-sm">
+							<p className="text-sm line-clamp-3">
 								संक्षिप्त विवरण: नेपाल क्रिकेट टिमले अघिल्लो खेलमा पाँच विकेटले
 								विजयी हासिल गर्दै सेमीफाइनलमा स्थान बनाएको छ। प्रशंसकहरूले
 								टोलीको प्रदर्शनमा उत्साह व्यक्त गरेका छन्।

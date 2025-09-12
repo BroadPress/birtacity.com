@@ -7,7 +7,7 @@ import image5 from "../assets/Homepage/Sectionsecond/image5.png";
 import image6 from "../assets/Homepage/Sectionsecond/image6.png";
 import image7 from "../assets/Homepage/Sectionsecond/image7.png";
 import image8 from "../assets/Homepage/Sectionsecond/image8.png";
-import arrow from "../assets/icons/arrow.svg";
+import arrow from "../assets/icons/arrright.svg";
 
 import profile1 from "../assets/Homepage/Sectionsecond/profile1.png";
 import profile2 from "../assets/Homepage/Sectionsecond/profile2.png";

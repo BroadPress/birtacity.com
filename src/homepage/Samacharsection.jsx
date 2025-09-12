@@ -69,7 +69,7 @@ const Samacharsection = () => {
 					</div>
 				</div>
 
-				<div className="flex flex-col lg:flex-row gap-7 lg:h-[470px] lg:pr-12">
+				<div className="flex flex-col lg:flex-row gap-7 lg:h-[400px] lg:pr-12">
 					{/* First Image */}
 					<div className="w-full lg:w-[45%]">
 						<div
