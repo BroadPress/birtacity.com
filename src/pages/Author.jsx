@@ -152,24 +152,24 @@ const Author = () => {
 						{[image1, image2].map((img, index) => (
 							<div
 								key={index}
-								className="flex flex-col lg:flex-row gap-4 h-[50%]"
+								className="flex flex-col lg:flex-row gap-4"
 							>
 								<img
 									src={img}
 									alt=""
-									className="rounded-[20px] aspect-video lg:w-1/2 h-full object-cover"
+									className="rounded-[20px] aspect-video lg:w-1/2 object-cover"
 								/>
-								<div className="flex flex-col gap-3 justify-around lg:w-1/2 text-justify">
+								<div className="flex flex-col gap-1 justify-around lg:w-1/2 text-justify">
 									<p className="font-bold line-clamp-1">
 										युवाहरूलाई इन्टरनेटमार्फत स्वरोजगारमा जोड्न सकिनेछ...
 										स्वरोजगारमा जोड्न युवाहरू
 									</p>
-									<p className="text-md line-clamp-3">
+									<p className="text-md line-clamp-2">
 										युवाहरूलाई इन्टरनेटमार्फत स्वरोजगारमा जोड्न सकिनेछ, जसले
 										बेरोजगारी कम गर्नेछ। तर, डिजिटल परिवर्तनका लागि सरकारी नीति
 										स्पष्ट
 									</p>
-									<div className="flex gap-4">
+									<div className="flex gap-2">
 										<div className="flex gap-2">
 											<img src={time} alt="" className="h-5 w-5" />
 											<p className="text-xs">३ मिनेटमा पढ्नुहोस्</p>
@@ -185,9 +185,9 @@ const Author = () => {
 					</div>
 
 					{/* RIGHT SIDE */}
-					<div className="lg:w-1/2 lg:h-full">
+					<div className="lg:w-1/2 lg:h-full ">
 						<div
-							className="bg-cover bg-center relative rounded-[20px] lg:h-full aspect-video overflow-hidden"
+							className="bg-cover bg-center relative rounded-[20px] aspect-video overflow-hidden"
 							style={{ backgroundImage: `url(${image3})` }}
 						>
 							<div className="absolute bottom-5 left-5 px-4">
